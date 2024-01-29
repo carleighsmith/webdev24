@@ -31,4 +31,5 @@ function setupForm()
       document.getElementById("photoRights").checked = false;
       document.getElementById("photoDist").value = 0;
 }
-//download node
+
+//download node -- Ask Mrs Preston to help download node
