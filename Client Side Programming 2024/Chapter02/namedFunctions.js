@@ -47,8 +47,8 @@ console.log("The sum of 9 + 11 + 13 is: " + add3(9, 11, 13));
 sum = add3(10, 12, 5) + add3(5, 2, add3(4, 7, 9));
 console.log("The sum is now " + sum);
 
-//this will call the show user funciton and print the user defined
-//locally in that fucntion
+//this will call the show user function and print the user defined
+//locally in that function
 showUser();
 
 //this will work now because the global user is defined at the top
@@ -72,7 +72,7 @@ console.log("Welcome to 'JavaScript\'s \nFunctions'");
 //char expression
 let letterGrade = 'B';
 
-//Chapte 2 Section 2-6 
+//Chapter 2 Section 2-6 
 //Arithmetic Operators
 let x = 12;
 console.log("\ndemonstrating post-increment");
