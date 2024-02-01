@@ -115,4 +115,21 @@ console.log(y === x);//false
 // == tests if two values are the same
 //=== tests if two values are the same and/or the same data type
 
+//Section 2-6d - Conditional Operators
+let member = "prime";
+let plan = "gold";
+let discount = (member === "prime") && (plan == "gold")? 0. : 0.0;
+console.log("As a " + member + " member and with a "+ plan +" plan, your discount is " + (discount*100) + "%");
+
+//or you can have boolean value set to true or false if you are a prime member
+let primeMember = true;
+discount = primeMember ? 0.05 : 0.0;
+
+//expressions instead of values
+(primeMember) ? console.log("Enjoy your free shipping!")  :  
+                console.log("Go Prime to enjoy free shipping!")
+
+let firstName = "", lastName = "";
+
+console.log("type of member variable: " + typeof(member))
 

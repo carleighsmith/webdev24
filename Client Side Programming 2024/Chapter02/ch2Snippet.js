@@ -235,3 +235,14 @@ condition1 ? trueValue : condition2 ? trueValue : falseValue
 //|| or
 // ! not
 
+//property access . Appends an object, method, or property to another object  
+//array index [ ] Accesses an element of an array
+//function call () Calls up functions or changes the order in which individual operations in an expression are evaluated
+//comma , 	Separates multiple expressions in the same statement
+//conditional expression ?: Executes one of two expressions based on the results of a conditional expression
+//delete "delete" - Deletes array elements, variables created without the var keyword, and properties of custom objects
+//Property exists "in" - Returns a value of true if a specified property is contained within an object
+//Object type "instanceof" - Returns true if an object is of a specified object type 
+//New Object "new" - Creates a new instance of a user-defined object type or a predefined JavaScript object type
+//Data type "typeof" - Determines the data type of a variable
+//void "void" - Evaluates an expression without returning a result
