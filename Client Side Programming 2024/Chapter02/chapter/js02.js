@@ -62,12 +62,3 @@ function getEstimate()
       //display the total cost estimate
       document.getElementById("estimate").innerHTML = "$" + totalCost;
 }
-
-
-//Another way to call the submitOrder function in response
-//to the user clicking the submit button.
-//document.getElementById("SubmitButton").onclick = submitOrder;
-
-//Finally another way to call the submitOrder function is to
-//add an event listener
-//document.getElementById("SubmitButton").addEventListener("")
