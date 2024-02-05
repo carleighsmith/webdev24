@@ -1,0 +1,16 @@
+/* Created by Carleigh Smith on 02/05/2024
+   File: style.css */
+
+/*CSS RESET*/
+body, header, nav, main, footer, img, h1, h3{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+/*Style rules for body and image*/
+body {background-color: #e3eaf8 ;}
+img{
+    max-width: 100%;
+    display: block;
+}
