@@ -57,7 +57,7 @@ ol, ul {
 header {
    background: #FFE373;
    width: 100%;
-   color: black;
+   color: rgb(0, 0, 0);
    font-size: 48px;
    text-align: center;
    line-height: 1.5em;

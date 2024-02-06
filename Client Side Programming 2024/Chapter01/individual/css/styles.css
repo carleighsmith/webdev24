@@ -1,0 +1,68 @@
+/* Created by Carleigh Smith on 02/06/2024
+   File: style.css */
+
+/*CSS RESET*/
+body, header, nav, main, footer, img, h3{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+/*Style rules for body and image*/
+
+body {background: #CE5937;
+    background: -moz-linear-gradient(45deg, #CE5937 0%, #1C6EA4 44%, #C59237 100%);
+    background: -webkit-linear-gradient(45deg, #CE5937 0%, #1C6EA4 44%, #C59237 100%);
+    background: linear-gradient(45deg, #CE5937 0%, #1C6EA4 44%, #C59237 100%);
+     }
+     
+fieldset {
+    position: relative;
+    padding: 1em;
+    background: #6d597ab3;
+    text-align: left;
+    }
+form {
+    background: #e56b6f48;
+    padding: 10px 5px 7px 5px;
+    margin: 0 auto;
+    width: 750px;
+    border: 2px solid #355070;
+    }
+
+main{
+    background-color: #e5989b52;
+    
+}
+footer{
+    background-color: #bd67a926;
+}
+h1{
+    font-family: 'Papyrus', Fantasy;
+}
+h2{
+    font-family: 'Papyrus', Fantasy;
+    font-size: 20px;
+}
+nav{
+    color:pink;
+}
+
+
+#submit {
+    background: #6e4592;
+    font-size: 1.25em;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    }
+
+#submitbutton {
+    padding: 0.5em 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+    

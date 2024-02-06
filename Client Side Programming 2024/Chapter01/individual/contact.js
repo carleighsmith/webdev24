@@ -1,13 +1,15 @@
 /*    JavaScript 7th Edition
       Chapter 2
-      Project 02-02
+      Case Project
 
       Application to test for completed form
       Author: Carleigh Smith
-      Date:   2/1/2024
+      Date:   2/6/2024
 
-      Filename: project02-02.js
+      Filename: index.js
  */
+
+      
 function verifyForm() {
     // Get the values of the input fields
     let name = document.getElementById("name").value;

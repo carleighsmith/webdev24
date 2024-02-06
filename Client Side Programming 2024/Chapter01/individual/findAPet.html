@@ -15,6 +15,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find A Pet</title>
+    <link rel="stylesheet" href="../individual/css/styles.css">
+    <script src="../individual/calculations.js" defer></script>
    
     
 </head>
@@ -39,12 +41,33 @@
                 <a href="contactUs.html">Contact Us</a> &nbsp; &#9475; &nbsp;
                 <a href="../../../index.html">Client-Side Main Page</a></p>
         </nav>
-
+        <article>
+            <h2>Filter for Search</h2>
+            <form>
+              <fieldset id="ageinfo">
+                <label for="ageinput">
+                  Age of Dog
+                  <input type="text" id="age" name="age" />
+                </label>
+                <label for="mininput">
+                  Minimum Price
+                  <input type="text" id="min" name="min" />
+                </label>
+                <label for="maxinput">
+                  Maximum Price
+                  <input type="text" id="max" name="max" />
+                </label>
+              </fieldset>
+              <fieldset id="submitbutton">
+                <input type="button" id="submit" value="Submit" />
+              </fieldset>
+           </form>
+         </article>
     <!-- Use the main area to add the main content of the webpage-->
     <main>
         <h5>What this page is going to include:</h5> 
         
-        <p>This page is going to include the avialble pets, individual pet profiles, adoption applicaiton form, and the filter for finding a pet.</p>
+        <p>This page is going to include the available pets, individual pet profiles, adoption applicaiton form, and the filter for finding a pet.</p>
         <br>
     </main>
 
