@@ -1,16 +1,142 @@
+/*Validated*/
 /* Created by Carleigh Smith on 02/05/2024
    File: style.css */
 
 /*CSS RESET*/
+/* a CSS reset style rule that sets the margin,
+padding, and borders to zero for the following
+selectors: body, header, nav, main, footer, img, h1, h3.*/
 body, header, nav, main, footer, img, h1, h3{
     margin: 0px;
     padding: 0px;
     border: 0px;
 }
 
-/*Style rules for body and image*/
-body {background-color: #e3eaf8 ;}
-img{
+/*Style rule for body and image*/
+/*Create a style rule for the body
+selector that sets a background color value of #e3eaf8.*/
+body {
+    background-color:#e3eaf8 ;
+}
+/*Create a style rule for an img selector that sets
+a max-width to 100% and displays the images as a block.*/
+img {
     max-width: 100%;
     display: block;
+}
+
+/*Style rule for header content*/
+/*a new style rule for the header h1 descendant
+selector that aligns text center; sets a font size value
+of 3em; sets a font family value of Georgia, Times, serif;
+sets a padding value of 3%; and sets a color value of #101a2d.*/
+h1 {
+    text-align: center;
+    font-size: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 3%;
+    color: #101a2d;
+}
+
+/*Style rules for navigation area*/
+/*Create a style rule for the nav selector that
+sets the background color to #1d396d.*/
+nav {
+    background-color: #1d396d;
+}
+/*Create a style rule for nav ul that sets the list style
+type to none, sets the margin to 0, and aligns text center.*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+/*Create a style rule for nav li that sets the display to an inline-block,
+sets a font size of 1.5em, sets a font family
+value of Verdana, Arial, sans-serif, and a font weight value of bold.*/
+nav li {
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;
+}
+/*Create a style rule for nav li a that sets the display
+to a block, sets a font color value of #e3eaf8, sets top
+and bottom padding values of 0.5em and left and right padding
+values of 2em, and removes the text decoration.*/
+nav li a {
+    display:block;
+    color: #e3eaf8;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-decoration: none;
+}
+
+/*Style rules for main content*/
+/*Create a style rule for the main selector
+that sets the padding value to 2%, a font
+family with values Geneva, Arial, sans-serif,
+and an overflow value of auto.*/
+main{
+    padding: 2%;
+    font-family: Geneva, Arial, sans-serif;
+    overflow: auto;
+}
+/*Create a style rule for main p that sets the font size value to 1.25em.*/
+main p{
+    font-size: 1.25em;
+}
+/*Create a style rule for main h3 that sets the top
+padding value to 2% and a font size value to 2em.*/
+main h3{
+    padding-top:2%;
+    font-size: 2em;
+}
+/*Create a style rule for the id selector image
+that sets a width value of 45%, a float value of left,
+and a padding value of 1%.*/
+#image {
+    width: 45%;
+    float: left;
+    padding: 1%;
+}
+/*Create a style rule for the id selector group that
+sets a width value of 45% and a float value of right.*/
+#group{
+    width: 45%;
+    float:right;
+}
+/*Create a style rule for the class selector external that
+sets the font color to #1d396d, removes the text decoration,
+sets the font weight value to bold, and sets the font style value to italic.*/
+.external{
+    color: #1d396d;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*Style rules for footer content*/
+/*Create a style rule for the footer
+selector that aligns text center, sets a
+font size value of 0.85em, sets a background
+color value of # 1d396d, sets a font color value
+of # e3eaf8, and sets top and bottom padding values
+to 1% and right and left padding values to 0%.*/
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #e3eaf8;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+/*Create a style rule for footer a that sets the font
+color value to # e3eaf8 and removes the text decoration.*/
+footer a {
+    color: #e3eaf8;
+    text-decoration: none;
 }

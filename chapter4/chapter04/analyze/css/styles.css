@@ -1,8 +1,121 @@
+/*Validated*/
+
 /* Created by Carleigh Smith on 02/05/2024
-   File: style.css *//* CSS reset */
+   File: style.css */
+
+/* CSS reset */
+/*Add a CSS reset as the first style rule.*/
     body, header, nav, main, footer, img, h1, h3, ul {
         margin: 0;
         padding: 0;
         border: 0;
     }
-     
+
+/* CSS body */
+    body {
+        background-color: #a6a6ac79;
+    }
+    
+/* CSS main */
+/*Update the style rule for the
+main selector that sets the overflow
+property to auto.*/
+    main {
+        overflow: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        color: #3b334d99;
+    }
+
+/* CSS main a*/
+/*Create a style rule for
+anchor elements within the
+main element that sets the
+font color value to #47476b,
+removes the underline, sets a
+font weight value of bold, and
+sets a font style value of italic.*/    
+    main a {
+        color: #050520;
+        text-decoration: none;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+/* CSS footer */
+/*Update the style rule for
+the footer selector to clear
+a float on the left.*/
+    footer {
+        clear: left;
+        float:left;
+        text-align: center;
+    }
+
+/* CSS external links */
+
+    .external-link {
+        color: #dddded;
+        font-weight: bold;
+        text-decoration: none ;
+    }
+
+/* CSS h1 */
+/*Correct the style rule
+for the h1 selector located
+in the header element to center-align
+its content.*/
+    h1 {
+        text-align: center;
+        font-size: 60px;
+        padding:0.5em;
+        color: #3b334d99;
+    }
+
+/* CSS  NAV ul */
+/*Correct the style rule for the
+list item elements within the nav
+to display the list as an inline-block.
+*/
+    nav ul {
+        display: inline;
+        list-style-type: none;
+        margin: 0;
+    }
+/* CSS  NAV li */    
+    nav li {
+        display: inline-block;
+        text-align: center;    
+    }
+
+/* CSS  div id= navi */    
+    #navi {
+        border: solid 4px #3b334d;
+        background-color: #3b334d99 ;
+        text-align: center;
+        
+    }
+
+/*Remove the underline from all nav links.*/
+   nav a {
+        color: #f2f2f2;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.75em;
+        padding: 0.5em 1em;
+     }
+
+/* CSS css1, css2, css3  */
+/*Adjust the width value for the cssl,
+css2, and css3 id selectors so that they
+appear next to each other horizontally.*/    
+#css1, #css2, #css3 {
+    width: 29%;
+    float: left;
+    margin: 0 2%;
+}
+
+#foot {
+    border: solid 1px #3b334d;
+    background-color: #3b334d99 ; 
+}

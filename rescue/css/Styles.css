@@ -1,0 +1,133 @@
+/*Validated*/
+/*<!-- 	
+	Student Name: Carleigh Smith
+	File Name: Styles.css
+	Date: 02/7/24
+-->*/
+
+/*CSS RESET*/
+/*a CSS reset style rule that sets the margin, padding, and
+borders to zero for the following selectors: body, header,
+nav, main, footer, img, h1, h3.*/
+body, header, nav, main, footer, img, h1, h3{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+/*Style rules for body and images*/
+/*sets a background color value of #f6eee4*/
+body {
+    background-color: #f6eee4;
+}
+
+/*sets a max-width to 100% and displays images as a block*/
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/*Style rules for navigation area*/
+/*sets the background color to #2a1f14*/
+nav {
+    background-color: #2a1f14;
+}
+
+/*sets the list style type to none, sets the margin to 0,
+and aligns text center*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+
+/*sets the display to an inline-block, sets a font size of
+1.5em, sets a font family value of Geneva, Arial, sans-serif,
+and sets a font weight value of bold*/
+nav li {
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: Geneva, Arial, Sans-Serif;
+    font-weight: bold;    
+}
+
+/*sets the display to a block, sets a font color value
+of #f6eee4, sets top and bottom padding values of 0.5em
+and left and right padding values of 2em, and removes the text decoration*/
+nav li a {
+    display: block;
+    color: #f6eee4;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-decoration: none;
+}
+
+/*Style rules for main content*/
+/*sets the padding value to 2% and a font
+family with values Verdana, Arial, sans-serif.*/
+main{
+    padding: 2%;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+/*sets the font size value to 1.25em*/
+main p{
+    font-size: 1.25em;
+}
+
+/*sets the top padding value to 2%*/
+main h3{
+    padding: 2%;
+}
+
+/*sets the list style type value to square.*/
+main ul{
+    list-style-type: square;
+}
+
+/*sets the font color to #4d3319, removes the text
+decoration, sets the font weight value to bold, and
+sets the font style value to italic*/
+.link{
+    color:#4d3319;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* sets the font size to 1.75em, sets the font weight
+value to bold, and aligns text center.*/
+.action{
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Create a style rule for the id selector contact that aligns text center.*/
+#contact{
+    text-align: center;
+}
+
+/*Style rules for footer content*/
+/*Create a style rule for the footer selector that aligns
+text center, sets a font size value of 0.85em, sets a background
+color value of #2a1f14, sets a font color value of #f6eee4, and
+sets top and bottom padding values to 1% and right and left padding values to 0%.*/
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #2a1f14;
+    color:#f6eee4;
+    padding-top:1% ;
+    padding-bottom: 1%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+/* sets the font color value to #f3e6d8 and removes the text decoration*/
+footer a {
+    color: #f3e6d8;
+    text-decoration: none;
+}
