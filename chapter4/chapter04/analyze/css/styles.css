@@ -46,10 +46,21 @@ sets a font style value of italic.*/
 /*Update the style rule for
 the footer selector to clear
 a float on the left.*/
-    footer {
+footer {
+    clear: left;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+}
+ 
+    /*Centers and sets style for footer text*/
+    footer a {
         clear: left;
-        float:left;
         text-align: center;
+        color: #000000;
+        text-decoration: none;
+        font-size: 20px;
     }
 
 /* CSS external links */
