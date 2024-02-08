@@ -18,7 +18,7 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="../individual/css/styles.css">
     <script src="../../Chapter01/individual/contact.js" defer></script>
-    
+    <title>Pawsitive Connections: Contact Us</title>
     
 </head>
 <body>
@@ -35,15 +35,18 @@
     <!-- Use the nav area to add hyperlinks to other pages
          within the website-->
          <nav>
-            <p><a href="index.html">Home</a> &nbsp; &#9475; &nbsp;
-                <a href="findAPet.html">Find a pet!</a> &nbsp; &#9475; &nbsp;
-                <a href="happyAdoptions.html">Happy Adoptions</a> &nbsp; &#9475; &nbsp;
-                <a href="resources.html">Pet Resources</a> &nbsp; &#9475; &nbsp;
-                <a href="contactUs.html">Contact Us</a> &nbsp; &#9475; &nbsp;
-                <a href="../../../index.html">Client-Side Main Page</a></p>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="findAPet.html">Find a pet!</a></li>
+            <li><a href="happyAdoptions.html">Happy Adoptions</a></li>
+            <li><a href="resources.html">Pet Resources</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+            <li><a href="../../../index.html"></a></li>
+          </ul>
         </nav>
 
      <article>
+      <div id="info">
         <h2>Give us your information!</h2>
         <form>
             <fieldset id="contactinfo">
@@ -64,17 +67,24 @@
               <input type="button" id="submit" value="Submit" />
             </fieldset>
          </form>
-     </article>   
+        </div>
+     </article> 
     <!-- Use the main area to add the main content of the webpage-->
     <main>
-        <h5>What this page is going to include:</h5> 
-        
-        <p>This page is the Contact Us page. This page will include a portion on 
-            why you should choose us to use while adopting a pet. It will also include our mission statement, our team, 
-            contact forms for feedback, and social media links.</p>
-        <br>
+      <div id="contact">
+        <h2>You can reach us at:</h2>
+            <p>Office: (228) 990-1641</p>
+            <p>Email: <a href="mailto:pawsitiveConnections@adopt.net" class="link" target="_blank">pawsitiveConnections@adopt.net</a></p>
+            <p>Address:<a href="https://www.bing.com/maps?mepi=106%7ELocal%7EUnknown%7EMap_Image&ty=18&q=Southern+Pines+Animal+Shelter&ss=ypid.YN873x3733819792762335184&segment=Local&ppois=31.352304458618164_-89.33457946777344_Southern+Pines+Animal+Shelter_YN873x3733819792762335184%7E&cp=31.352299%7E-89.334576&lvl=16.0&v=2&sV=1&FORM=MPSRPL"  
+            class="link" target="_blank"> 1901 N 31st Ave, Hattiesburg, MS 39401</a>
+            </p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54515.888198240544!2d-89.37591513046874!3d31.3522726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889cd94cce888275%3A0x5c4c8f4c83384b5!2sSouthern%20Pines%20Animal%20Shelter!5e0!3m2!1sen!2sus!4v1707403988161!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </main>
 
+    <div id="foot">
+
+
+    </div>
     <!-- Use the footer area to add webpage footer content-->
     <footer>
         <p>&copy; Copyright 2024. All Rights Reserved.</p>
