@@ -32,5 +32,11 @@ function verifyForm() {
 
     window.alert("Your estimated total is $"+ estimate)
 }
+
+
 // Attach an event listener to the "Submit" button
 document.getElementById("submit").addEventListener("click", verifyForm);
+
+
+
+//need to add pictures and tabs of the available animals one the submit button is pressed
