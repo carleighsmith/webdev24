@@ -1,0 +1,33 @@
+/* 
+Style sheet created by: 
+Carleigh Smith
+2/21/2024 
+*/
+body {
+    background-color: #dde3fd;
+}
+
+#container {
+    padding-bottom: 500px;
+}
+
+.box {
+    border: 1px solid #000;
+    margin: 2%;
+    padding: 2%;
+    background-color: #798ef6;
+    color: #091034;
+    width: 400px;
+    height: 170px;
+}
+
+/* sticky */
+
+
+/* relative */
+
+
+/* fixed */
+
+
+/* absolute */
