@@ -42,4 +42,59 @@ console.log(sparse[0]);
 console.log(sparse[1]);
 console.log(sparse[99]);
 
-//Switch statement
+// create an array named foodMenu
+// containing the text strings “Breakfast”,
+// “Lunch”, and “Dinner” as an array literal
+let foodMenu1 = ["Breakfast", "Lunch", "Dinner"];
+//using the new Array() object constructor.
+let foodMenu = new Array("Breakfast", "Lunch", "Dinner");
+
+//size of foodMenu array
+foodMenu.length;
+
+//return the 3rd element in foodMenu array
+console.log(foodMenu[2]);
+
+//Provide the expression to 
+//reference to fifth inline image in the document.
+document.images[4]
+
+//Provide the expression to 
+//reference the third element 
+//belonging to the blogpost class.
+document.getElementsByClassName("blogpost") [2]
+
+//a loop to add numbers from 0 to 10
+let num = 1;
+let total = 0;
+//while loop is a pre-test loop: it checks your 
+//condition before you can get in the loop
+while(num <= 10) // no semicolon here
+{
+    total += num; //total = total + num
+    num++;        //num = num + 1
+}
+console.log("Total is " + total);
+
+//reset variables
+num = 1;
+total = 0;
+//do while is a post test loop: it lets you in the loop,
+// then check your condition
+do{
+    total += num;
+    num++;
+}while(num <= 10);
+console.log("Total is " + total);
+
+//reset variables
+total = 0;
+//for loop is a pre-test loop
+for(num = 1; num <= 10; num++)
+{
+    total+= num;
+}
+console.log("Total is " + total);
+
+
+

@@ -30,6 +30,7 @@ img {
 selector that sets a background color value of #fefae0*/
 body {
     background-color:#fdf0d5 ;
+    font-family: "Nunito", sans-serif;
 }
 
 /*Style rules for navigation area*/
@@ -164,6 +165,7 @@ h5 {
 header {
     text-align: center;
     font-size: 40px;
+    font-family: "Noto Serif", serif;
 }
 
 /*Update the style rule for

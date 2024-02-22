@@ -9,7 +9,7 @@
 /*a CSS reset style rule that sets the margin, padding, and
 borders to zero for the following selectors: body, header,
 nav, main, footer, img, h1, h3.*/
-body, header, nav, main, footer, img, h1, h3{
+body, header, nav, main, footer, img, h1, h3, ul{
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -27,6 +27,32 @@ img {
     display: block;
 }
 
+/*Style rules for mobile viewport*/
+.mobile {
+    display: block;
+}
+
+/*Style rules to show mobile class and hide tab-desk class*/
+.tab-desk {
+    display: none;
+}
+
+/*Style rules for header area*/
+h1, h3 {
+    padding: 2%;
+    text-align: center;
+}
+
+/*Style rule for the h1 selector within the mobile class */
+.mobile h1 {
+    font-family: "Emblema One", system-ui;
+}
+
+/*Style rule for the h3 selector within the mobile class*/
+.mobile h3 {
+    font-family: "Lora", serif;
+}
+
 /*Style rules for navigation area*/
 /*sets the background color to #2a1f14*/
 nav {
@@ -37,7 +63,6 @@ nav {
 and aligns text center*/
 nav ul {
     list-style-type: none;
-    margin: 0;
     text-align: center;
 }
 
@@ -45,10 +70,11 @@ nav ul {
 1.5em, sets a font family value of Geneva, Arial, sans-serif,
 and sets a font weight value of bold*/
 nav li {
-    display: inline-block;
+    display: block;
     font-size: 1.5em;
     font-family: Geneva, Arial, Sans-Serif;
-    font-weight: bold;    
+    font-weight: bold;   
+    border-top: 0.5px #f6eee4; 
 }
 
 /*sets the display to a block, sets a font color value
@@ -61,15 +87,15 @@ nav li a {
     padding-bottom: 0.5em;
     padding-left: 2em;
     padding-right: 2em;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 /*Style rules for main content*/
-/*sets the padding value to 2% and a font
-family with values Verdana, Arial, sans-serif.*/
+/*sets the padding value to 2%*/
 main{
     padding: 2%;
-    font-family: Verdana, Arial, sans-serif;
+    /* font-family: Verdana, Arial, sans-serif; */
+    font-family: "Lora", serif;
 }
 
 /*sets the font size value to 1.25em*/
@@ -79,7 +105,7 @@ main p{
 
 /*sets the top padding value to 2%*/
 main h3{
-    padding: 2%;
+    padding-top: 2%;
 }
 
 /*sets the list style type value to square.*/
@@ -105,9 +131,37 @@ value to bold, and aligns text center.*/
     text-align: center;
 }
 
+/*sets border radius so rounded photos*/
+.round {
+    border-radius: 6px;
+}
+
+/*style rule for the #info ul selector*/
+#info ul{
+    margin-left: 10%;
+}
+
 /*Create a style rule for the id selector contact that aligns text center.*/
 #contact{
     text-align: center;
+}
+
+/*style rule for the tel-link class selector */
+.tel-link {
+    background-color: #2a1f14;
+    padding: 2%;
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*style rule for the anchor selector within the tel-link class */
+.tel-link a {
+    color: #f6eee4;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /*Style rules for footer content*/
