@@ -7,40 +7,31 @@ styles.css*/
 /* a CSS reset style rule that sets the margin,
 padding, and borders to zero for the following
 selectors: body, header, nav, main, footer, img, h1, h3.*/
-
 body, nav, main, footer, h1, h3, ul, div{
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-
 /*Create a style rule for the body
 selector that sets a background color value of #fefae0*/
 body {
-    background-color:#fdf0d5 ;
-    
+    background-color:#fdf0d5 ;  
 }
 
-/*sets a max width to 100%. Also display image elements as a block.*/
 img {
     max-width: 100%;
     display: block;
-    /* padding-top: .5em;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: justify; */
 }
 
-
-/*Sets the header to the center and 40 pixels big*/
+/*Begin style rules for mobile viewport*/
+/*Style rules for header*/
 header {
     text-align: centered;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-color: #000;
-    
+    background-color: #000; 
 }
 
 header img {
@@ -53,18 +44,13 @@ sets the background color to #1d396d.*/
 nav {
     background-color: #d4a373;
     padding: 1%;
-   
 }
-/*Create a style rule for nav ul that sets the list style
-type to none, sets the margin to 0, and aligns text center.*/
+
 nav ul {
     list-style-type: none;
-    
     text-align: center;
 }
-/*Create a style rule for nav li that sets the display to an inline-block,
-sets a font size of 1.5em, sets a font family
-value of Verdana, Arial, sans-serif, and a font weight value of bold.*/
+
 nav li {
     font-size: 1.5em;
     font-family: "Nunito", sans-serif;
@@ -78,17 +64,12 @@ nav li:first-child {
     border-bottom: none;
 }
 
-/*Create a style rule for nav li a that sets the display
-to a block, sets a font color value of #e3eaf8, sets top
-and bottom padding values of 0.5em and left and right padding
-values of 2em, and removes the text decoration.*/
 nav li a {
     display: block;
     color: #fff;
     padding: 0.5em 1em;
     text-decoration: none;
 }
-
 
 /* Show mobile class, hide tablet-desktop class */
 .mobile {
@@ -98,6 +79,7 @@ nav li a {
 .tablet-desktop {
     display: none;
 }
+
 .logo {
     position: -webkit-sticky;
     position: sticky;
@@ -117,6 +99,7 @@ nav li a {
    
    
 }
+
 /*Sets the basic align and font styles for the div services*/
 #services {
     font-size: 22px;
@@ -140,6 +123,7 @@ nav li a {
     font-weight: bold;
 }
 
+/* Style rules for main content */
 main {
     clear: left;
     background-color: #fff;
@@ -157,6 +141,7 @@ main {
     padding-right: 5%;
 }
 
+/*Style rules for .tel-link content*/
 .tel-link {
     background-color: hsl(0, 45%, 74%);
     padding: 1%;
@@ -166,6 +151,7 @@ main {
     border-radius: 5px;
 }
 
+/*Style rules for .tel-link anchor content*/
 .tel-link a {
     color: #fff;
     text-decoration: none;
@@ -173,17 +159,20 @@ main {
     display: inline-block;
 }
 
+/*Style rules for .hours content*/
 .hours {
     margin-left: 10%;
     text-align: left;
    
 }
 
+/*Style rules for .pph content*/
 .pph {
     margin-left: 10%;
     text-align: left;
 }
 
+/*Style rules for .action content*/
 .action {
     font-size: 1.35em;
     color: #d4a373;
@@ -202,12 +191,13 @@ main {
     text-decoration: none;
 }
 
+/*Style rules for .link content*/
 .link {
     text-decoration: none;
     color: #432818
 }
 
-
+/*Style rules for .round content*/
 .round {
     border-radius: 11px;
 }
@@ -219,7 +209,7 @@ main {
     text-decoration: none ;
 }
 
-
+/*Style rules for .map content*/
 .map {
     border: 2px solid #000;
     width: 95%;
