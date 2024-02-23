@@ -18,10 +18,10 @@ body{
 
 /*sets a max width to 100%. Also display image elements as a block.*/
 img {
-    max-width: 100%;
+    max-width: 50%;
     display: block;
     padding-top: .5em;
-    margin-left: auto;
+    margin-left: auto; 
     margin-right: auto;
     text-align: justify;
 }
@@ -188,4 +188,8 @@ footer a {
     text-align: center;
     overflow: auto;
     padding-bottom: 2em;
+}
+
+#gallery {
+    text-align: center;
 }
