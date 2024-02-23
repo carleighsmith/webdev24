@@ -35,13 +35,16 @@ let htmlCode = "";
 // the length of the captions array in increments of 1. 
 //With each iteration, add the following text to the value 
 //of the htmlCode variable:
-for (let i = 0; i < captions.length; i++)
-{
-      htmlCode += "<figure>\n<img alt='' src='slide1.jpg'/>\n<figcaption>caption[i]</figcaption>\n</figure>"
-}
+for (let i = 0; i < captions.length; i++) {
+      htmlCode += '<figure>' +
+      '<img alt ="" src="slide' + i + '.jpg" />' +
+              '<figcaption>' +captions[i] +'</figcaption>' +
+              '</figure>';
+  }
 
 //After the for loop, change the inner HTML 
 //of the document element by the id "gallery" 
 //to the value of the htmlCode variable.
+document.getElementById("gallery").innerHTML = htmlCode;
 
 

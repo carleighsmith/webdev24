@@ -3,8 +3,8 @@
       Project 03-03
 
       Application to generate a movie list
-      Author: 
-      Date:   
+      Author: Carleigh Smith
+      Date:   2/22/2024
 
       Filename: project03-03.js
 */
@@ -57,4 +57,19 @@ links[7] = "https://www.imdb.com/title/tt0050083/?ref_=adv_li_tt";
 links[8] = "https://www.imdb.com/title/tt1375666/?ref_=adv_li_tt";
 links[9] = "https://www.imdb.com/title/tt0137523/?ref_=adv_li_tt";
 
+/*declare the htmlCode variable, setting its initial value to an empty text string*/ 
+htmlCode = "";
 
+/*Create a for loop with a counter that goes from 0 to less 
+the length of the titles array in increments of 1 */
+for (var i = 0; i < 10; i++) {
+      htmlCode += "<tr>";
+      htmlCode += "<td><a href='" + links[i] + "'>" + titles[i] + "</a></td>";
+      htmlCode += "<td>" + summaries[i] + "</td>";
+      htmlCode += "<td>" + ratings[i] + "</td>";
+      htmlCode += "</tr>";
+}
+
+var tableBody = document.getElementsByTagName('tbody')[0];
+
+tableBody.innerHTML = htmlCode;
