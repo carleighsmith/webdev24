@@ -116,7 +116,6 @@ main{
     border-radius: 8px;
 }
 
-
 .external-link {
     color: #666600;
     font-weight: bold;
@@ -151,24 +150,73 @@ footer p a {
     text-decoration: none;
 }
 
+/* Media Query for Tablet Viewport*/
+@media screen and (min-width: 630px) {  /*630px is starting breakpoint*/
 
+    /*Tablet Viewport: Show tablet-desktop class, hide mobile class*/
+    .tablet-desktop {
+        display: block;
+    }
 
+    .mobile {
+        display: none;
+    }
 
+    /* Tablet Viewport: Style rule for header */
+    header {
+        position: static;
+        padding-bottom: 2%;
+    }
 
-/*
-#exercises {
-    clear: left;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    background-color: #f2f2f2;
-    padding: 1% 2%;
+     /* Tablet Viewport: Style rules for nav area */
+     nav li {
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #fff;
+     }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav li a {
+        padding: 0.1em 0.75em;
+    }
+
+     /* Tablet Viewport: Style rules for main content area */ 
+     main ul {
+        margin: 0 0 4% 10%;
+     }
+        
+    #exercises {
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        background-color: #f2f2f2;
+        padding: 1% 2%;
+    }
+
+    #exercises dt {
+        font-weight: bold;
+    }
+
+    #exercises dd {
+        padding: 0.5% 1% 2% 0;
+    }
+
+    .tel-num {
+        font-size: 1.25em;
+    }
+
+    .map {
+        width: 600px;
+        height: 450px;
+    }
+} /*end media for min-width 630px*/
+
+/* Media Query for Desktop Viewport */ 
+@media screen and (min-width: 769px) {
+
+    /* Desktop Viewport: Style rule for header */ 
 }
 
-#exercises dt {
-    font-weight: bold;
-}
 
-#exercises dd {
-    padding: 0.5% 1% 2% 0;
-}
-*/
