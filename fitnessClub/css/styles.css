@@ -151,7 +151,7 @@ footer p a {
 }
 
 /* Media Query for Tablet Viewport*/
-@media screen and (min-width: 630px) {  /*630px is starting breakpoint*/
+@media screen and (min-width: 630px),print {  /*630px is starting breakpoint*/
 
     /*Tablet Viewport: Show tablet-desktop class, hide mobile class*/
     .tablet-desktop {
@@ -214,9 +214,66 @@ footer p a {
 } /*end media for min-width 630px*/
 
 /* Media Query for Desktop Viewport */ 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1015),print {
 
     /* Desktop Viewport: Style rule for header */ 
+    header {
+        width: 25%;
+        float: left;
+        padding-bottom: 0;
+    }
+
+     /* Desktop Viewport: Style rules for nav area */ 
+     nav {
+        float: right;
+        width: 70%;
+        margin: 4em 1em 0 0;
+     }
+
+     nav ul {
+        text-align: right;
+     }
+
+     nav li {
+        border: none;
+    }
+
+    nav li a {
+        padding: 0.5em 1em;
+    }
+
+    /* Desktop Viewport: Style Rules for main content */
+    main{
+        clear: left;
+    }
+
+    main h1 {
+        font-size: 1.8em;
+    }
+
+    #weights, #cardio, #training {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+
+    #exercises {
+        clear: left;
+    }
+}/* media query closing brace for desktop viewport */
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+    #container {
+        width: 1920px;
+        margin: 0 auto;
+    }
+} /*media query closing brace for large desktop viewport*/
+
+/* Media Query for Print */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
 }
-
-

@@ -16,7 +16,7 @@ body, nav, main, footer, h1, h3, ul, div{
 /*Create a style rule for the body
 selector that sets a background color value of #fefae0*/
 body {
-    background-color:#fdf0d5 ;  
+    background-color:#bab7b1ae ;  
 }
 
 img {
@@ -27,11 +27,9 @@ img {
 /*Begin style rules for mobile viewport*/
 /*Style rules for header*/
 header {
-    text-align: centered;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-color: #ffffff; 
 }
 
 header img {
@@ -44,6 +42,7 @@ sets the background color to #1d396d.*/
 nav {
     background-color: #d4a373;
     padding: 1%;
+    margin-bottom: 1%;
 }
 
 nav ul {
@@ -61,7 +60,6 @@ nav li {
 
 nav li:first-child {
     border-top: none;
-    border-bottom: none;
 }
 
 nav li a {
@@ -84,15 +82,14 @@ nav li a {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-color: #d8d7d7;
-    
-    border-color: #a53860;
-    border-radius: 50%;
+    background-color: #ded4d4;
+    border-color: #d95b89;
+    border-radius: 90%;
     
 }
 
-/*Sets the basic align and font styles for the div about us*/
-#aboutUs {
+/* Sets the basic align and font styles for the div about us*/ */
+ #aboutUs {
    font-size: 24px;
    text-align: center;
    padding-left: 5%;
@@ -102,15 +99,19 @@ nav li a {
    
    
 }
+#callus {
+    text-align: center;
+}
 
-/*Sets the basic align and font styles for the div services*/
+/* Sets the basic align and font styles for the div services*/
 #services {
     font-size: 22px;
     text-align: center;
     overflow: auto;
     padding-left: 5%;
-   padding-right: 5%;
+    padding-right: 5%;
     padding-bottom: 2em;
+
 }
 #services ul {
     list-style-type: none;
@@ -124,7 +125,7 @@ nav li a {
 #services dt{
     font-size: 30px;
     font-weight: bold;
-}
+} 
 
 /* Style rules for main content */
 main {
@@ -147,7 +148,7 @@ main {
 /*Style rules for .tel-link content*/
 .tel-link {
     background-color: hsl(0, 45%, 74%);
-    padding: 1%;
+    padding: 2%;
     margin: 0 auto;
     width: 80%;
     text-align: center;
@@ -159,13 +160,13 @@ main {
     color: #fff;
     text-decoration: none;
     font-size: 1.5em;
-    display: inline-block;
+    display: block;
 }
 
 /*Style rules for .hours content*/
 .hours {
     margin-left: 10%;
-    text-align: left;
+    /* text-align: left; */
    
 }
 
@@ -185,7 +186,6 @@ main {
 /*Sets the basic align and font styles for the div contact*/
 #contact {
     text-align: center;
-    text-decoration: none;
 }
 
 
@@ -194,11 +194,6 @@ main {
     text-decoration: none;
 }
 
-/*Style rules for .link content*/
-.link {
-    text-decoration: none;
-    color: #432818
-}
 
 /*Style rules for .round content*/
 .round {
@@ -229,20 +224,18 @@ footer {
     text-decoration: none;
     font-size: 1.1em;
     padding: 0 1em;
-    background-color: #fdf0d5
+    background-color: #d4c4a3
     
 }
 
-
-/*Centers and sets style for footer text*/
-footer a {
-   
+footer p {
+    font-size: 0.75em;
     text-align: center;
     color: #432818;
-    text-decoration: none;
-    background-color: #fdf0d5
-
-   
+    padding: 0 1em;
 }
 
-
+footer p a {
+    color: #432818;
+    text-decoration: none;
+}
