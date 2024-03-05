@@ -191,7 +191,8 @@ footer p a {
     #exercises {
         border-top: 1px solid #000;
         border-bottom: 1px solid #000;
-        background-color: #f2f2f2;
+        background: linear-gradient(to right, #ccc, #fff);
+        background-color: #f2f2f2;;
         padding: 1% 2%;
     }
 
@@ -214,13 +215,13 @@ footer p a {
 } /*end media for min-width 630px*/
 
 /* Media Query for Desktop Viewport */ 
-@media screen and (min-width: 1015),print {
+@media screen and (min-width: 1015px),print {
 
     /* Desktop Viewport: Style rule for header */ 
     header {
         width: 25%;
         float: left;
-        padding-bottom: 0;
+        /* padding-bottom: 0; */
     }
 
      /* Desktop Viewport: Style rules for nav area */ 
@@ -240,6 +241,11 @@ footer p a {
 
     nav li a {
         padding: 0.5em 1em;
+    }
+
+    nav li a:hover {
+        color: #000;
+        background-color: #fff;
     }
 
     /* Desktop Viewport: Style Rules for main content */
@@ -263,12 +269,13 @@ footer p a {
 }/* media query closing brace for desktop viewport */
 
 /* Media Query for Large Desktop Viewports */
-@media screen and (min-width: 1921px) {
+ @media screen and (min-width: 1921px) {
     #container {
         width: 1920px;
         margin: 0 auto;
-    }
-} /*media query closing brace for large desktop viewport*/
+    } 
+ }
+ /*media query closing brace for large desktop viewport */
 
 /* Media Query for Print */
 @media print {

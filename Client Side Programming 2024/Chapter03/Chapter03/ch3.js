@@ -9,10 +9,6 @@ let dataValues = [];
 let months2 = new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun",
                  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
 
-//initializing array daysWeek to be new array of 7 elements
-let daysWeek = new Array(8);
-let monthName = new Array(12); //holds 12 elements
-
 //initializing an array with 4 undefined values
 let vals = [,,,];
 console.log(vals[0]);
@@ -22,16 +18,6 @@ vals[4] = "Jack";
 console.log(vals[4]);
 console.log("The size of array vals is " + vals.length); //print the size of the array
 console.log(vals); //display the contents of the array in the format of [values,...,values]
-
-//populate array daysWeek with values
-daysWeek[0] = "";
-daysWeek[1] = "Monday";
-daysWeek[2] = "Tuesday";
-daysWeek[3] = "Wednesday";
-daysWeek[4] = "Thursday";
-daysWeek[5] = "Friday";
-daysWeek[6] = "Saturday";
-daysWeek[7] = "Sunday";
 
 //Sparse arrays
 let sparse = new Array();
@@ -96,5 +82,57 @@ for(num = 1; num <= 10; num++)
 }
 console.log("Total is " + total);
 
+let grade = 78;
 
+if (grade >= 90)//no semi-colon here
+{
+    console.log("You made an A.");
+}
+else if (grade >= 80)
+{
+    console.log("You made an B.");
+}
+else if (grade >= 70)
+{
+    console.log("You made an C.");
+}
+else if (grade >= 60)
+{
+    console.log("You made an D.");
+}
+else{
+    console.log("You failed!");
+}
 
+//initializing array daysWeek to be new array of 7 elements
+let daysWeek = new Array(8);
+let monthName = new Array(12); //holds 12 elements
+
+//populate array daysWeek with values
+daysWeek[0] = "";
+daysWeek[1] = "Monday";
+daysWeek[2] = "Tuesday";
+daysWeek[3] = "Wednesday";
+daysWeek[4] = "Thursday";
+daysWeek[5] = "Friday";
+daysWeek[6] = "Saturday";
+daysWeek[7] = "Sunday";
+
+//switch statement
+switch (daysWeek[4])
+{
+    case "Monday":
+        console.log("Starting new work week!");
+        break;
+    case "Friday":
+        console.log("TGIF!");
+        break;
+    case "Saturday":
+        console.log("Sleep in today!");
+        break;
+    case "Sunday":
+        console.log("Go to church and cook a good meal!");
+        break;
+    default:        //happens when none of the cases are executed
+        console.log("Have a great day!");
+}

@@ -18,14 +18,16 @@ let weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday",
 window.addEventListener("load", addWeekDays);
 
 //Function to write weekday names into the calendar
-function addWeekDays() {
+function addWeekDays() 
+{
     let i = 0; // initial counter value
 
     //reference the collection of heading cells
     let headingCells = document.getElementsByTagName("th");
 
     //write each of the seven days into a heading cell 
-    while (i < 7) {
+    while (i < 7) 
+    {
         headingCells[i].innerHTML = weekDays[i];
 
         //increase the counter by 1
@@ -37,12 +39,15 @@ function addWeekDays() {
 window.addEventListener("load", showGames);
 
 //Function to write game information into the calendar
-function showGames() {
-    for (let i = 0; i < gameDates.length; i++){
+function showGames() 
+{
+    for (let i = 0; i < gameDates.length; i++)
+    {
         let gameInfo = "";
 
         //Open the paragraph
-        switch (gameResults[i]) {
+        switch (gameResults[i]) 
+        {
             case "W":
                 gameInfo += "<p class='win'>";
                 break;
@@ -58,9 +63,11 @@ function showGames() {
         }
 
         //Display the game location
-        if (gameLocations[i] === "h") {
+        if (gameLocations[i] === "h") 
+        {
             gameInfo += "vs. ";
-        } else if (gameLocations[i] === "a") {
+        } else if (gameLocations[i] === "a") 
+        {
             gameInfo += "@ ";
         }
 
@@ -71,11 +78,14 @@ function showGames() {
         gameInfo += gameResults[i] + ": (" + runsScored[i] + " - " + runsAllowed[i] + ")";
 
         //Display innings played for suspended, shortened, or extra training games
-        if (gameInnings[i] < 5) {
+        if (gameInnings[i] < 5) 
+        {
             gameInfo += " [" + gameInnings[i] + "]***";
-        } else if (gameInnings[i] < 9) {
+        } else if (gameInnings[i] < 9) 
+        {
             gameInfo += " [" + gameInnings[i] + "]*";
-        } else if (gameInnings[i] > 9) {
+        } else if (gameInnings[i] > 9) 
+        {
             gameInfo += " [" + gameInnings[i] + "]";
         }
         
