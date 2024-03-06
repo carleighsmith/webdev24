@@ -44,6 +44,7 @@ header {
     display: block;
 }
 
+
 /*Style rules for navigation area*/
 /*Create a style rule for the nav selector that
 sets the background color to #1d396d.*/
@@ -86,6 +87,15 @@ nav li a {
     display: none;
 }
 
+.banneralt {
+    display:none;
+}
+
+.faq {
+    text-align: center;
+    font-size: 1.5em;
+}
+
 /* Sets the basic align and font styles for the div about us*/ */
  #aboutUs {
    font-size: 24px;
@@ -110,15 +120,18 @@ nav li a {
     padding-bottom: 2em;
 
 }
+
 #services ul {
     list-style-type: none;
     margin: 0;
     text-align: center;
 }
+
 #services li {
     font-size: 25px;
 
 }
+
 #services dt{
     font-size: 25px;
     font-weight: bold;
@@ -249,10 +262,17 @@ footer p a {
         display: none;
     }
 
-    /* Tablet Viewport: Style rule for header */
+    /* Tablet Viewport: Style rule for header and banner */
     header {
         position: static;
         padding-bottom: 2%;
+    }
+    .banner {
+        display:none;
+    }
+
+    .banneralt {
+        display:block;
     }
 
      /* Tablet Viewport: Style rules for nav area */
@@ -271,7 +291,7 @@ footer p a {
         padding: 0.1em 0.75em;
     }
 
-     /* Tablet Viewport: Style rules for main content area */ 
+    /* Tablet Viewport: Style rules for main content area */ 
   
      main ul {
         margin: 0 0 4% 10%;
@@ -284,18 +304,17 @@ footer p a {
         font-size: 1.5em;
     }
      
+    /* Tablet Viewport: Style rules for service content area */ 
+
      #services {
         font-size: 29px;
-        /* text-align: center; */
         padding-left: 5%;
         padding-right: 5%;
         padding-bottom: 2em;
     
     }
     #services ul {
-        /* list-style-type: none; */
         margin: 0;
-        /* text-align: center; */
     }
     #services li {
         font-size: 25px;
@@ -309,15 +328,23 @@ footer p a {
     } 
     
 
+    /* Tablet Viewport: Style rules for phone number */ 
+
      .tel-num {
         font-size: 1.25em;
     }
 
+    /* Tablet Viewport: Style rules for map*/ 
     .map {
         width: 600px;
         height: 450px;
     }
 
+    .faq {
+        display:none;
+    }
+
+    /* Tablet Viewport: Style rules for footer content area */ 
     footer {
     
         text-align: center;
@@ -341,28 +368,38 @@ footer p a {
 /* Media Query for Desktop Viewport */ 
 @media screen and (min-width: 1015px),print {
 
-     /* Desktop Viewport: Style rule for header */ 
-     header img{
+     /* Desktop Viewport: Style rule for logo and banner */ 
+    .logo{
         width: 15%;
         float: left;
         padding: 2em;
-        
     }
 
-    
     .banner {
         display: none;
     }
 
+    .banneralt {
+        display:block;
+        width: 100%;
+    }
+    .logo {
+        position: static;
+        padding-bottom: 2%;
+        background: linear-gradient(to right, #d4a373,#e7d1a2);
+
+    }
+
      /* Desktop Viewport: Style rules for nav area */ 
      nav {
-        float: right;
+        float:inline-end;
         width: 70%;
-        margin: 4em 1em 0 0;
+        margin: 5em 5em 0 0;
      }
 
+
      nav ul {
-        text-align: left;
+        text-align:center;
         
      }
 
@@ -379,8 +416,10 @@ footer p a {
         background-color: #e3c485;
     }
 
+    /* Desktop Viewport: Style rules for main area */ 
+
     main {
-        clear: left;
+        clear: left;         
     }
 
     main h1, main h4 {
@@ -393,6 +432,9 @@ footer p a {
     main ul {
         margin: 0 0 4% 10%;
      }
+
+    /* Desktop Viewport: Style rules for service area */ 
+
      
      #services {
         font-size: 1.85em;
@@ -417,10 +459,16 @@ footer p a {
         text-align:left;
     } 
 
+    /* Desktop Viewport: Style rules for contact area */ 
     #contact {
         font-size: 25px;
     }
 
+    .faq {
+        display:none;
+    }
+
+    /* Desktop Viewport: Style rules for footer area */ 
     footer {
     
         text-align: center;
@@ -428,21 +476,31 @@ footer p a {
         text-decoration: none;
         font-size: 1.1em;
         padding: 0 1em;
-        background-color: #d4c4a3;
-        
+        background: linear-gradient(to left,#bc8247 25%,#e1dedc);        
     }
-    
-    footer p {
+    /*gradient*/
+    footer p { 
         font-size: 1.6em;
         text-align: center;
         color: #432818;
         padding: 0 1em;
     }
 
+    /* Desktop Viewport: Style rules for about us area */ 
     #aboutUs {
         font-size: 25px;
     }
+    /* Desktop Viewport: Style rules for round class */ 
+    .round {
+        border-radius: 20%;
+    }
     
+    /* Desktop Viewport: Style rules for questions and answer id*/ 
+    #questions, #answers {
+        width: 40%;
+        float: left;
+        margin: 0 2%;
+    }
 
 }/* media query closing brace for desktop viewport */
 
