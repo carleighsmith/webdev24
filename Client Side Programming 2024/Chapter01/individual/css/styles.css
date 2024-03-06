@@ -86,8 +86,8 @@ nav li:first-child {
 
 /*Sets the header to the center and 40 pixels big*/
 header {
-    position: -webkit-sticky;
-    position: sticky;
+    /* position: -webkit-sticky;
+    position: sticky; */
     top: 0;
     /* background-color: #ffb4a2; */
 
@@ -95,6 +95,7 @@ header {
 
 header img {
     margin: 0 auto;
+    
 }
 
 #mission {
@@ -205,5 +206,6 @@ footer a {
 #logo img{
     border-color: #a53860;
     border-radius: 50%;
+   
 }
 

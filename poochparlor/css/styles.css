@@ -16,8 +16,7 @@ body, nav, main, footer, h1, h3, ul, div{
 /*Create a style rule for the body
 selector that sets a background color value of #fefae0*/
 body {
-    background-color:#bab7b1ae ;  
-}
+    background-color: #f0d9ba;}
 
 img {
     max-width: 100%;
@@ -27,13 +26,22 @@ img {
 /*Begin style rules for mobile viewport*/
 /*Style rules for header*/
 header {
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
+
 }
 
-header img {
+.logo {
     margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    max-width: 40%;
+    display: block;
+    border-radius: 90%;
+}
+
+.banner {
+    margin: 0 auto;
+    display: block;
 }
 
 /*Style rules for navigation area*/
@@ -55,7 +63,7 @@ nav li {
     font-family: "Nunito", sans-serif;
     font-weight: bold;
     border-top: 1px solid #fff;
-   ;
+   
 }
 
 nav li:first-child {
@@ -78,16 +86,6 @@ nav li a {
     display: none;
 }
 
-.logo {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-color: #ded4d4;
-    border-color: #d95b89;
-    border-radius: 90%;
-    
-}
-
 /* Sets the basic align and font styles for the div about us*/ */
  #aboutUs {
    font-size: 24px;
@@ -107,7 +105,6 @@ nav li a {
 #services {
     font-size: 22px;
     text-align: center;
-    overflow: auto;
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 2em;
@@ -119,11 +116,11 @@ nav li a {
     text-align: center;
 }
 #services li {
-    font-size: 30px;
+    font-size: 25px;
 
 }
 #services dt{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
 } 
 
@@ -238,4 +235,231 @@ footer p {
 footer p a {
     color: #432818;
     text-decoration: none;
+}
+
+/* Media Query for Tablet Viewport*/
+@media screen and (min-width: 630px),print {
+
+    /*Tablet Viewport: Show tablet-desktop class, hide mobile class*/
+    .tablet-desktop {
+        display:block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /* Tablet Viewport: Style rule for header */
+    header {
+        position: static;
+        padding-bottom: 2%;
+    }
+
+     /* Tablet Viewport: Style rules for nav area */
+     nav li {
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #fff;
+     }
+
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav li a {
+        padding: 0.1em 0.75em;
+    }
+
+     /* Tablet Viewport: Style rules for main content area */ 
+  
+     main ul {
+        margin: 0 0 4% 10%;
+     }
+
+     main h1, main h4 {
+        font-size: 40px;
+    }
+    main h5 {
+        font-size: 1.5em;
+    }
+     
+     #services {
+        font-size: 29px;
+        /* text-align: center; */
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 2em;
+    
+    }
+    #services ul {
+        /* list-style-type: none; */
+        margin: 0;
+        /* text-align: center; */
+    }
+    #services li {
+        font-size: 25px;
+        text-align:left;
+    
+    }
+    #services dt{
+        font-size: 25px;
+        font-weight: bold;
+        text-align:left;
+    } 
+    
+
+     .tel-num {
+        font-size: 1.25em;
+    }
+
+    .map {
+        width: 600px;
+        height: 450px;
+    }
+
+    footer {
+    
+        text-align: center;
+        color: #432818;
+        text-decoration: none;
+        font-size: 1.1em;
+        padding: 0 1em;
+        background-color: #d4c4a3
+        
+    }
+    
+    footer p {
+        font-size: 1.4em;
+        text-align: center;
+        color: #432818;
+        padding: 0 1em;
+    }
+
+}/*end media for min-width 630px*
+
+/* Media Query for Desktop Viewport */ 
+@media screen and (min-width: 1015px),print {
+
+     /* Desktop Viewport: Style rule for header */ 
+     header img{
+        width: 15%;
+        float: left;
+        padding: 2em;
+        
+    }
+
+    
+    .banner {
+        display: none;
+    }
+
+     /* Desktop Viewport: Style rules for nav area */ 
+     nav {
+        float: right;
+        width: 70%;
+        margin: 4em 1em 0 0;
+     }
+
+     nav ul {
+        text-align: left;
+        
+     }
+
+     nav li {
+        border: none;
+    }
+
+    nav li a {
+        padding: 0.5em 1em;
+    }
+
+    nav li a:hover {
+        color: #2e0606;
+        background-color: #e3c485;
+    }
+
+    main {
+        clear: left;
+    }
+
+    main h1, main h4 {
+        font-size: 50px;
+    }
+    main h5 {
+        font-size: 40px;
+    }
+
+    main ul {
+        margin: 0 0 4% 10%;
+     }
+     
+     #services {
+        font-size: 1.85em;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 2em;
+    
+    }
+    #services ul {
+       
+        margin: 0;
+      
+    }
+    #services li {
+        font-size: 35px;
+        text-align:left;
+    
+    }
+    #services dt{
+        font-size: 35px;
+        font-weight: bold;
+        text-align:left;
+    } 
+
+    #contact {
+        font-size: 25px;
+    }
+
+    footer {
+    
+        text-align: center;
+        color: #432818;
+        text-decoration: none;
+        font-size: 1.1em;
+        padding: 0 1em;
+        background-color: #d4c4a3;
+        
+    }
+    
+    footer p {
+        font-size: 1.6em;
+        text-align: center;
+        color: #432818;
+        padding: 0 1em;
+    }
+
+    #aboutUs {
+        font-size: 25px;
+    }
+    
+
+}/* media query closing brace for desktop viewport */
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+        #container {
+            width: 1920px;
+            margin: 0 auto;
+        }
+ }
+ /*media query closing brace for large desktop viewport */
+
+
+ /* Media Query for Print */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
 }
