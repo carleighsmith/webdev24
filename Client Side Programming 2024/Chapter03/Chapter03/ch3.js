@@ -136,3 +136,5 @@ switch (daysWeek[4])
     default:        //happens when none of the cases are executed
         console.log("Have a great day!");
 }
+
+
