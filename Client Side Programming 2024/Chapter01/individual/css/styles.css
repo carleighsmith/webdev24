@@ -1,211 +1,435 @@
-/* Created by Carleigh Smith on 02/06/2024
-   File: style.css */
+/*
+Author: Carleigh Smith
+Start Date: 2/19/2024
+File Name: styles.css
+*/
 
-/*CSS RESET*/
-/* a CSS reset style rule that sets the margin,
-padding, and borders to zero for the following
-selectors: body, header, nav, main, footer, img, h1, h3.*/
-
-body, header, nav, main, footer, img, h1, h3{
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-}   
-
-body{
-    background-color: #ffcdb2;
+/*CSS Reset*/
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section,
+article, aside {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-/*sets a max width to 100%. Also display image elements as a block.*/
+/* Style rules for body and images */
+/*Begin style rules for mobile viewport*/
+body{
+    background-color: #D0B8AC;
+}
+
 img {
-    max-width: 50%;
-    display: block;
-    padding-top: .5em;
-    margin-left: auto; 
-    margin-right: auto;
-    text-align: justify;
+        max-width: 100%;
+        display: block;
+}
+
+.logo {
+    border-radius: 60%;
+    width:50%;
+    border: 8px solid #AE847E;
+
+}
+
+/*Style rule for box sizing applies to all elements*/
+* {
+    box-sizing: border-box;
+}
+
+/*Begin style rules for mobile viewport*/
+/*Style rules for header*/
+header{
+    top: 0;
+
+}
+
+header img {
+    margin: 0 auto;
+}
+
+#hero img{
+    display: none;
+    border: 8px solid #AE847E;
+    border-bottom: none;
+
 }
 
 /*Style rules for navigation area*/
-/*Create a style rule for the nav selector that
-sets the background color to #1d396d.*/
-nav {
-    padding: 1%;
-    margin-bottom: 1%;
-    background-color: #ffb4a2;
+nav{
+   padding: 1%;
+   margin-bottom: 1%;
 }
-/*Create a style rule for nav ul that sets the list style
-type to none, sets the margin to 0, and aligns text center.*/
-nav ul {
+
+nav ul{
     list-style-type: none;
     text-align: center;
 }
-/*Create a style rule for nav li that sets the display to an inline-block,
-sets a font size of 1.5em, sets a font family
-value of Verdana, Arial, sans-serif, and a font weight value of bold.*/
-nav li {
-    /* display: inline-block;
-    font-size: 2em;
-    font-family: Verdana, Arial, sans-serif;
-    font-weight: bold; */
+
+nav li{
     font-size: 1.5em;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-top: 1px solid #e9edc9
-}
-/*Create a style rule for nav li a that sets the display
-to a block, sets a font color value of #e3eaf8, sets top
-and bottom padding values of 0.5em and left and right padding
-values of 2em, and removes the text decoration.*/
-nav li a {
-    /* display:block;
-    color: #e9edc9;
-    padding-top: .5em;
-    padding-bottom: 0.5em;
-    padding-left: 2em;
-    padding-right: 2em;
-    text-decoration: none; */
-    display: block;
-    color: #e9edc9;
-    padding: 0.5em 1em;
-    text-decoration: none;
+    font-family: 'Francois One', sans-serif;
+    border-top: 1px solid #fff;
 }
 
 nav li:first-child {
     border-top: none;
 }
 
+nav li a {
+    display: block;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
 
-/* CSS external links */
+/* Show mobile class, hide tablet-desktop class */
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+/* Style rules for main content */
+main{
+    background-color: #EAEDEE;
+    padding: 2%;
+    font-size: 1.15em;
+    font-family: "Roboto Slab", serif;
+}
+
+.mobile h3 {
+    text-shadow: 5px 5px 8px #ccc;
+}
+
+article {
+    padding: 2%;
+}
+
+article h3 {
+    text-align: center;
+}
+
+article img {
+    margin: 0 auto;
+    
+    
+}
+
+article ul {
+    margin-left: 10%;
+}
+
+article:nth-of-type(2){
+    background-color: rgba(204, 204, 204, 0.3);
+}
+
+.tel-link {
+    background-color: #AE847E;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
+.steps {
+    margin-left: 10%;
+}
+
+.action {
+    font-size: 1.35em;
+    color: #666600;
+    font-weight: bold;
+    text-shadow: 5px 5px 8px #ccc;
+}
+
+.frame {
+    position: relative;
+    max-width: 450px;
+    margin: 2% auto;
+}
+
+.pic-text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.frame-pic {
+    max-width: 40%;
+    max-height: 40%;
+}
+
+#weights, #cardio, #training {
+    margin: 0 2%;
+}
+
+.round {
+    border-radius: 8px;
+}
 
 .external-link {
-    color: #432818;
+    color: #666600;
     font-weight: bold;
     text-decoration: none ;
 }
 
-
-/*Sets the header to the center and 40 pixels big*/
-header {
-    /* position: -webkit-sticky;
-    position: sticky; */
-    top: 0;
-    /* background-color: #ffb4a2; */
-
+#contact {
+    text-align: center;
 }
 
-header img {
-    margin: 0 auto;
+#contact .contact-email-link {
+    color: #666600;
+    text-decoration: none;
+}
+
+.map {
+    border: 2px solid #000;
+    width: 95%;
+    height: 50%;
+}
+
+/* Style rules for footer content */
+footer p {
+    font-size: 0.75em;
+    text-align: center;
+    color: #fff;
+    padding: 0 1em;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Media Query for Tablet Viewport*/
+@media screen and (min-width: 630px),print {  /*630px is starting breakpoint*/
+
+    /*Tablet Viewport: Show tablet-desktop class, hide mobile class*/
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /* Tablet Viewport: Style rule for header */
+    header {
+        /* position:static; */
+        padding-bottom: 2%;
+    }
+    header img {
+        margin: 0 auto;
+    }
+
+    .logo {
+        border-radius: 60%;
+        max-width: 40%;
+        border: 8px solid #AE847E;
+
+    }
     
-}
+    #hero img{
+        width: auto;
+        max-height:1500px;
+    }
+     /* Tablet Viewport: Style rules for nav area */
+     nav li {
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #fff;
+     }
 
-#mission {
-    text-align: center;
-    font-size: 40px;
-}
+    nav li:last-child {
+        border-right: none;
+    }
 
+    nav li a {
+        padding: 0.1em 0.75em;
+    }
 
-/*Update the style rule for
-the footer selector to clear
-a float on the left.*/
-footer {
-    clear: left;
-    text-align: center;
-    color: #432818;
-    text-decoration: none;
-    font-size: 30px;
-}
+    /* Tablet Viewport: Style rules for main content area */ 
+    main ul {
+        margin: 0 0 4% 10%;
+    }
 
+    main {
+        border: 8px solid #AE847E;
+    }
 
-/*Centers and sets style for footer text*/
-footer a {
-    clear: left;
-    text-align: center;
-    color: #432818;
-    text-decoration: none;
-    font-size: 30px;
-}
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
 
-#foot {
-    border: solid 1px #b5838d;
-    background-color: #b5838d ; 
+    .pic-text {
+        font-size: 1em;
+        padding: 10px;
+    }
 
-}
+    aside {
+        text-align: center;
+        font-size: 1.25em;
+        font-style: italic;
+        font-weight: bold;
+        padding: 2%;
+        background-color: rgba(204, 204, 204, 0.5);
+        box-shadow: 5px 5px 8px #000;
+        text-shadow: 5px 5px 8px #000;
+        border-radius: 0 15px;
+    }
 
-/*Sets the basic align and font styles for the div contact*/
-#contact { 
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 40px;
-    text-align: center;
-    overflow: auto;
-    padding-bottom: 2em;
+    .grid-item4 {
+        grid-column: 1 / span 3;
+    }
+        
+    #exercises {
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        background: linear-gradient(to right, #ccc, #fff);
+        background-color: #f2f2f2;;
+        padding: 1% 2%;
+    }
+
+    #exercises dt {
+        font-weight: bold;
+    }
+
+    #exercises dd {
+        padding: 0.5% 1% 2% 0;
+    }
+
+    .tel-num {
+        font-size: 1.25em;
+    }
+
+    .map {
+        width: 600px;
+        height: 450px;
+    }
+
+    
+} /*end media for min-width 630px*/
+
+/* Media Query for Desktop Viewport */ 
+@media screen and (min-width: 1015px),print {
+
+    /* Desktop Viewport: Style rule for header */ 
+    header {
+        width: 25%;
+        float: left;
+    }
+    header img {
+        margin: 0 auto;
+    }
+    .logo {
+        max-width: 100%;
+    }
+    
+    #hero img{
+        display: block;
+    }
+     /* Desktop Viewport: Style rules for nav area */ 
+     nav {
+        float: right;
+        width: 70%;
+        margin: 4em 1em 0 0;
+        background-color: #C4A69D;
+    
+     }
+
+     nav ul {
+        text-align: right;
+     }
+
+     nav li {
+        border: none;
+    }
+
+    nav li a {
+        padding: 0.5em 1em;
+    }
+
+    nav li a:hover {
+        color: #5B3814;
+        background-color: #D1C7BD;
+    }
+
+    /* Desktop Viewport: Style Rules for main content */
+    main{
+        clear: left;
+        border: 8px solid #AE847E;       
+    }
+
+    main h1 {
+        font-size: 1.8em;
+        text-align: center;
+
+    }
+    article h2 {
+        display:inline-block;
+        text-align: center;
+    }
+    article h3 {
+        font-size: 1.75em;
+        display:block;
+    }
+
+    .pic-text {
+        font-size: 1.5em;
+        padding: 20px;
+    }
+
+    .frame {
+        opacity: 0.9;
+    }
+
+    .frame:hover {
+        opacity: 1;
+        box-shadow: 8px 8px 10px #808080;
+    }
+
+    #weights, #cardio, #training {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+
+    #exercises {
+        clear: left;
+    }
+}/* media query closing brace for desktop viewport */
+
+/* Media Query for Large Desktop Viewports */
+ @media screen and (min-width: 1921px) {
+    #container {
+        width: 1920px;
+        margin: 0 auto;
+    } 
  }
- /*Sets the color and decoration of contact*/
- #contact a {
-     text-decoration: none;
-     color: #a53860;
- 
- }
+ /*media query closing brace for large desktop viewport */
 
- #info {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 30px;
-    text-align: center;
-    overflow: auto;
- }
- #contactinfo
- {
-    font-size: 30px;
- }
-#submit
-{
-    font-size: 30px;
-    background-color: #ffb4a2;
-    color: #6d597a;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
+/* Media Query for Print */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
 }
-
-#home {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 40px;
-    text-align: center;
-    overflow: auto;
-    padding-bottom: 2em;
-}
-
-#findaPet{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 40px;
-    text-align: center;
-    overflow: auto;
-    padding-bottom: 2em;
-   
-}
-
-#adoptions{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 40px;
-    text-align: center;
-    overflow: auto;
-    padding-bottom: 2em;
-}
-
-#resources {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 40px;
-    text-align: center;
-    overflow: auto;
-    padding-bottom: 2em;
-}
-
-#gallery {
-    text-align: center;
-
-}
-
-#logo img{
-    border-color: #a53860;
-    border-radius: 50%;
-   
-}
-

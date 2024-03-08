@@ -1,0 +1,88 @@
+/*
+Author: Carleigh Smith
+Start Date: 2/19/2024
+File Name: styles.css
+*/
+
+/*CSS Reset*/
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section,
+article, aside {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+/*Begin style rules for mobile viewport*/
+body{
+    background-color: #d6b5e2;
+}
+
+/*Style rule for box sizing applies to all elements*/
+* {
+    box-sizing: border-box;
+}
+
+/* Style rules for main content */
+main{
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.15em;
+    font-family: "Roboto Slab", serif;
+}
+
+article h1 {
+    text-shadow: 5px 5px 8px #2a0523;
+    font-size: 3em;
+}
+
+article {
+    padding: 2%;
+    text-align: center;
+}
+
+article h3 {
+    text-align: center;
+    
+}
+
+.h:hover {
+    color: #000;
+    background-color: #e9c1e5;
+}
+
+body dt {
+    font-size:2em;
+    padding-left: 2%;
+}
+body p {
+    font-size: 1.5em;
+    padding-left: 5%;
+    
+}
+.pages:hover {
+    color: #000;
+    background-color: #d2a4cf;
+    font-weight: bold;
+}
+
+body {
+    text-decoration:none;
+    font: black;
+}
+
+
+/* Style rules for footer content */
+footer{
+    font-size: 1em;
+    text-align: center;
+    color: #000000;
+    padding: 0 1em;
+
+}
+
+footer p a {
+    color: #000000;
+    text-decoration: none;
+}
+

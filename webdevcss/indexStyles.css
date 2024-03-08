@@ -1,0 +1,117 @@
+/*
+Author: Carleigh Smith
+Start Date: 3/7/2024
+File Name: indexStyles.css
+*/
+
+/*CSS Reset*/
+body, header, nav, main, footer, h1, div, img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+/*Begin style rules for mobile viewport*/
+body{
+    background-color: #c09898;
+}
+
+/* img {
+        max-width: 100%;
+        display: block;
+} */
+
+/*Style rule for box sizing applies to all elements*/
+* {
+    box-sizing: border-box;
+}
+
+/*Begin style rules for mobile viewport*/
+
+/* Show mobile class, hide tablet-desktop class */
+/* .mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+} */
+
+/* Style rules for main content */
+main{
+    background-color: #e68c8c;
+    padding: 2%;
+    font-size: 1.15em;
+    font-family: "Roboto Slab", serif;
+}
+
+h1 {
+    text-shadow: 5px 5px 8px #ccc;
+    text-align: center;
+}
+
+
+article {
+    padding: 5%;
+}
+
+article:nth-of-type(2){
+    background-color: rgba(204, 204, 204, 0.3);
+}
+
+
+.external-link {
+    color: #666600;
+    font-weight: bold;
+    text-decoration: none ;
+}
+
+
+/* Style rules for footer content */
+footer p {
+    font-size: 0.75em;
+    text-align: center;
+    color: #fff;
+    padding: 0 1em;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Media Query for Desktop Viewport */ 
+@media screen and (min-width: 1015px),print {
+
+
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    article:hover {
+        opacity: 1;
+        box-shadow: 8px 8px 10px #808080;
+    }
+
+
+}/* media query closing brace for desktop viewport */
+
+/* Media Query for Large Desktop Viewports */
+ @media screen and (min-width: 1921px) {
+    #container {
+        width: 1920px;
+        margin: 0 auto;
+    } 
+ }
+ /*media query closing brace for large desktop viewport */
+
+/* Media Query for Print */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+}

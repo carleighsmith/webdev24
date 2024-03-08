@@ -17,94 +17,112 @@
     <title>Find A Pet</title>
     <link rel="stylesheet" href="../individual/css/styles.css">
     <script src="../individual/calculations.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
    
     
 </head>
 <body>
-    <!-- Use the header area for the website name or logo -->
-    <header>
-      <div id="logo">
-        <img src="images/Pawsitive Connections.jpg" alt="logo"/>
 
-
-      </div>
-        
+  <div id="container">
+      <!-- Use the header area for the website name or logo -->
+      <header>
+        <a href="index.html"><img src="images/Pawsitive Connections.jpg" alt="logo" class="logo"/></a>
     </header>
-    <div id="mission">
+    
+  
+      <!-- Use the nav area to add hyperlinks to other pages
+          within the website-->
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="findAPet.html">Find a pet!</a></li>
+              <li><a href="happyAdoptions.html">Happy Adoptions</a></li>
+              <li><a href="resources.html">Pet Resources</a></li>
+              <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+          </nav>
 
-      <!-- **Pet Adoption Platform**: I would create a website
-          where local shelters can list animals available for
-          adoption. Users can filter pets by type, 
-          age, size, and other criteria.
-          -->
-      <h2>"Uniting Hearts, One Paw at a Time"</h2> 
-
-</div>  
-     <!-- Use the nav area to add hyperlinks to other pages
-         within the website-->
-         <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="findAPet.html">Find a pet!</a></li>
-            <li><a href="happyAdoptions.html">Happy Adoptions</a></li>
-            <li><a href="resources.html">Pet Resources</a></li>
-            <li><a href="contactUs.html">Contact Us</a></li>
-            <li><a href="../../../index.html"></a></li>
-          </ul>
-        </nav>
-
-        <article>
-          <div id="info">
-            <h2>Filter for Search</h2>
+          <!-- <article>
             <form>
-              <h6>Enter wanted age, minimum price, and maximum price into the search engine to received estimated price.</h6>
-              <h6>In the future the engine will show the pets available for the price range  and age entered.</h6>
-              <h5>Press Enter to Recieve Pictures and Info of Pets In Your Range</h5>
-              <fieldset id="ageinfo">
-                <label for="ageinput">
-                  Age of Animal
-                  <input type="text" id="age" name="age" />
-                </label>
-                <label for="mininput">
-                  Minimum Price
-                  <input type="text" id="min" name="min" />
-                </label>
-                <label for="maxinput">
-                  Maximum Price
-                  <input type="text" id="max" name="max" />
-                </label>
+              <fieldset>
+                <legend><span>What is your minimum price range?</span></legend>
+                <input type="number" id="min" name="min"/>
+                <label for="mininput">$</label>
               </fieldset>
+
+              <fieldset>
+                <legend><span>What is your maximum price range?</span></legend>
+                <input type="number" id="max" name="max"/>
+                <label for="maxinput">$</label>
+              </fieldset>
+
+              <fieldset>
+                <legend><span>Gender: </span></legend>
+                <input type="radio" id="male" name ="gender" value="male"/>
+                <label for="male">Male</label>
+                <input type="radio" id="fem" name ="gender" value="fem"/>
+                <label for="fem">Female</label>
+              </fieldset>
+              
+              <fieldset>
+                <legend><span>Age preference</span></legend>
+                <input type ="radio" id="young" name="age" value="young"/>
+                <label for="young">3 weeks - 4 months</label>
+                <input type ="radio" id="med" name="age" value="med"/>
+                <label for="med">5 months - 1 year</label>
+                <input type ="radio" id="older" name="age" value="older"/>
+                <label for="older">2 years-5 years</label>
+                <input type ="radio" id="oldest" name="age" value="oldest"/>
+                <label for="oldest">6 years or older</label>
+              </fieldset>
+
               <fieldset id="submitbutton">
                 <input type="button" id="submit" value="Submit" />
               </fieldset>
-           </form>
-          </div>
-         </article>
+            </form>
+          </article> -->
 
-         <article>
-          <div id="gallery"></div>
-       </article>
-    <!-- Use the main area to add the main content of the webpage-->
-    <main>
-      <div id="findaPet" >
-        <h5>What this page is going to include:</h5> 
+          <article>
+              <h2>Filter for Search</h2>
+              <form>
+                <h6>Enter wanted age, minimum price, and maximum price into the search engine to received estimated price.</h6>
+                <h6>In the future the engine will show the pets available for the price range and age entered. I will also add the gender radio buttons soon.</h6>
+                <h5>Press Submit to Recieve Pictures and Info of Pets In Your Range</h5>
+                <fieldset id="ageinfo">
+                  <label for="ageinput">
+                    Age of Animal
+                    <input type="text" id="age" name="age" />
+                  </label>
+                  <label for="mininput">
+                    Minimum Price
+                    <input type="text" id="min" name="min" />
+                  </label>
+                  <label for="maxinput">
+                    Maximum Price
+                    <input type="text" id="max" name="max" />
+                  </label>
+                </fieldset>
+                <fieldset id="submitbutton">
+                  <input type="button" id="submit" value="Submit" />
+                </fieldset>
+            </form>
+          </article>
+
+          <article>
+            <div id="gallery"></div>
+        </article>
+      <!-- Use the main area to add the main content of the webpage-->
+      <main>
         
-        <p>This page is going to include the available pets, individual pet profiles, adoption application form, and the filter for finding a pet.</p>
-        <br>
-      </div>
-    </main>
+        </div>
+      </main>
 
-
-    <div id="foot">
-
-      
-    </div>
-
-    <!-- Use the footer area to add webpage footer content-->
-    <footer>
+      <!-- Use the footer area to add webpage footer content-->
+      <footer>
         <p>&copy; Copyright 2024. All Rights Reserved.</p>
-        <p>PawsitiveConnections@adoptions.net</p>
+        <p><a href="pawsitive.connects@gmail.comt">pawsitive.connects@gmail.com</a></p>
     </footer>
-
+  </div>
 </body>
 </html>

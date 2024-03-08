@@ -19,19 +19,31 @@ function verifyForm() {
     let estimate = 0;
     let average = 0;
 
-    if (age < 5)
-        estimate += 50;
+    try {
+        if ((age) && (min) && (max))
+        {
+            if (age < 5)
+                estimate += 50;
+            
+            average = max-min;
+            estimate += average
+            estimate = Math.round(estimate) 
+            window.alert("Your estimated total is $"+ estimate)
+            addPetPhotos();
+        } else {
+            window.alert("Please fill in all fields");
+        }
 
-    average = max-min;
-    estimate += average
-    estimate = Math.round(estimate)
+    } catch (err)
+    {
+        window.alert(err)
+    }
 
-    // (age) && (min) && (max)
+    //(age) && (min) && (max)
     // ? window.alert("Your estimated total would be $" + estimate) :
     // window.alert("Please fill in all fields");
 
-    window.alert("Your estimated total is $"+ estimate)
-    addPetPhotos();
+
 }
 
 
