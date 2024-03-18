@@ -33,7 +33,7 @@ img {
 header{
     top: 0;
     background-color: #000;
-    height: 200px;
+    height: 190px;
 }
 
 header img {
@@ -211,7 +211,6 @@ footer p a {
 
     /* Tablet Viewport: Style rule for header */
     header {
-        /* position:static; */
         padding-bottom: 2%;
     }
 
@@ -238,7 +237,7 @@ footer p a {
     .grid {
         display: grid;
         grid-template-columns: auto auto auto;
-        grid-gap: 20px;
+        gap: 20px;
     }
 
     .pic-text {
@@ -254,7 +253,7 @@ footer p a {
         padding: 2%;
         background-color: rgba(204, 204, 204, 0.5);
         box-shadow: 5px 5px 8px #000;
-        text-shadow: 5px 5px 8px #000;
+        text-shadow: 5px 5px 8px #b3b3b3;
         border-radius: 0 15px;
     }
 
