@@ -38,6 +38,7 @@ function createLightBox() {
    lightBox.appendChild(lbPrev);
    lbPrev.id = "lbPrev";
    lbPrev.innerHTML = "&#9664";//symbol for previous button
+   lbPrev.onclick = showPrev;
 
    //Design the lightbox next slide button
    lightBox.appendChild(lbNext);
@@ -49,6 +50,20 @@ function createLightBox() {
    lightBox.appendChild(lbPlay);
    lbPlay.id = "lbPlay";
    lbPlay.innerHTML = "&#9199;";//symbol for play/pause button
+   let timeID;
+   lbPlay.onclick = function() {
+      if(timeID) {
+         //Stop the slideshow
+         window.clearInterval(timeID);
+         timeID = undefined;
+      } else {
+         //Start the slideshow
+         showNext();
+         timeID = window.setInterval(showNext, 1500);
+      }
+   }
+  
+  
 
    //Design the lightbox images container
    lightBox.appendChild(lbImages);
@@ -60,6 +75,7 @@ function createLightBox() {
       let image = document.createElement("img");
       image.src = imgFiles[i];
       image.alt = imgCaptions[i];
+      image.onclick = createOverlay;
       lbImages.appendChild(image);
    }
 
@@ -73,6 +89,47 @@ function createLightBox() {
       //set the text content of the counter to currentImg / imgCount
       lbCounter.textContent = currentImg + " / " + imgCount;
    }
+
+   //Function to move backward through the image list
+   function showPrev() {
+      lbImages.insertBefore(lbImages.lastElementChild, lbImages.firstElementChild) ;
+      (currentImg > 1) ? currentImg-- : currentImg = imgCount;
+      lbCounter.textContent = currentImg + " / " + imgCount;
+   }
+
+   //Function to create Overlay
+   function createOverlay() {
+      let overlay = document.createElement("div"); //create the overlay
+      overlay.id = "lbOverlay";
+
+      //Add the figure box to the overlay
+      let figureBox = document.createElement("figure"); //append the figure box to the overlay
+      overlay.appendChild(figureBox);
+
+      //Add the images to the figure box
+      let overlayImage = this.cloneNode("true"); //Copy the image that called the function
+      figureBox.appendChild(overlayImage); //append the copied image to the figure box
+
+      //Add the caption to the figure box
+      let overlayCaption = document.createElement("figcaption");
+      overlayCaption.textContent = this.alt; //display the value of the alt attribute as the figure caption
+      figureBox.appendChild(overlayCaption); //append the caption to the figure box
+
+      //Add a close button to the overlay
+      let closeBox = document.createElement("div"); //create an element for the close button
+      closeBox.id = "lbOverlayClose";
+      closeBox.innerHTML = "&times;" //display the x symbol in the close button
+
+      closeBox.onclick = function() {   //when the close button is clicked remove the overlay from the document body
+         document.body.removeChild(overlay);
+      }
+
+      overlay.appendChild(closeBox);
+
+      document.body.appendChild(overlay); //append the overlay to the page body and append the close button the overlay
+   }
+
+
 
 }
 

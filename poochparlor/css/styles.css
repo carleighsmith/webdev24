@@ -1,4 +1,4 @@
-/*Validated*/
+/*Validated 3/21/2024*/
 /*Carleigh Smith
 02/7/2024
 styles.css*/
@@ -7,7 +7,8 @@ styles.css*/
 /* a CSS reset style rule that sets the margin,
 padding, and borders to zero for the following
 selectors: body, header, nav, main, footer, img, h1, h3.*/
-body, nav, main, footer, h1, h3, ul, div{
+body, nav, main, footer, h1, h3, ul, div, img, figure, article, aside,
+figcaption, section{
     margin: 0;
     padding: 0;
     border: 0;
@@ -16,42 +17,51 @@ body, nav, main, footer, h1, h3, ul, div{
 /*Create a style rule for the body
 selector that sets a background color value of #fefae0*/
 body {
-    background-color: #f0d9ba;}
+    background-color: #DCDDC5;}
 
 img {
     max-width: 100%;
     display: block;
 }
 
+/*Style rule for box sizing applies to all elements*/
+* {
+    box-sizing: border-box;
+}
+
 /*Begin style rules for mobile viewport*/
 /*Style rules for header*/
 header {
     top: 0;
-
+    background-color: #DCDDC5;
+    height: 20%;
 }
+
 
 .logo {
-    margin: 0 auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    max-width: 40%;
-    display: block;
-    border-radius: 90%;
+    border-radius: 50%;
+    border: 8px solid #d4a373 ;
+    max-width: 70%;
 }
 
-.banner {
+header img {
     margin: 0 auto;
-    display: block;
+    /* max-width: 40%; */
 }
 
+#hero {
+    padding: 0px;
+    max-width: 100%;
+    margin: 0px;
+}
 
 /*Style rules for navigation area*/
 /*Create a style rule for the nav selector that
 sets the background color to #1d396d.*/
 nav {
-    background-color: #d4a373;
     padding: 1%;
     margin-bottom: 1%;
+
 }
 
 nav ul {
@@ -71,11 +81,12 @@ nav li:first-child {
     border-top: none;
 }
 
-nav li a {
+nav li a { /*Change color of nav*/
     display: block;
-    color: #fff;
+    color: #9f8126;
     padding: 0.5em 1em;
     text-decoration: none;
+    
 }
 
 /* Show mobile class, hide tablet-desktop class */
@@ -87,17 +98,13 @@ nav li a {
     display: none;
 }
 
-.banneralt {
-    display:none;
-}
-
-.faq {
+/* .faq {
     text-align: center;
     font-size: 1.5em;
-}
+} */
 
-/* Sets the basic align and font styles for the div about us*/ */
- #aboutUs {
+/* Sets the basic align and font styles for the div about us*/ 
+ /* #aboutUs {
    font-size: 24px;
    text-align: center;
    padding-left: 5%;
@@ -109,10 +116,10 @@ nav li a {
 }
 #callus {
     text-align: center;
-}
+} */
 
 /* Sets the basic align and font styles for the div services*/
-#services {
+/* #services {
     font-size: 22px;
     text-align: center;
     padding-left: 5%;
@@ -121,25 +128,10 @@ nav li a {
 
 }
 
-#services ul {
-    list-style-type: none;
-    margin: 0;
-    text-align: center;
-}
-
-#services li {
-    font-size: 25px;
-
-}
-
-#services dt{
-    font-size: 25px;
-    font-weight: bold;
-} 
+}  */
 
 /* Style rules for main content */
 main {
-    clear: left;
     background-color: #fff;
     padding: 2%;
     font-size: 1.15em;
@@ -147,13 +139,33 @@ main {
 }
 
 /*Sets the basic align and font styles for the div homepage*/
-#homepage{
-    font-size: 25px;
-    text-align: center;
-    overflow: auto;
-    padding-left: 5%;
-    padding-right: 5%;
+
+
+
+.mobile h3 {
+    text-shadow: 5px 5px 8px #ccc;
 }
+
+article {
+    padding: 2%;
+}
+
+article h3 {
+    text-align: center;
+}
+
+article img {
+    margin: 0 auto;
+}
+
+article ul {
+    margin-left: 10%;
+}
+
+article:nth-of-type(2){
+    background-color: rgba(204, 204, 204, 0.3);
+}
+
 
 /*Style rules for .tel-link content*/
 .tel-link {
@@ -165,7 +177,6 @@ main {
     border-radius: 5px;
 }
 
-/*Style rules for .tel-link anchor content*/
 .tel-link a {
     color: #fff;
     text-decoration: none;
@@ -173,18 +184,14 @@ main {
     display: block;
 }
 
-/*Style rules for .hours content*/
-.hours {
-    margin-left: 10%;
-    /* text-align: left; */
-   
-}
+
+
 
 /*Style rules for .pph content*/
-.pph {
+/* .pph {
     margin-left: 10%;
     text-align: left;
-}
+} */
 
 /*Style rules for .action content*/
 .action {
@@ -192,6 +199,27 @@ main {
     color: #d4a373;
     font-weight: bold;
 }
+
+.frame {
+    position: relative;
+    max-width: 450px;
+    margin: 2% auto;
+}
+
+
+.pic-text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
 
 /*Sets the basic align and font styles for the div contact*/
 #contact {
@@ -204,15 +232,23 @@ main {
     text-decoration: none;
 }
 
+#services, #descriptions, #hours {
+    margin: 0 2%;
+}
+
+#groomquest, #healthquest, #groomerquest {
+    margin: 0 2%;
+}
+
 
 /*Style rules for .round content*/
 .round {
-    border-radius: 11px;
+    border-radius: 8px;
 }
 
 /* CSS external links */
 .external-link {
-    color: #d4a373;
+    color: #79440e;
     font-weight: bold;
     text-decoration: none ;
 }
@@ -224,10 +260,9 @@ main {
     height: 50%;
 }
 
-/*Update the style rule for
-the footer selector to clear
-a float on the left.*/
-footer {
+/* Style rules for footer content */
+
+ /* footer {
     
     text-align: center;
     color: #432818;
@@ -248,7 +283,21 @@ footer p {
 footer p a {
     color: #432818;
     text-decoration: none;
+}  */
+
+
+footer p {
+    font-size: 0.75em;
+    text-align: center;
+    color: #fff;
+    padding: 0 1em;
 }
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
 
 /* Media Query for Tablet Viewport*/
 @media screen and (min-width: 630px),print {
@@ -267,13 +316,7 @@ footer p a {
         position: static;
         padding-bottom: 2%;
     }
-    .banner {
-        display:none;
-    }
 
-    .banneralt {
-        display:block;
-    }
 
      /* Tablet Viewport: Style rules for nav area */
      nav li {
@@ -296,37 +339,104 @@ footer p a {
      main ul {
         margin: 0 0 4% 10%;
      }
-
-     main h1, main h4 {
-        font-size: 40px;
-    }
-    main h5 {
-        font-size: 1.5em;
-    }
      
-    /* Tablet Viewport: Style rules for service content area */ 
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+    }
 
-     #services {
-        font-size: 29px;
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-bottom: 2em;
-    
+
+    .pic-text {
+        font-size: 1em;
+        padding: 10px;
     }
-    #services ul {
-        margin: 0;
+
+    aside {
+        text-align: center;
+        font-size: 1.25em;
+        font-style: italic;
+        font-weight: bold;
+        padding: 2%;
+        background-color: rgba(202, 203, 168, 1);
+        box-shadow: 5px 5px 8px #000;
+        text-shadow: 5px 5px 5px #b3b3b3;
+        border-radius: 0 15px;
+        /* width: 1920px;
+        margin: 0 auto; */
     }
-    #services li {
+
+    .grid-item4 {
+        grid-column: 1 / span 3;
+    }
+
+    .tel {
+        background-color: hsl(0, 45%, 74%);
+        padding: 2%;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .tel a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5em;
+        display: block;
+    }
+
+
+    #groomers {
+        clear: left;
+        border-top: 1px solid #000;
         font-size: 25px;
-        text-align:left;
-    
+        border-bottom: 1px solid #000;
+        background: white;
+        background-color: #f2f2f2;;
+        padding: 1% 2%;
+        text-align: center;
+        margin: 20%;
     }
-    #services dt{
+    #groomers img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 50%;
+        border: 5px solid #bc8247;
+    }
+
+    #groomers dt {
         font-size: 25px;
         font-weight: bold;
-        text-align:left;
-    } 
+    }
     
+
+    #groomers dd {
+        padding: 0.5% 1% 2% 0;
+    }
+
+    #homepage h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    #homepage p {
+        font-size: 20px;
+    }
+
+    #about {
+        clear: left;
+        border-top: 1px solid #000;
+        font-size: 25px;
+        border-bottom: 1px solid #000;
+        background: white;
+        background-color: #f2f2f2;;
+        padding: 1% 2%;
+        text-align: center;
+        margin: 20%;
+    }
+     
 
     /* Tablet Viewport: Style rules for phone number */ 
 
@@ -340,70 +450,36 @@ footer p a {
         height: 450px;
     }
 
-    .faq {
-        display:none;
-    }
-
     /* Tablet Viewport: Style rules for footer content area */ 
-    footer {
-    
-        text-align: center;
-        color: #432818;
-        text-decoration: none;
-        font-size: 1.1em;
-        padding: 0 1em;
-        background-color: #d4c4a3
-        
-    }
-    
-    footer p {
-        font-size: 1.4em;
-        text-align: center;
-        color: #432818;
-        padding: 0 1em;
-    }
+
 
 }/*end media for min-width 630px*
 
 /* Media Query for Desktop Viewport */ 
 @media screen and (min-width: 1015px),print {
 
-     /* Desktop Viewport: Style rule for logo and banner */ 
-    .logo{
-        width: 15%;
+     /* Desktop Viewport: Style rule for header */ 
+
+    header {
+        width: 25%;
         float: left;
-        padding: 2em;
-    }
-
-    .banner {
-        display: none;
-    }
-
-    .banneralt {
-        display:block;
-        width: 100%;
-    }
-    .logo {
-        position: static;
-        padding-bottom: 2%;
-        background: linear-gradient(to right, #d4a373,#e7d1a2);
-
+        padding-bottom: 0;
     }
 
      /* Desktop Viewport: Style rules for nav area */ 
-     nav {
+    nav {
         float:inline-end;
         width: 70%;
         margin: 5em 5em 0 0;
      }
 
 
-     nav ul {
+    nav ul {
         text-align:center;
         
      }
 
-     nav li {
+    nav li {
         border: none;
     }
 
@@ -422,42 +498,180 @@ footer p a {
         clear: left;         
     }
 
-    main h1, main h4 {
-        font-size: 50px;
-    }
-    main h5 {
-        font-size: 40px;
+    article h3 {
+        font-size: 1.75em;
     }
 
-    main ul {
-        margin: 0 0 4% 10%;
-     }
+    .pic-text {
+        font-size: 1.5em;
+        padding: 20px;
+    }
+
+    .frame {
+        opacity: 0.9;
+    }
+
+    .frame:hover {
+        opacity: 1;
+        box-shadow: 8px 8px 10px #808080;
+    }
+
+
+    #services, #descriptions, #hours{
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+        background-color: #eeefd1;
+    }
+
+    #groomquest, #healthquest, #groomerquest {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+        font-size: 19px;
+
+    }
+
+    #intro,#team {
+        width: 45%;
+        float: left;
+        margin: 0 2%;
+    }
+
+    #groomers {
+        clear: left;
+    }
+
 
     /* Desktop Viewport: Style rules for service area */ 
 
-     
-     #services {
-        font-size: 1.85em;
+    #services {
+        font-size: 15px;
         padding-left: 5%;
         padding-right: 5%;
         padding-bottom: 2em;
-    
     }
+
     #services ul {
-       
         margin: 0;
-      
-    }
-    #services li {
-        font-size: 35px;
-        text-align:left;
+    }     
     
-    }
-    #services dt{
+    #services h1 { 
         font-size: 35px;
+        text-align: center;
+     }
+     #services h5 { 
+        font-size: 35px;
+        text-align: center;
+     }
+    #services p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    #services li {
+        font-size: 20px;
+        text-align:left;
+    }
+
+    .package {
+        font-size: 15px;
+    }
+
+
+    #descriptions dt{
+        font-size: 20px;
         font-weight: bold;
         text-align:left;
     } 
+
+    #descriptions dd{
+        font-size: 20px;
+        text-align:left;
+    } 
+
+    #descriptions h1 { 
+        font-size: 35px;
+        text-align: center;
+     }
+
+    #hours li {
+        font-size: 27px;
+    }
+
+    #hours h1 { 
+        font-size: 35px;
+        text-align: center;
+     }
+
+     #hours h5 { 
+        font-size: 35px;
+        text-align: center;
+     }
+    #hours p {
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .serve {
+        border-radius: 20%;
+        height: 250px;
+        width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 5px solid #bc8247;
+    }
+
+    /* Desktop Viewport: Style rules for about area */ 
+
+    #facilities {
+        clear: left;
+        border-top: 1px solid #000;
+        font-size: 25px;
+        border-bottom: 1px solid #000;
+        background: white;
+        background-color: #f2f2f2;;
+        padding: 1% 2%;
+        text-align: center;
+        margin: 20%;
+    }
+
+    #intro h4 {
+        font-size: 25px;
+    }
+    
+    #team h4 {
+        font-size: 25px;
+    }
+
+    #intro p {
+        font-size: 20px;
+    }
+
+    .aboutPic {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        max-width: 29%;
+        border: 5px solid #bc8247;
+    }
+
+    .faqpic {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        max-width: 50%;
+        border-radius: 20%;
+        border: 5px solid hsl(29, 31%, 73%);
+
+    }
+
+
 
     /* Desktop Viewport: Style rules for contact area */ 
     #contact {
@@ -495,12 +709,7 @@ footer p a {
         border-radius: 20%;
     }
     
-    /* Desktop Viewport: Style rules for questions and answer id*/ 
-    #questions, #answers {
-        width: 40%;
-        float: left;
-        margin: 0 2%;
-    }
+
 
 }/* media query closing brace for desktop viewport */
 

@@ -9,7 +9,7 @@
 /*a CSS reset style rule that sets the margin, padding, and
 borders to zero for the following selectors: body, header,
 nav, main, footer, img, h1, h3.*/
-body, header, nav, main, footer, img, h1, h3, ul{
+body, header, nav, main, footer, img, h1, h3, ul, aside, figure, figcaption{
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -136,6 +136,25 @@ value to bold, and aligns text center.*/
     border-radius: 6px;
 }
 
+aside {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px #c5a687;
+}
+
+figure {
+    border: 4px solid #2a1f14;
+    box-shadow: 6px 6px 10px #c5a687;
+    max-width: 400px;
+    margin: 2% auto;
+}
+
+figcaption {
+    padding: 2%;
+    border-top: 4px solid #3a1f14;
+}
+
 /*style rule for the #info ul selector*/
 #info ul{
     margin-left: 10%;
@@ -193,9 +212,13 @@ footer a {
     .tab-desk {
         display: block;
     }
+
+    .mobile {
+        display: none;
+    }
     /*Tablet Viewport: Style rules for nav area*/
     nav {
-        display: none;
+        display: block;
     }
 
     nav li {
@@ -206,6 +229,16 @@ footer a {
 
     nav li a {
         padding: 0.5em;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+
+    aside {
+        grid-column: 1 / span 2;
     }
 }
 
@@ -227,11 +260,23 @@ footer a {
     nav li a:hover {
         color: #2a1f14;
         background-color: #f6eee4;
+        opacity: 0.5;
     }
 
     /*Desktop Viewport: Style rules for main content*/
     #info ul {
         margin-left: 5%;
+    }
+
+    .grid {
+        /* display: grid; */
+        grid-template-columns: auto auto auto;
+        gap: 30px;
+    }
+
+    aside {
+        grid-column: 1 / span 3;
+        font-size: 2em;
     }
 
 }
@@ -254,12 +299,22 @@ footer a {
         background-color: #f6eee4;
     }
 
+    .grid {
+        /* display: grid; */
+        grid-template-columns: auto auto auto auto;
+    }
+
+    aside {
+        grid-column: 1 / span 4;
+        font-size: 3em;
+    }
+
 }
 
 /*Media Query for Print*/
 @media print {
     body {
         background-color: white;
-        font: black;
+        color: black;
     }
 }

@@ -1,4 +1,4 @@
-<!--Validated-->
+<!--Validated 3/21/2024-->
 <!DOCTYPE html>
 <!--
     Student Name: Carleigh Smith
@@ -14,70 +14,99 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../poochparlor/css/styles.css">
     <title>The Pooch Parlor: Home</title>
+    <link rel="shortcut icon" href="images/fav/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="images/fav/android-chrome-192.png">
+    
 </head>
 <body>
+    <div id="container"> 
 
-    <!-- Use the header area for the website name or logo -->
-    <header>
-        <a href = "index.html"><img src="images/The Pooch Parlor.jpg" alt="logo" class="logo"></a>
-        <div class="tablet-desktop">
-            <a href = "index.html"><img src="images/images/dog-banner.jpg" alt="banner with dogs on it" class="banner"></a>
-        </div>
+        <!-- Use the header area for the website name or logo -->
+        <header>
+            <a href = "index.html"><img src="images/The_Pooch_Parlor.jpg" alt="logo" class="logo"></a>
+        </header>
+        <!-- Use the nav area to add hyperlinks to other pages
+            within the website-->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html"> Services</a></li>
+                    <li><a href="bookings.html">Bookings</a></li>
+                    <li><a href="FAQs.html"> FAQs</a></li>
+                    <li><a href="about.html"> About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </nav>
+
+            <!--Hero Image-->
+            <div id="hero" class="tablet-desktop">
+                <img src="images/images/dog-banner.jpg" alt="banner with dogs on it" class="banneralt">
+            </div>
+
+
+        <!-- Use the main area to add the main content of the webpage-->
+        <main>
+            <!-- <a href = "index.html"><img src="images/images/dog-banner.jpg" alt="banner with dogs on it" class="banneralt"></a> -->
+
+            <div id = homepage >
+
         
-    </header>
+                <div class ="mobile">
+                    <p>Welcome To The Parlor for Your Pooches- <br> Where Tails Transform and Paws Shine</p>
+                  
+                    <p>Mission Statement:</p>
 
-      <!-- Use the nav area to add hyperlinks to other pages
-         within the website-->
-         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html"> Services</a></li>
-                <li><a href="bookings.html">Bookings</a></li>
-                <li><a href="FAQs.html"> FAQs</a></li>
-                <li><a href="about.html"> About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                    <p>"Grooming is not just a service – it's an expression of love for dogs"</p>
 
-            </ul>
-        </nav>
+                <div id="callus"><p>Call Us Today to Make an Appointment</p></div>
 
-    <!-- Use the main area to add the main content of the webpage-->
-    <main>
-        <a href = "index.html"><img src="images/images/dog-banner.jpg" alt="banner with dogs on it" class="banneralt"></a>
+                    <p class="tel-link"><a href="tel:6014023709">(601) 402-3709</a></p> 
+                </div>
 
-        <div id = homepage >
-            <div class="tablet-desktop">
-                <h1>Welcome To The Parlor for Your Pooches- <br> Where Tails Transform and Paws Shine</h3>
-                <p></p>
-                    <img src="images/j-balla-photography-F57xLufncj8-unsplash.jpg" alt="dog getting dried off" class="round">
-                <h4>Mission Statement:</h4>
-                <h5>"Grooming is not just a service – it's an expression of love for dogs"</h5>
+
+                <div class="tablet-desktop">
+                    <h1>Welcome To The Parlor for Your Pooches- <br> Where Tails Transform and Paws Shine</h1>
+                    <p>Mission Statement:</p>
+                    <p>"Grooming is not just a service – it's an expression of love for dogs"</p>
+                    <p>Get 50% off your pet's first appointment: <span class="action">Book appointments here!</span></p>
+                </div>
             </div>
-      
-            <div class ="mobile">
-                <p>Welcome To The Parlor for Your Pooches- <br> Where Tails Transform and Paws Shine</p>
-                <img src="images/j-balla-photography-F57xLufncj8-unsplash.jpg" alt="dog getting dried off" class="round">
-                <p>Mission Statement:</p>
-                <p>"Grooming is not just a service – it's an expression of love for dogs"</p>
-               <div id="callus"><p>Call Us Today to Make an Appointment</p></div>
-                <p class="tel-link"><a href="tel:6014023709">(601) 402-3709</a></p> 
-                <p>                                                   </p>
-            
+
+            <div class="grid">
+
+                <figure class="frame">
+                    <a href="services.html">
+                        <img src="images/j-balla-photography-F57xLufncj8-unsplash.jpg" alt="dog getting dried off" class="fram-pic">
+                    </a>
+                    <figcaption class="pic-text">Services</figcaption>
+                </figure>
+
+                <figure class="frame">
+                    <a href="bookings.html">
+                        <img src="images/images/dog-bath.jpg" alt="dog getting a bath" class="fram-pic">
+                    </a>
+                    <figcaption class="pic-text">Book An Appointment</figcaption>
+                </figure>
+
+                <figure class="frame">
+                    <a href="FAQ.html">
+                        <img src="images/images/dog-nail-trim.jpg" alt="dog getting nails trimmed" class="fram-pic">
+                    </a>
+                    <figcaption class="pic-text">Frequently Asked Questions</figcaption>
+                </figure>
             </div>
-        </div>
-    </main>
+        </main>
 
-    <div id="foot">
-
+        <!-- Use the footer area to add webpage footer content-->
+        <footer>
+            <br>
+            <p>&copy; Copyright 2024. All Rights Reserved.</p>
+            <p><a href="mailto:thepoochparlor@grooming.net">thepoochparlor@grooming.net</a></p>
+        </footer>
 
     </div>
-
-    <!-- Use the footer area to add webpage footer content-->
-    <footer>
-        <br>
-        <p>&copy; Copyright 2024. All Rights Reserved.</p>
-        <p><a href="mailto:thepoochparlor@grooming.net">thepoochparlor@grooming.net</a></p>
-    </footer>
-
-     
 </body>
 </html>
