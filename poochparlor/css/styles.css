@@ -262,7 +262,7 @@ article:nth-of-type(2){
 
 /* Style rules for footer content */
 
- /* footer {
+  footer {
     
     text-align: center;
     color: #432818;
@@ -283,20 +283,8 @@ footer p {
 footer p a {
     color: #432818;
     text-decoration: none;
-}  */
+}  
 
-
-footer p {
-    font-size: 0.75em;
-    text-align: center;
-    color: #fff;
-    padding: 0 1em;
-}
-
-footer p a {
-    color: #fff;
-    text-decoration: none;
-}
 
 
 /* Media Query for Tablet Viewport*/
