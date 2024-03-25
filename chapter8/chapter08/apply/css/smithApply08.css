@@ -1,0 +1,67 @@
+/*
+Author:Carleigh Smith
+Date:3/25/2024
+File Name: smithApply08.css
+*/
+
+/* CSS Reset */
+body, main, footer, table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body */
+body {
+	background-color: #f4f9e1;
+}
+
+/* Style rule for the container */
+#container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* Style for the footer element */
+footer {
+	font-size: .70em;
+	text-align: center;
+}
+
+/* Style rule for the table element*/
+table {
+	width: 80%;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid #71881b;
+}
+
+/* Style rule for table, tr, th, and td selectors*/
+table, tr, th, td{
+	border: 1px solid #000; /*collapse border idk*/
+	padding: 2%;
+}
+
+/* Style rule for the caption element*/
+caption {
+	font-size: 2em;
+	padding: 2%;
+	margin-top: 2%;
+}
+
+/* Style rule for th and td selectors*/
+th, td {
+	border: 1px solid #7188bb;
+}
+
+/* Style rule for td that center-aligns its text*/
+td {
+	text-align: center;
+}
+
+/*style rule for tr odd rows*/
+tr:nth-child(odd) {
+	background-color: #d3e788;
+}

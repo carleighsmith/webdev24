@@ -185,6 +185,40 @@ article:nth-of-type(2){
     height: 50%;
 }
 
+#form {
+    margin-top: 2%;
+    background-color: #f2f2f2;
+    padding: 2%;
+}
+
+#form h2 {
+    text-align: center;
+}
+
+/*Style rules for form elements*/
+fieldset, input, select, textarea {
+    margin-bottom: 2%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+#submit {
+    margin: 0 auto;
+    border: none;
+    display: block;
+    padding: 2%;
+    background-color: #b3b3b3;
+    font-size: 1em;
+    border-radius: 10px;
+}
 /* Style rules for footer content */
 footer p {
     font-size: 0.75em;
@@ -317,6 +351,12 @@ footer p a {
     tr:nth-child(odd) { 
         background-color: #ccc;
     }
+
+    /*Tablet Viewport: Style rule for form element*/
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
     
 } /*end media for min-width 630px*/
 
@@ -328,6 +368,7 @@ footer p a {
         width: 25%;
         float: left;
         padding-bottom: 0;
+        height: 1%; /*check prestons css*/
     }
 
      /* Desktop Viewport: Style rules for nav area */ 
@@ -389,6 +430,21 @@ footer p a {
 
     #exercises {
         clear: left;
+    }
+
+    /*Desktop Viewport: Style rules for form elements*/
+    form {
+        width: auto;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+    }
+
+    .btn {
+        grid-column: 1 / span 3;
     }
 }/* media query closing brace for desktop viewport */
 
