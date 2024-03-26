@@ -19,6 +19,33 @@ body {
 /* Style rules for form elements */
 
 
+/* Style rule for the fieldset and input elements*/
+fieldset, input {
+	margin-bottom: 2%;
+}
+
+/* Style rule for the fieldset legend*/
+fieldset legend {
+	font-size: 1.25em;
+	font: bold;
+}
+
+/* Style rule for the btn class selector*/
+.btn {
+	border: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding: 5%;
+	background-color: #003399;
+	font-size: 1.25em;
+	border-radius: 10px;
+	border-color: #fff;
+}
+
+
 /* Style for the footer element */
 footer {
 	font-size: .9em;
@@ -28,5 +55,23 @@ footer {
 /* Media query for tablet layout */ 
 @media only screen and (min-width: 600px) {
 
+	form {
+		width: 80%;
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: auto auto;
+		gap: 20px;
+	}
+
+	.btn {
+		grid-column: 1 / span 2;
+		padding: 3%;
+	}
     
 }

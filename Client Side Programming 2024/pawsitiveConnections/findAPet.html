@@ -1,0 +1,177 @@
+<!--Validated-->
+<!DOCTYPE html>
+   <!--
+      JavaScript 7th Edition
+      Chapter 1
+      Case Individual Project
+
+      Author: Carleigh Smith
+      Date:   01/23/2024
+
+      Filename: index.html
+   -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find A Pet</title>
+    <link rel="stylesheet" href="../individual/css/styles.css">
+    <script src="../individual/calculations.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+   
+    
+</head>
+<body>
+
+  <div id="container">
+      <!-- Use the header area for the website name or logo -->
+      <header>
+        <a href="index.html"><img src="images/Pawsitive Connections.jpg" alt="logo" class="logo"/></a>
+    </header>
+    
+  
+      <!-- Use the nav area to add hyperlinks to other pages
+          within the website-->
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="findAPet.html">Find a pet!</a></li>
+              <li><a href="happyAdoptions.html">Happy Adoptions</a></li>
+              <li><a href="resources.html">Pet Resources</a></li>
+              <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+          </nav>
+
+          <!-- <article>
+            <form>
+              <fieldset>
+                <legend><span>What is your minimum price range?</span></legend>
+                <input type="number" id="min" name="min"/>
+                <label for="mininput">$</label>
+              </fieldset>
+
+              <fieldset>
+                <legend><span>What is your maximum price range?</span></legend>
+                <input type="number" id="max" name="max"/>
+                <label for="maxinput">$</label>
+              </fieldset>
+
+              <fieldset>
+                <legend><span>Gender: </span></legend>
+                <input type="radio" id="male" name ="gender" value="male"/>
+                <label for="male">Male</label>
+                <input type="radio" id="fem" name ="gender" value="fem"/>
+                <label for="fem">Female</label>
+              </fieldset>
+              
+              <fieldset>
+                <legend><span>Age preference</span></legend>
+                <input type ="radio" id="young" name="age" value="young"/>
+                <label for="young">3 weeks - 4 months</label>
+                <input type ="radio" id="med" name="age" value="med"/>
+                <label for="med">5 months - 1 year</label>
+                <input type ="radio" id="older" name="age" value="older"/>
+                <label for="older">2 years-5 years</label>
+                <input type ="radio" id="oldest" name="age" value="oldest"/>
+                <label for="oldest">6 years or older</label>
+              </fieldset>
+
+              <fieldset id="submitbutton">
+                <input type="button" id="submit" value="Submit" />
+              </fieldset>
+            </form>
+          </article> -->
+
+          <article>
+              <h2>Filter for Search</h2>
+              <form>
+                <h6>Enter wanted age, minimum price, and maximum price into the search engine to received estimated price.</h6>
+                <h6>In the future the engine will show the pets available for the price range and age entered. I will also add the gender radio buttons soon.</h6>
+                <h5>Press Submit to Recieve Pictures and Info of Pets In Your Range</h5>
+                <fieldset id="ageinfo">
+                  <label for="ageinput">
+                    Age of Animal
+                    <input type="text" id="age" name="age" />
+                  </label>
+                  <label for="mininput">
+                    Minimum Price
+                    <input type="text" id="min" name="min" />
+                  </label>
+                  <label for="maxinput">
+                    Maximum Price
+                    <input type="text" id="max" name="max" />
+                  </label>
+                </fieldset>
+                <fieldset id="submitbutton">
+                  <input type="button" id="submit" value="Submit" />
+                </fieldset>
+            </form>
+          </article>
+
+          <article>
+            <div class="row">
+              <div class="column">
+                <div id="gallerya"></div>
+              </div>
+              <div class="column">
+                <div id="galleryb"></div>
+              </div>
+              <div class="column">
+                <div id="galleryc"></div>
+              </div>
+              <div class="column">
+                <div id="galleryd"></div>
+              </div>
+              <div class="column">
+                <div id="gallerye"></div>
+              </div>
+              <div class="column">
+                <div id="galleryf"></div>
+              </div>
+              <div class="column">
+                <div id="galleryg"></div>
+              </div>
+              <div class="column">
+                <div id="galleryh"></div>
+              </div>
+              <div class="column">
+                <div id="galleryi"></div>
+              </div>
+              <div class="column">
+                <div id="galleryj"></div>
+              </div>
+              <div class="column">
+                <div id="galleryk"></div>
+              </div>
+              <div class="column">
+                <div id="galleryl"></div>
+              </div>
+              <div class="column">
+                <div id="gallerym"></div>
+              </div>
+              <div class="column">
+                <div id="galleryn"></div>
+              </div>
+              <div class="column">
+                <div id="galleryo"></div>
+              </div>
+            </div>
+        </article>
+      <!-- Use the main area to add the main content of the webpage-->
+      <main>
+        <p>The debugging tools I used from this chapter includes tracing errors with window.alerts and adding and removing break points to my code in browser.</p>
+        <p>In this chapter on debugging, I used two primary methods to trace my errors. Firstly, I employed window.alerts to trace my errors. By strategically placing these window alert statements, I was able to trigger pop-up messages at specific points during the runtime of my code. This identifies potential errors.</p>  
+        <p>Secondly, I utilized breakpoints within my browser's developer tools. By adding breakpoints at critical points in my code, the runtime is paused at the points and examined. This identifies unexpected behaviors.</p>
+      
+      </div>
+      </main>
+
+      <!-- Use the footer area to add webpage footer content-->
+      <footer>
+        <p>&copy; Copyright 2024. All Rights Reserved.</p>
+        <p><a href="pawsitive.connects@gmail.comt">pawsitive.connects@gmail.com</a></p>
+    </footer>
+  </div>
+</body>
+</html>

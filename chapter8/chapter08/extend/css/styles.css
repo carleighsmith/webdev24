@@ -1,0 +1,34 @@
+body{
+    background-color: #ffe5dc; /* used to set background color */
+    font-family: sans-serif; /* used to set font family */
+}
+h2{
+    text-align: center;
+    color:#a22c02;
+}
+
+table{
+    width:700px;
+    margin: auto;
+    /* border-collapse:collapse;   /* use this to set the table borders collapsed into a single border */
+    border: 4px solid #fd4d0c;
+    box-shadow:10px 10px 5px #792101; /* used for box shadow */
+    
+}
+
+
+table tr td{
+    border:1px solid #a22c02;
+}
+tr:nth-child(odd) {
+    background-color: #fe9772; /* used to set background color of odd rows */
+}
+
+table thead th{
+    background-color: sienna;
+    border:1px solid #a22c02;
+    color:white;
+}
+table th ,td {
+    padding:8px;
+}

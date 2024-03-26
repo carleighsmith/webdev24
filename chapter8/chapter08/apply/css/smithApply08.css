@@ -40,7 +40,7 @@ table {
 
 /* Style rule for table, tr, th, and td selectors*/
 table, tr, th, td{
-	border: 1px solid #000; /*collapse border idk*/
+	border: collapse; /*collapse border idk*/
 	padding: 2%;
 }
 

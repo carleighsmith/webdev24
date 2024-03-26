@@ -4,8 +4,8 @@
       Chapter case
 
       Order Form Code
-      Author: 
-      Date:   
+      Author: Carleigh Smith
+      Date:   3/26/2024 
 
       Filename: js06b.js
  */
