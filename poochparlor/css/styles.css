@@ -1,4 +1,4 @@
-/*Validated 3/21/2024*/
+/*Validated 3/27/2024*/
 /*Carleigh Smith
 02/7/2024
 styles.css*/
@@ -40,6 +40,7 @@ header {
 
 .logo {
     border-radius: 50%;
+    margin-top: 5%;
     border: 8px solid #d4a373 ;
     max-width: 70%;
 }
@@ -98,37 +99,7 @@ nav li a { /*Change color of nav*/
     display: none;
 }
 
-/* .faq {
-    text-align: center;
-    font-size: 1.5em;
-} */
 
-/* Sets the basic align and font styles for the div about us*/ 
- /* #aboutUs {
-   font-size: 24px;
-   text-align: center;
-   padding-left: 5%;
-   padding-right: 5%;
-   padding-top: 5%;
-   overflow: auto;
-   
-   
-}
-#callus {
-    text-align: center;
-} */
-
-/* Sets the basic align and font styles for the div services*/
-/* #services {
-    font-size: 22px;
-    text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 2em;
-
-}
-
-}  */
 
 /* Style rules for main content */
 main {
@@ -137,10 +108,6 @@ main {
     font-size: 1.15em;
     font-family: "Noto Serif", serif;
 }
-
-/*Sets the basic align and font styles for the div homepage*/
-
-
 
 .mobile h3 {
     text-shadow: 5px 5px 8px #ccc;
@@ -183,8 +150,6 @@ article:nth-of-type(2){
     font-size: 1.5em;
     display: block;
 }
-
-
 
 
 /*Style rules for .pph content*/
@@ -260,9 +225,48 @@ article:nth-of-type(2){
     height: 50%;
 }
 
+/*Style rule for form*/
+#form {
+    margin-top: 2%;
+    background-color: #fff;
+    padding: 2%;
+    margin-left: 25%;
+    margin-right:25%;
+    width: 50%;
+   
+}
+#form h2 {
+    text-align: center;
+}
+
+/*Style rules for form elements*/
+fieldset, input, select, textarea {
+    margin-bottom: 2%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+#submit {
+    margin: 0 auto;
+    border: none;
+    display: block;
+    padding: 2%;
+    background-color: #DCDDC5;
+    font-size: 1em;
+    border-radius: 10px;
+}
+
 /* Style rules for footer content */
 
-  footer {
+footer {
     
     text-align: center;
     color: #432818;
@@ -438,7 +442,49 @@ footer p a {
         height: 450px;
     }
 
-    /* Tablet Viewport: Style rules for footer content area */ 
+    /* Tablet Viewport: Style rules for table */
+    table {
+        border: 4px solid #bc8247;
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 60%;
+        margin-bottom: 3%;
+        width: 100%;
+    }
+
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1%;
+    }
+
+    th, td {
+        border: 1px solid #bc8247;
+        margin: 0 auto;
+        padding: 2%;
+        text-align: center;
+    }
+
+    th {
+        background-color: #bc8247;
+        color: #ebc69b;
+        font-size: 1em;
+    }
+    
+    tr:nth-child(odd) { 
+        background-color: #ebc69b;
+    }
+
+    tr:nth-child(even) { 
+        background-color: #ebd9c4;
+    }
+
+    /*Tablet Viewport: Style rule for form element*/
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
+    
 
 
 }/*end media for min-width 630px*
@@ -659,7 +705,20 @@ footer p a {
 
     }
 
+    /*Desktop Viewport: Style rules for form elements*/
+    form {
+        width: auto;
+    }
 
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+    }
+
+    .btn {
+        grid-column: 1 / span 3;
+    }
 
     /* Desktop Viewport: Style rules for contact area */ 
     #contact {
@@ -697,7 +756,7 @@ footer p a {
         border-radius: 20%;
     }
     
-
+   
 
 }/* media query closing brace for desktop viewport */
 
@@ -706,6 +765,10 @@ footer p a {
         #container {
             width: 1920px;
             margin: 0 auto;
+        }
+        /*table style in large desktop viewport*/
+        table {
+            width: 80%;
         }
  }
  /*media query closing brace for large desktop viewport */

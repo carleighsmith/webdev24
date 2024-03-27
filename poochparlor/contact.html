@@ -1,4 +1,4 @@
-<!--Validated 3/21/2024-->
+<!--Validated 3/27/2024-->
 
 <!DOCTYPE html>
 <!--
@@ -62,6 +62,73 @@
                 <!--Fix map link-->
                 <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13633.697030082445!2d-89.37144319999999!3d31.319654399999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889cdf02d469f58b%3A0x3b742c56a4319bc2!2sAffinity%20Retreat!5e0!3m2!1sen!2sus!4v1706752421200!5m2!1sen!2sus"
             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe></p>
+            </div>
+
+            <div id="form">
+
+                <h2>Complete the form below to subscribe to our updates and emails! </h2>
+                <form class="form-grid"> <!-- Start Form -->
+                    <fieldset>
+                        <legend>Subscription Information</legend>
+                        <label for="fName">First Name:</label>
+                        <input type="text" name="fName" id="fName" required>
+                   
+                        <label for="lName">Last Name:</label>
+                        <input type="text" name="lName" id="lName" required>
+                    
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" id="phone" required>
+                    </fieldset>
+
+                    <div id="appointmentForm">
+                        <fieldset>
+                            <legend>Sign Up to Make Appointment</legend>
+    
+                            <label for="ofName">Owner's First Name:</label>
+                            <input type="text" name="ofName" id="ofName" required>
+                       
+                            <label for="olName">Owner's Last Name:</label>
+                            <input type="text" name="olName" id="olName" required>
+                        
+                            <label for="oemail">Email:</label>
+                            <input type="email" name="oemail" id="oemail" required>
+    
+                            <label for="ophone">Phone:</label>
+                            <input type="tel" name="ophone" id="ophone" required>
+                        
+                            <label for="petName">Pet's Name:</label>
+                            <input type="text" name="petName" id="petName" required>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <legend>Pet's Gender:</legend>
+                            <input type="radio" id="female" name="petGender" value="Female"><label for="female">Female</label><br>
+                            <input type="radio" id="male" name="petGender" value="Male"><label for="male">Male</label>
+                        </fieldset>
+                            
+                        <fieldset>
+                            <legend>Services</legend>
+                            <!--add check marks-->
+                            <input type="checkbox" id="bathandshampoo" value="Bathing and Shampooing" name="service"><label for="bathandshampoo">Bathing and Shampooing: $25</label><br>
+                            <input type="checkbox" id="haircutandstyle" value="Haircut and Styling" name="service"><label for="haircutandstyle">Haircut and Styling: $40</label><br>
+                            <input type="checkbox" id="nailtrimming" value="Nail Trimming" name="service"><label for="nailtrimming">Nail Trimming: $15</label><br>
+                            <input type="checkbox" id="earcleaning" value="Ear Cleaning" name="service"><label for="earcleaning">Ear Cleaning: $10</label><br>
+                            <input type="checkbox" id="teethcleaning" value="Teeth Cleaning" name="service"><label for="teethcleaning">Teeth Cleaning: $20</label><br>
+                            <input type="checkbox" id="desheding" value="De-Shedding" name="service"><label for="desheding">De-shedding: $30</label><br>
+                            <input type="checkbox" id="treatment" value="Flea and Tick Treatment" name="service"><label for="treatment">Flea and Tick Treatment: $25</label><br>
+                            <input type="checkbox" id="conditioning" value="Skin and Coat Conditioning" name="service"><label for="conditioning">Skin and Coat Conditioning: $20</label><br>
+                            <input type="checkbox" id="specialtyservice" value="Specialty Services" name="service"><label for="specialtyservice">Specialty Services: Prices vary, please inquire for details.</label><br>
+    
+                        </fieldset>
+                    </div>
+                    <input type="submit" id="submit" value="Submit" class="btn">
+
+                </form>
+
+
             </div>
         </main>
 
