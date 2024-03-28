@@ -14,7 +14,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find A Pet</title>
+    <title>Pawsitive Connections: Find A Pet</title>
     <link rel="stylesheet" href="../individual/css/styles.css">
     <script src="../individual/calculations.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
@@ -41,69 +41,93 @@
             <li><a href="resources.html">Pet Resources</a></li>
             <li><a href="webSec.html">Web Security Information</a></li>
             <li><a href="contactUs.html">Contact Us</a></li>
+            <li><a href="signUp.html">Sign Up</a></li>
             </ul>
         </nav>
 
-          <!-- <article>
-            <form>
-              <fieldset>
-                <legend><span>What is your minimum price range?</span></legend>
-                <input type="number" id="min" name="min"/>
-                <label for="mininput">$</label>
-              </fieldset>
+       
+      <!-- Use the main area to add the main content of the webpage-->
+      <main>
 
-              <fieldset>
-                <legend><span>What is your maximum price range?</span></legend>
-                <input type="number" id="max" name="max"/>
-                <label for="maxinput">$</label>
-              </fieldset>
 
-              <fieldset>
-                <legend><span>Gender: </span></legend>
-                <input type="radio" id="male" name ="gender" value="male"/>
-                <label for="male">Male</label>
-                <input type="radio" id="fem" name ="gender" value="fem"/>
-                <label for="fem">Female</label>
-              </fieldset>
-              
-              <fieldset>
-                <legend><span>Age preference</span></legend>
-                <input type ="radio" id="young" name="age" value="young"/>
-                <label for="young">3 weeks - 4 months</label>
-                <input type ="radio" id="med" name="age" value="med"/>
-                <label for="med">5 months - 1 year</label>
-                <input type ="radio" id="older" name="age" value="older"/>
-                <label for="older">2 years-5 years</label>
-                <input type ="radio" id="oldest" name="age" value="oldest"/>
-                <label for="oldest">6 years or older</label>
-              </fieldset>
-
-              <fieldset id="submitbutton">
-                <input type="button" id="submit" value="Submit" />
-              </fieldset>
-            </form>
-          </article> -->
-
+           
+        
           <article>
               <h2>Filter for Search</h2>
-              <form>
-                <h6>Enter wanted age, minimum price, and maximum price into the search engine to received estimated price.</h6>
+              <h6>Enter wanted age, minimum price, and maximum price into the search engine to received estimated price.</h6>
                 <h6>In the future the engine will show the pets available for the price range and age entered. I will also add the gender radio buttons soon.</h6>
                 <h5>Press Submit to Recieve Pictures and Info of Pets In Your Range</h5>
-                <fieldset id="ageinfo">
-                  <label for="ageinput">
-                    Age of Animal
-                    <input type="text" id="age" name="age" />
+              <form>
+                <fieldset id="petInfo">
+                  <legend>Pet Filter</legend>
+                 
+                  <label for="species">
+                    Species:
                   </label>
+                  <input type="radio" id="species" name="species" value="Cat"/> <label for="Cat">Cat</label>
+                  <input type="radio" id="species" name="species" value="Dog"/> <label for="Dog">Dog</label>
+                  <input type="radio" id="species" name="species" value="Etc"/> <label for="Etc">Etc</label>
+
+
+                  <br>
+                 
+                  <label for="ageinput">
+                    Age of Animal:
+                    <select name="ageinput" id="ageinput">
+                      <option value="NA">No Specific Age</option>
+                      <option value="2 - 4 Months">2 - 4 Months</option>
+                      <option value="5 - 8 Months">5 - 8 Months</option>
+                      <option value="9 - 11 Months">9 - 11 Months</option>
+                      <option value="1 Years">1 Year</option>
+                      <option value="1 Years">2 Years</option>
+                      <option value="1 Years">3 Years</option>
+                      <option value="1 Years">4 Years</option>
+                      <option value="1 Years">5 Years</option>
+                      <option value="1 Years">6 Years</option>
+                      <option value="1 Years">7 Years</option>
+                      <option value="1 Years">8 Years</option>
+                      <option value="1 Years">9 Years</option>
+                      <option value="10 Years or Older">10 Years or Older</option>
+                    </select>
+                  </label>
+
+                  <br>
+
+
+                  <label for="gender">
+                    Gender:
+                  </label>
+                  <input type="radio" id="female" name="gender" value="female" /> <label for="female">Female</label>
+                  <input type="radio" id="male" name="gender" value="male" /> <label for="male">Male</label>
+
+                  <br>
+
+                  <label for="size">
+                    Size:
+                  </label>
+                  <input type="radio" id="small" name="size" value="small" /> <label for="small">Small(0-25lbs)</label>
+                  <input type="radio" id="medium" name="size" value="medium" /> <label for="medium">Medium(26-60lbs)</label>
+                  <input type="radio" id="large" name="size" value="large" /> <label for="large">Large(61-100lbs)</label>
+                  <input type="radio" id="XL" name="size" value="XL" /> <label for="XL">Extra-Large(101lbs or more)</label>
+
+                  <!--Add Breed, Location, more-->
+                </fieldset>
+                <fieldset id="priceRange">
+                  <legend>Price Filter</legend>
                   <label for="mininput">
-                    Minimum Price
+                    Minimum Price $
                     <input type="text" id="min" name="min" />
                   </label>
+                  <br>
                   <label for="maxinput">
-                    Maximum Price
+                    Maximum Price $
                     <input type="text" id="max" name="max" />
                   </label>
                 </fieldset>
+                
+                  
+                </fieldset>
+                
                 <fieldset id="submitbutton">
                   <input type="button" id="submit" value="Submit" />
                 </fieldset>
@@ -159,8 +183,16 @@
               </div>
             </div>
         </article>
-      <!-- Use the main area to add the main content of the webpage-->
-      <main>
+
+
+
+
+
+
+
+
+
+
         <p>The debugging tools I used from this chapter includes tracing errors with window.alerts and adding and removing break points to my code in browser.</p>
         <p>In this chapter on debugging, I used two primary methods to trace my errors. Firstly, I employed window.alerts to trace my errors. By strategically placing these window alert statements, I was able to trigger pop-up messages at specific points during the runtime of my code. This identifies potential errors.</p>  
         <p>Secondly, I utilized breakpoints within my browser's developer tools. By adding breakpoints at critical points in my code, the runtime is paused at the points and examined. This identifies unexpected behaviors.</p>

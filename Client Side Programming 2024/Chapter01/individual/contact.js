@@ -10,17 +10,59 @@
  */
 
       
-function verifyForm() {
-    // Get the values of the input fields
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let phone = document.getElementById("phone").value;
+let submit = document.getElementById("submit");
 
-    // Check if all fields are filled out
-    (name) && (email) && (phone)
-    ? window.alert("Thank you!") :
-    window.alert("Please fill in all fields");
+submit.addEventListener("click",validateFN);
+submit.addEventListener("click",validateLN);
+submit.addEventListener("click",validateEmail);
+submit.addEventListener("click",validatePhone);
 
+
+function validateFN() {
+    let fN = document.getElementById("fName");
+    if (fN.validity.valueMissing) {
+        fN.setCustomValidity("Please enter your first name.");
+    } else {
+        fN.setCustomValidity("");
+    }
 }
-// Attach an event listener to the "Submit" button
-document.getElementById("submit").addEventListener("click", verifyForm);
+
+function validateLN() {
+    let lN = document.getElementById("lName");
+    if (lN.validity.valueMissing) {
+        lN.setCustomValidity("Please enter your last name.");
+    } else {
+        lN.setCustomValidity("");
+    }
+}
+function validateEmail() {
+    let email = document.getElementById("email");
+    if (email.validity.valueMissing) {
+        email.setCustomValidity("Please enter your email.");
+    } else {
+        email.setCustomValidity("");
+    }
+}
+function validatePhone() {
+    let phone = document.getElementById("phone");
+    if (phone.validity.valueMissing) {
+        phone.setCustomValidity("Please enter your phone number.");
+    } else {
+        phone.setCustomValidity("");
+    }
+}
+
+// function verifyForm() {
+//     // Get the values of the input fields
+//     let name = document.getElementById("name").value;
+//     let email = document.getElementById("email").value;
+//     let phone = document.getElementById("phone").value;
+
+//     // Check if all fields are filled out
+//     (name) && (email) && (phone)
+//     ? window.alert("Thank you!") :
+//     window.alert("Please fill in all fields");
+
+// }
+// // Attach an event listener to the "Submit" button
+// document.getElementById("submit").addEventListener("click", verifyForm);

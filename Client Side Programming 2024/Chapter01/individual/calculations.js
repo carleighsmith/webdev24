@@ -1,4 +1,4 @@
-
+"use strict";
 /*    JavaScript 7th Edition
       Chapter 2
       Case Project
@@ -9,46 +9,73 @@
 
       Filename: calculations.js
  */
+
+
 function verifyForm() {
     // Get the values of the input fields
-    let age = document.getElementById("age").value;
-    let min = document.getElementById("min").value;
+    let age = document.getElementById("ageinput").value;
+    let min = parseFloat(document.getElementById("min").value);
     let max = document.getElementById("max").value;
+    let species = document.querySelector('input[name="species"]:checked');
+    let gender = document.querySelector('input[name="gender"]:checked');
+    let size = document.querySelector('input[name="size"]:checked');
+       
 
-    // Check if all fields are filled out
-    let estimate = 0;
-    let average = 0;
 
     try {
-        if ((age) && (min) && (max))
-        {
-            if (age<=0 || min <=0 || max <= 0 || max <= min)
-            {
-                window.alert("Make sure every field entry is a number over 0, make sure the Maximum balance is more than the minimum, and make sure only numbers are entered.")
-            }else
-            {
-                if (age < 5){
-                    estimate += 50;
-            
-                    average = max-min;
-                    estimate += average
-                    estimate = Math.round(estimate) 
-                    window.alert("Your estimated total is $"+ estimate)
-                    addPetPhotos();
-                } else 
-                {window.alert("Please fill in all fields");}
-            }      
+        if (!age || !min || !max || !species || !gender || !size) {
+            window.alert("Please fill in all fields.");
+            return;
         }
-        else {
-            window.alert("Please fill in all fields");
-        
+    
+        // Check if age, min, and max are valid numbers
+        if (isNaN(min) || isNaN(max)) {
+            window.alert("Please enter valid numbers for minimum price, and maximum price.");
+            return;
         }
+    
+        // Convert values to numbers
+        age = parseFloat(age);
+        min = parseFloat(min);
+        max = parseFloat(max);
+    
+        // Check if age, min, and max are positive numbers
+        if (min <= 0 || max <= 0) {
+            window.alert("Please make sure every field entry is a number over 0.");
+            return;
+        }
+    
+        // Check if max is greater than min
+        if (max <= min) {
+            window.alert("Please make sure the maximum price is greater than the minimum price.");
+            return;
+        }
+    
+        // Perform additional validations if needed
+    
+        // If all validations pass, calculate and display estimated price
+        let estimate = calculateEstimatedPrice(min, max);
+        window.alert("Your estimated total is $" + estimate.toFixed(2));
+        addPetPhotos();
+    
     } catch (err)
     {
         window.alert(err)
     }
-
 }
+
+    // Function to calculate estimated price
+function calculateEstimatedPrice( min, max) {
+    let estimate = 0.6;
+   
+    
+    let average = max - (estimate * min);
+   
+    
+    return average;
+}
+
+
 
 
 // Attach an event listener to the "Submit" button
