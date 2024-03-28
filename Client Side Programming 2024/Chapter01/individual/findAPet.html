@@ -1,4 +1,5 @@
-<!--Validated-->
+<!--Validated 3/28/2024-->
+
 <!DOCTYPE html>
    <!--
       JavaScript 7th Edition
@@ -27,8 +28,8 @@
   <div id="container">
       <!-- Use the header area for the website name or logo -->
       <header>
-        <a href="index.html"><img src="images/Pawsitive Connections.jpg" alt="logo" class="logo"/></a>
-    </header>
+        <a href="index.html"><img src="images/PawsitiveConnections.jpg" alt="logo" class="logo"></a>
+      </header>
     
   
       <!-- Use the nav area to add hyperlinks to other pages
@@ -61,12 +62,12 @@
                 <fieldset id="petInfo">
                   <legend>Pet Filter</legend>
                  
-                  <label for="species">
+                  <h4 for="species">
                     Species:
-                  </label>
-                  <input type="radio" id="species" name="species" value="Cat"/> <label for="Cat">Cat</label>
-                  <input type="radio" id="species" name="species" value="Dog"/> <label for="Dog">Dog</label>
-                  <input type="radio" id="species" name="species" value="Etc"/> <label for="Etc">Etc</label>
+                  </h4>
+                  <label for="Cat">Cat</label><input type="radio" id="Cat" name="species" value="Cat"> 
+                  <label for="Dog">Dog</label><input type="radio" id="Dog" name="species" value="Dog"> 
+                  <label for="Etc">Etc</label><input type="radio" id="Etc" name="species" value="Etc"> 
 
 
                   <br>
@@ -94,47 +95,46 @@
                   <br>
 
 
-                  <label for="gender">
+                  <h4 for="gender">
                     Gender:
-                  </label>
-                  <input type="radio" id="female" name="gender" value="female" /> <label for="female">Female</label>
-                  <input type="radio" id="male" name="gender" value="male" /> <label for="male">Male</label>
+                  </h4>
+                  <label for="female">Female</label><input type="radio" id="female" name="gender" value="female" >
+                  <label for="male">Male</label><input type="radio" id="male" name="gender" value="male" > 
 
                   <br>
 
-                  <label for="size">
+                  <h4 for="size">
                     Size:
-                  </label>
-                  <input type="radio" id="small" name="size" value="small" /> <label for="small">Small(0-25lbs)</label>
-                  <input type="radio" id="medium" name="size" value="medium" /> <label for="medium">Medium(26-60lbs)</label>
-                  <input type="radio" id="large" name="size" value="large" /> <label for="large">Large(61-100lbs)</label>
-                  <input type="radio" id="XL" name="size" value="XL" /> <label for="XL">Extra-Large(101lbs or more)</label>
+                  </h4>
+                  <label for="small">Small(0-25lbs)</label><input type="radio" id="small" name="size" value="small" > 
+                  <label for="medium">Medium(26-60lbs)</label><input type="radio" id="medium" name="size" value="medium" > 
+                  <label for="large">Large(61-100lbs)</label><input type="radio" id="large" name="size" value="large" > 
+                  <label for="XL">Extra-Large(101lbs or more)</label><input type="radio" id="XL" name="size" value="XL" > 
 
                   <!--Add Breed, Location, more-->
                 </fieldset>
                 <fieldset id="priceRange">
                   <legend>Price Filter</legend>
-                  <label for="mininput">
+                  <label for="min">
                     Minimum Price $
-                    <input type="text" id="min" name="min" />
+                    <input type="text" id="min" name="min" >
                   </label>
                   <br>
-                  <label for="maxinput">
+                  <label for="max">
                     Maximum Price $
-                    <input type="text" id="max" name="max" />
+                    <input type="text" id="max" name="max" >
                   </label>
                 </fieldset>
-                
-                  
-                </fieldset>
+     
                 
                 <fieldset id="submitbutton">
-                  <input type="button" id="submit" value="Submit" />
+                  <input type="button" id="submit" value="Submit" >
                 </fieldset>
             </form>
           </article>
 
           <article>
+            <h3>Our Animals:</h3>
             <div class="row">
               <div class="column">
                 <div id="gallerya"></div>
@@ -184,20 +184,11 @@
             </div>
         </article>
 
-
-
-
-
-
-
-
-
-
         <p>The debugging tools I used from this chapter includes tracing errors with window.alerts and adding and removing break points to my code in browser.</p>
         <p>In this chapter on debugging, I used two primary methods to trace my errors. Firstly, I employed window.alerts to trace my errors. By strategically placing these window alert statements, I was able to trigger pop-up messages at specific points during the runtime of my code. This identifies potential errors.</p>  
         <p>Secondly, I utilized breakpoints within my browser's developer tools. By adding breakpoints at critical points in my code, the runtime is paused at the points and examined. This identifies unexpected behaviors.</p>
       
-      </div>
+    
       </main>
 
       <!-- Use the footer area to add webpage footer content-->

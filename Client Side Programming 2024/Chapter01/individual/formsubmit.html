@@ -1,11 +1,14 @@
+<!--Validated 3/28/2024-->
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
-   <meta charset="utf-8" />
+   <meta charset="utf-8" >
    <meta name="viewport" content="width=device-width,initial-scale=1.0">
    <title>Pawsitive Connections: Your Account Information</title>
-   <link rel="stylesheet" href="css/styles.css" />
+   <link rel="stylesheet" href="css/styles.css" >
+   
    <script>
       window.addEventListener("load", function(){   
          // Retrieve the field/value pairs from the URL
@@ -21,38 +24,60 @@
          document.getElementById("pwd2").textContent = formFields[7];          
       } );   
    </script>
+
 </head>
 
 <body>
-   <header>
-      <h1>
-            Your Account
-      </h1>
-   </header>
+   <div id="container">
 
-   <section>
-      <h1>Account Information</h1>
-      <table id="account">
-         <tr>
-            <td>Username</td>
-            <td><span id="username"></span></td>
-         </tr>
-         <tr>
-            <td>Email</td>
-            <td><span id="email"></span></td>
-         </tr> 
-         <tr>
-            <td>Password</td>
-            <td><span id="pwd"></span></td>
-         </tr>
-         <tr>
-            <td>Confirm Password</td>
-            <td><span id="pwd2"></span></td>
-         </tr>             
-      </table>
-   </section>
 
-   <h3><a href="index.html">Go back home</a></h3>
+      <!-- Use the header area for the website name or logo -->
+        <header>
+            <a href="index.html"><img src="images/PawsitiveConnections.jpg" alt="logo" class="logo"></a>
+        </header>
+        
+        <!-- Use the nav area to add hyperlinks to other pages
+            within the website-->
+            <nav>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="findAPet.html">Find a pet!</a></li>
+                <li><a href="happyAdoptions.html">Happy Adoptions</a></li>
+                <li><a href="resources.html">Pet Resources</a></li>
+                <li><a href="webSec.html">Web Security Information</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+         <main>
+            <section>
+               <h1>Account Information</h1>
+               <table id="account">
+                  <tr>
+                     <td>Username</td>
+                     <td><span id="username"></span></td>
+                  </tr>
+                  <tr>
+                     <td>Email</td>
+                     <td><span id="email"></span></td>
+                  </tr> 
+                  <tr>
+                     <td>Password</td>
+                     <td><span id="pwd"></span></td>
+                  </tr>
+                  <tr>
+                     <td>Confirm Password</td>
+                     <td><span id="pwd2"></span></td>
+                  </tr>             
+               </table>
+            </section>
+      
+            <h3><a href="index.html">Go back home</a></h3>
+         </main>
 
+         <footer>
+            <p>&copy; Copyright 2024. All Rights Reserved.</p>
+            <p><a href="pawsitive.connects@gmail.comt">pawsitive.connects@gmail.com</a></p>
+        </footer>
+   </div>
 </body>
 </html>
