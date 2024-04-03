@@ -9,10 +9,11 @@
 /*a CSS reset style rule that sets the margin, padding, and
 borders to zero for the following selectors: body, header,
 nav, main, footer, img, h1, h3.*/
-body, header, nav, main, footer, img, h1, h3, ul, aside, figure, figcaption{
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section,
+article, aside ,audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 /*Style rules for body and images*/
@@ -22,7 +23,7 @@ body {
 }
 
 /*sets a max-width to 100% and displays images as a block*/
-img {
+img, video {
     max-width: 100%;
     display: block;
 }
@@ -111,6 +112,10 @@ main h3{
 /*sets the list style type value to square.*/
 main ul{
     list-style-type: square;
+}
+
+video{
+    margin:0 auto 4%;
 }
 
 /*sets the font color to #4d3319, removes the text
