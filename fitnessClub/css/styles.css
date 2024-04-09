@@ -3,7 +3,6 @@ Author: Carleigh Smith
 Start Date: 2/19/2024
 File Name: styles.css
 */
-/*To make sure css is right, watch webdev webex March 18th 2024*/
 
 /*CSS Reset*/
 body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section,
@@ -257,7 +256,7 @@ footer p a {
      }
 
      nav li {
-        border-top: none;
+        /* border-top: none; */
         display: inline-block;
         border-right: 1px solid #fff;
         font-size: 1.5em;
@@ -322,6 +321,15 @@ footer p a {
 
     #exercises dd {
         padding: 0.5% 1% 2% 0;
+    }
+
+    .viewex {
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    #example {
+        display: none;
     }
 
     .tel-num {
@@ -400,7 +408,7 @@ footer p a {
         width: 25%;
         float: left;
         padding-bottom: 0;
-        height: 1%; /*check prestons css*/
+        height: 1%;
     }
 
      /* Desktop Viewport: Style rules for nav area */ 
@@ -464,6 +472,11 @@ footer p a {
 
     #exercises {
         clear: left;
+    }
+
+    .offer:hover {
+        transform: scale(1.25);
+        cursor: pointer;
     }
 
     /*Desktop Viewport: Style rules for form elements*/

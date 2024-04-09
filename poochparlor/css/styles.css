@@ -8,7 +8,7 @@ styles.css*/
 padding, and borders to zero for the following
 selectors: body, header, nav, main, footer, img, h1, h3.*/
 body, nav, main, footer, h1, h3, ul, div, img, figure, article, aside,
-figcaption, section{
+figcaption, section, audio, video{
     margin: 0;
     padding: 0;
     border: 0;
@@ -19,9 +19,13 @@ selector that sets a background color value of #fefae0*/
 body {
     background-color: #DCDDC5;}
 
-img {
+img, video {
     max-width: 100%;
     display: block;
+}
+
+video{
+    margin:0 auto 4%;
 }
 
 /*Style rule for box sizing applies to all elements*/

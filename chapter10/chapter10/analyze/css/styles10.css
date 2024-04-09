@@ -1,6 +1,6 @@
 /*
-    Author:
-    Date:
+    Author:Carleigh Smith
+    Date:4/8/2024
     File Name: styles.css
 */
 
@@ -54,6 +54,18 @@ main {
 	border-radius: 6px;
 	background-color: #fff;
 	border: inset 0.2em #7a6d68; 
+}
+
+#placeholder {
+	display: none;
+}
+
+figure {
+	text-align: center;
+}
+
+img {
+	padding: 1em;
 }
 
 footer {

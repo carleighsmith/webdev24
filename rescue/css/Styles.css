@@ -34,7 +34,7 @@ img, video {
 }
 
 /*Style rules to show mobile class and hide tab-desk class*/
-.tab-desk {
+.tab-desk, .desktop, #nav-links {
     display: none;
 }
 
@@ -47,6 +47,7 @@ h1, h3 {
 /*Style rule for the h1 selector within the mobile class */
 .mobile h1 {
     font-family: "Emblema One", system-ui;
+    margin: 2% 0 0 3%;
 }
 
 /*Style rule for the h3 selector within the mobile class*/
@@ -60,35 +61,29 @@ nav {
     background-color: #2a1f14;
 }
 
-/*sets the list style type to none, sets the margin to 0,
-and aligns text center*/
-nav ul {
-    list-style-type: none;
+
+.mobile-nav a {
+    color: #fff;
     text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
 }
 
-/*sets the display to an inline-block, sets a font size of
-1.5em, sets a font family value of Geneva, Arial, sans-serif,
-and sets a font weight value of bold*/
-nav li {
-    display: block;
-    font-size: 1.5em;
-    font-family: Geneva, Arial, Sans-Serif;
-    font-weight: bold;   
-    border-top: 0.5px #f6eee4; 
-}
-
-/*sets the display to a block, sets a font color value
-of #f6eee4, sets top and bottom padding values of 0.5em
-and left and right padding values of 2em, and removes the text decoration*/
-nav li a {
-    display: block;
+.mobile-nav a.nav-icon {
+    display:block;
+    position: absolute;
+    left: 0;
+    top: 0;
     color: #f6eee4;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 2em;
-    padding-right: 2em;
-    /* text-decoration: none; */
+    padding: 2%;
+}
+
+.nav-icon div {
+    height: 40px;
+    width: 40px;
+    color: #2a1f14;
 }
 
 /*Style rules for main content*/
@@ -188,6 +183,21 @@ figcaption {
     font-weight: bold;
 }
 
+#questions p {
+    cursor: pointer;
+}
+
+#answer {
+    text-align: center;
+    font-weight: bold;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#answer h2 {
+    display: none;
+}
+
 
 /*Style rules for form elements*/
 fieldset,input,textarea {
@@ -247,7 +257,7 @@ footer a {
         display: block;
     }
 
-    .mobile {
+    .mobile, .mobile-nav {
         display: none;
     }
     /*Tablet Viewport: Style rules for nav area*/
@@ -259,10 +269,21 @@ footer a {
         border-top: none;
         display: inline-block;
         font-size: 1.25em;
+        font-family: Geneva, Arial, Sans-Serif;
+        font-weight: bold; 
     }
 
     nav li a {
         padding: 0.5em;
+        display: block;
+        color: #f6eee4;
+    }
+
+    /*sets the list style type to none, sets the margin to 0,
+    and aligns text center*/
+    nav ul {
+        list-style-type: none;
+        text-align: center;
     }
 
     .grid {
