@@ -28,8 +28,29 @@ let cardsLeft = document.getElementById("cardsLeft");
 let deck = [];
 
 document.getElementById("deal").onclick = function() {   
-   
+      //to generate a new shuffled array of poker cards
+      function newDeck() {
+            deck = deckStr.split(","); // Split the deckStr at each occurrence of ","
+            deck.sort(shuffle); // Sort the contents of the deck array
+      }
 
-}
+      for (let i = 0; i < cards.length; i++) { //for loop that iterates through the contents of the cards node list
+            if (deck.length === 0) { //f the length of the deck array is 0
+                
+                newDeck(); //call the newDeck() function
+            }
 
+            let card = deck.pop(); //remove the last item from the deck array 
+            cards[i].textContent = card; //tore the popped item as the text content of the current item in the cards node list
+
+            //Change the value of the text content of the cardsLeft object to the value of the length of the deck array
+            cardsLeft.textContent = deck.length;
+      }
+
+      //shuffle() function with 2 parameters named a and b
+      function shuffle(a,b) {
+            return 0.5 - Math.random(); //Return the value of 0.5 minus a randomly-generated number created with the Math.random() method
+      }
+
+};
             
