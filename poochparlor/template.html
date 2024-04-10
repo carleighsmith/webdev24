@@ -19,6 +19,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-touch-icon.png">
     <link rel="icon" sizes="192x192" href="images/fav/android-chrome-192.png">
+    <script src="scripts/scripts.js" defer></script>
 </head>
 <body>
 
@@ -29,16 +30,21 @@
 
       <!-- Use the nav area to add hyperlinks to other pages
          within the website-->
-         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html"> Services</a></li>
-                <li><a href="bookings.html">Bookings</a></li>
-                <li><a href="FAQs.html"> FAQs</a></li>
-                <li><a href="about.html"> About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
+         <nav class="mobile-nav">
+            <div id="menu-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html"> Services</a></li>
+                    <li><a href="bookings.html">Bookings</a></li>
+                    <li><a href="FAQs.html"> FAQs</a></li>
+                    <li><a href="about.html"> About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
 
-            </ul>
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
         </nav>
 
         <div id="hero" class="tablet-desktop">

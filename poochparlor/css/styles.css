@@ -24,10 +24,6 @@ img, video {
     display: block;
 }
 
-video{
-    margin:0 auto 4%;
-}
-
 /*Style rule for box sizing applies to all elements*/
 * {
     box-sizing: border-box;
@@ -60,38 +56,23 @@ header img {
     margin: 0px;
 }
 
-/*Style rules for navigation area*/
-/*Create a style rule for the nav selector that
-sets the background color to #1d396d.*/
-nav {
-    padding: 1%;
-    margin-bottom: 1%;
+/*Style rules for hamburger menu*/
 
-}
-
-nav ul {
-    list-style-type: none;
+.mobile-nav a {
+    color: #120d07; /*change color*/
+    font-family: 'Francois On', sans-serif;
     text-align: center;
-}
-
-nav li {
-    font-size: 1.5em;
-    font-family: "Nunito", sans-serif;
-    font-weight: bold;
-    border-top: 1px solid #fff;
-   
-}
-
-nav li:first-child {
-    border-top: none;
-}
-
-nav li a { /*Change color of nav*/
-    display: block;
-    color: #9f8126;
-    padding: 0.5em 1em;
+    font-size: 2em;
     text-decoration: none;
-    
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 /* Show mobile class, hide tablet-desktop class */
@@ -99,11 +80,9 @@ nav li a { /*Change color of nav*/
     display: block;
 }
 
-.tablet-desktop {
+.tablet-desktop, #menu-links {
     display: none;
 }
-
-
 
 /* Style rules for main content */
 main {
@@ -111,6 +90,10 @@ main {
     padding: 2%;
     font-size: 1.15em;
     font-family: "Noto Serif", serif;
+}
+
+video{
+    margin:0 auto 4%;
 }
 
 .mobile h3 {
@@ -156,17 +139,12 @@ article:nth-of-type(2){
 }
 
 
-/*Style rules for .pph content*/
-/* .pph {
-    margin-left: 10%;
-    text-align: left;
-} */
-
 /*Style rules for .action content*/
 .action {
     font-size: 1.35em;
     color: #d4a373;
     font-weight: bold;
+    text-shadow: 5px 5px 8px #ccc;
 }
 
 .frame {
@@ -237,7 +215,6 @@ article:nth-of-type(2){
     margin-left: 25%;
     margin-right:25%;
     width: 50%;
-   
 }
 #form h2 {
     text-align: center;
@@ -269,7 +246,6 @@ label {
 }
 
 /* Style rules for footer content */
-
 footer {
     
     text-align: center;
@@ -294,7 +270,6 @@ footer p a {
 }  
 
 
-
 /* Media Query for Tablet Viewport*/
 @media screen and (min-width: 630px),print {
 
@@ -303,7 +278,7 @@ footer p a {
         display:block;
     }
 
-    .mobile {
+    .mobile, .mobile-nav {
         display: none;
     }
 
@@ -313,22 +288,36 @@ footer p a {
         padding-bottom: 2%;
     }
 
+    /*Style rules for navigation area*/
+    nav {
+        padding: 1%;
+        margin-bottom: 1%;
+    }
 
-     /* Tablet Viewport: Style rules for nav area */
-     nav li {
-        border-top: none;
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav li {
+        font-size: 1.5em;
+        font-family: "Nunito", sans-serif;
+        font-weight: bold;
         display: inline-block;
         border-right: 1px solid #fff;
-     }
-
-
-    nav li:last-child {
-        border-right: none;
     }
 
-    nav li a {
-        padding: 0.1em 0.75em;
+    nav li:first-child {
+        border-top: none;
     }
+
+    nav li a { /*Change color of nav*/
+        display: block;
+        color: #9f8126;
+        padding: 0.5em 1em;
+        text-decoration: none;
+    }
+
 
     /* Tablet Viewport: Style rules for main content area */ 
   
@@ -434,6 +423,15 @@ footer p a {
     }
      
 
+    .viewex {
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    #example {
+        display: none;
+    }
+
     /* Tablet Viewport: Style rules for phone number */ 
 
      .tel-num {
@@ -488,8 +486,28 @@ footer p a {
         width: 70%;
         margin: 0 auto;
     }
-    
 
+    /*Tablet Viewport: Animation*/
+    @-webkit-keyframes text-animation {
+        0% { font-size: 1em; }
+        50% { font-size: 2em; }
+        100% { font-size: 1.35em; }    
+    }
+
+    @keyframes text-animation {
+        0% { font-size: 1em; }
+        50% { font-size: 2em; }
+        100% { font-size: 1.35em; }
+    }
+
+    figcaption {
+        -webkit-animation-name: text-animation;
+        animation-name: text-animation;
+        -webkit-animation-delay: 3s;
+        animation-delay: 3s;
+        -webkit-animation-duration: 5s;
+        animation-duration: 5s;
+    }
 
 }/*end media for min-width 630px*
 
@@ -497,7 +515,6 @@ footer p a {
 @media screen and (min-width: 1015px),print {
 
      /* Desktop Viewport: Style rule for header */ 
-
     header {
         width: 25%;
         float: left;
@@ -506,15 +523,14 @@ footer p a {
 
      /* Desktop Viewport: Style rules for nav area */ 
     nav {
-        float:inline-end;
+        float: right;
         width: 70%;
-        margin: 5em 5em 0 0;
+        margin: 4em 1em 0 0;
      }
 
 
     nav ul {
-        text-align:center;
-        
+        text-align: right;        
      }
 
     nav li {
@@ -528,6 +544,7 @@ footer p a {
     nav li a:hover {
         color: #2e0606;
         background-color: #e3c485;
+        transform: scale(1.3);
     }
 
     /* Desktop Viewport: Style rules for main area */ 

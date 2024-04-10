@@ -256,7 +256,6 @@ footer p a {
      }
 
      nav li {
-        /* border-top: none; */
         display: inline-block;
         border-right: 1px solid #fff;
         font-size: 1.5em;
