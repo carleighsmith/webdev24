@@ -12,18 +12,29 @@
 
 
 function verifyForm() {
-    // Get the values of the input fields
+        // Get the values of the input fields
+        /*Enhance the feedback form in your project to enable users to choose one
+        or more options from a list of at least five options. Include code that adds
+        user selections to either an array or an object and ensure that if a user deselects
+        one of the options, it is removed from the array or object. Add code to convert the array or object to a string. */
+    let speciesCheckboxes = document.querySelectorAll('input[name="species"]:checked');
+    let selectedSpecies = [];
+    speciesCheckboxes.forEach(function(checkbox) {
+        selectedSpecies.push(checkbox.value);
+    });
+    
+    // Convert selected species array to a string
+    let speciesString = selectedSpecies.join(', ');
+    
+    // Get other form field values
     let age = document.getElementById("ageinput").value;
     let min = parseFloat(document.getElementById("min").value);
-    let max = document.getElementById("max").value;
-    let species = document.querySelector('input[name="species"]:checked');
+    let max = parseFloat(document.getElementById("max").value);
     let gender = document.querySelector('input[name="gender"]:checked');
     let size = document.querySelector('input[name="size"]:checked');
-       
-
-
+    
     try {
-        if (!age || !min || !max || !species || !gender || !size) {
+        if (!age || !min || !max || !gender || !size) {
             window.alert("Please fill in all fields.");
             return;
         }
@@ -39,7 +50,7 @@ function verifyForm() {
         min = parseFloat(min);
         max = parseFloat(max);
     
-        // Check if age, min, and max are positive numbers
+         // Check if age, min, and max are positive numbers
         if (min <= 0 || max <= 0) {
             window.alert("Please make sure every field entry is a number over 0.");
             return;
@@ -49,17 +60,24 @@ function verifyForm() {
         if (max <= min) {
             window.alert("Please make sure the maximum price is greater than the minimum price.");
             return;
-        }
+         }
     
         // Perform additional validations if needed
     
         // If all validations pass, calculate and display estimated price
         let estimate = calculateEstimatedPrice(min, max);
         window.alert("Your estimated total is $" + estimate.toFixed(2));
+    
+        // Show selected species in an alert
+        if (speciesString) {
+            window.alert("Selected species: " + speciesString);
+        } else {
+            window.alert("Please select at least one species.");
+        }
+    
         addPetPhotos();
     
-    } catch (err)
-    {
+    } catch (err) {
         window.alert(err)
     }
 }
