@@ -13,6 +13,12 @@
 
       function verifyForm() {
         // Get the values of the input fields
+
+        /*Enhance the feedback form in your project to enable users to choose one or more 
+        options from a list of at least five options. Include code that adds user selections 
+        to either an array or an object and ensure that if a user deselects one of the options, 
+        it is removed from the array or object. Add code to convert the array or object to a string. */
+        
         let speciesCheckboxes = document.querySelectorAll('input[name="species"]:checked');
         let selectedSpecies = [];
         speciesCheckboxes.forEach(function(checkbox) {
