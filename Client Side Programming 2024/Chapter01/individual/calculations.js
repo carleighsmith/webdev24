@@ -11,76 +11,75 @@
  */
 
 
-function verifyForm() {
+      function verifyForm() {
         // Get the values of the input fields
-        /*Enhance the feedback form in your project to enable users to choose one
-        or more options from a list of at least five options. Include code that adds
-        user selections to either an array or an object and ensure that if a user deselects
-        one of the options, it is removed from the array or object. Add code to convert the array or object to a string. */
-    let speciesCheckboxes = document.querySelectorAll('input[name="species"]:checked');
-    let selectedSpecies = [];
-    speciesCheckboxes.forEach(function(checkbox) {
-        selectedSpecies.push(checkbox.value);
-    });
+        let speciesCheckboxes = document.querySelectorAll('input[name="species"]:checked');
+        let selectedSpecies = [];
+        speciesCheckboxes.forEach(function(checkbox) {
+            selectedSpecies.push(checkbox.value);
+        });
     
-    // Convert selected species array to a string
-    let speciesString = selectedSpecies.join(', ');
+        // Convert selected species array to a string
+        let speciesString = selectedSpecies.join(', ');
     
-    // Get other form field values
-    let age = document.getElementById("ageinput").value;
-    let min = parseFloat(document.getElementById("min").value);
-    let max = parseFloat(document.getElementById("max").value);
-    let gender = document.querySelector('input[name="gender"]:checked');
-    let size = document.querySelector('input[name="size"]:checked');
+        // Get other form field values
+        let age = document.getElementById("ageinput").value;
+        let min = parseFloat(document.getElementById("min").value);
+        let max = parseFloat(document.getElementById("max").value);
+        let gender = document.querySelector('input[name="gender"]:checked');
+        let size = document.querySelector('input[name="size"]:checked');
     
-    try {
-        if (!age || !min || !max || !gender || !size) {
-            window.alert("Please fill in all fields.");
-            return;
-        }
+        try {
+            if (!age || !min || !max || !gender || !size) {
+                window.alert("Please fill in all fields.");
+                return;
+            }
     
-        // Check if age, min, and max are valid numbers
-        if (isNaN(min) || isNaN(max)) {
-            window.alert("Please enter valid numbers for minimum price, and maximum price.");
-            return;
-        }
+            // Check if age, min, and max are valid numbers
+            if (isNaN(min) || isNaN(max)) {
+                window.alert("Please enter valid numbers for minimum price, and maximum price.");
+                return;
+            }
     
-        // Convert values to numbers
-        age = parseFloat(age);
-        min = parseFloat(min);
-        max = parseFloat(max);
+            // Convert values to numbers
+            age = parseFloat(age);
+            min = parseFloat(min);
+            max = parseFloat(max);
     
-         // Check if age, min, and max are positive numbers
-        if (min <= 0 || max <= 0) {
-            window.alert("Please make sure every field entry is a number over 0.");
-            return;
-        }
+            // Check if age, min, and max are positive numbers
+            if (min <= 0 || max <= 0) {
+                window.alert("Please make sure every field entry is a number over 0.");
+                return;
+            }
     
-        // Check if max is greater than min
-        if (max <= min) {
-            window.alert("Please make sure the maximum price is greater than the minimum price.");
-            return;
-         }
+            // Check if max is greater than min
+            if (max <= min) {
+                window.alert("Please make sure the maximum price is greater than the minimum price.");
+                return;
+            }
     
-        // Perform additional validations if needed
+            // If no species are selected, show alert and return
+            if (selectedSpecies.length === 0) {
+                window.alert("Please select at least one species.");
+                return;
+            }
     
-        // If all validations pass, calculate and display estimated price
-        let estimate = calculateEstimatedPrice(min, max);
-        window.alert("Your estimated total is $" + estimate.toFixed(2));
+            // Perform additional validations if needed
     
-        // Show selected species in an alert
-        if (speciesString) {
+            // If all validations pass, calculate and display estimated price
+            let estimate = calculateEstimatedPrice(min, max);
+            window.alert("Your estimated total is $" + estimate.toFixed(2));
+    
+            // Show selected species in an alert
             window.alert("Selected species: " + speciesString);
-        } else {
-            window.alert("Please select at least one species.");
+    
+            addPetPhotos();
+    
+        } catch (err) {
+            window.alert(err);
         }
-    
-        addPetPhotos();
-    
-    } catch (err) {
-        window.alert(err)
     }
-}
+    
 
     // Function to calculate estimated price
 function calculateEstimatedPrice( min, max) {
