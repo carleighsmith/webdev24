@@ -1,92 +1,85 @@
-/*
-Author: Carleigh Smith
-Start Date: 2/19/2024
-File Name: styles.css
-*/
-
-/*CSS Reset*/
-body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section,
-article, aside {
+/* CSS Reset */
+* {
     margin: 0;
     padding: 0;
-    border: 0;
-}
-
-/* Style rules for body and images */
-/*Begin style rules for mobile viewport*/
-body{
-    background-color: #d6b5e2;
-}
-
-/*Style rule for box sizing applies to all elements*/
-* {
     box-sizing: border-box;
 }
 
-/* Style rules for main content */
-main{
-    background-color: #fff;
-    padding: 2%;
-    font-size: 1.15em;
-    font-family: "Roboto Slab", serif;
-}
-
-article h1 {
-    text-shadow: 5px 5px 8px #2a0523;
-    font-size: 3em;
-}
-
-article {
-    padding: 2%;
-    text-align: center;
-}
-
-article h4 {
-    text-align: center;
-    font-size: 1.35em;
-    text-decoration: none;
-}
-
-
-
-.h:hover {
-    color: #000;
-    background-color: #e9c1e5;
-}
-
-body dt {
-    font-size:2em;
-    padding-left: 2%;
-}
-body h2 {
-    font-size: 1.5em;
-    padding-left: 5%;
-    
-}
-.pages:hover {
-    color: #000;
-    background-color: #d2a4cf;
-    font-weight: bold;
-}
-
+/* Body and General Styles */
 body {
-    text-decoration:none;
-    font: black;
+    background-color: #f0f0f0; /* Light gray background for a clean look */
+    font-family: 'Roboto', sans-serif; /* Modern sans-serif font */
+    color: #333; /* Dark gray text for contrast */
 }
 
-
-/* Style rules for footer content */
-footer{
-    font-size: 1.5em;
+/* Header Styles */
+header {
     text-align: center;
-    color: #000000;
-    padding: 0 1em;
-
+    padding: 1.5em 0; /* Generous padding for the header */
+    background-color: #4A90E2; /* Professional blue */
 }
 
-footer p a {
-    color: #000000;
-    text-decoration: none;
+header h1 {
+    font-size: 2.5em; /* Large size for main heading */
+    color: #ffffff; /* White text for high contrast */
 }
 
+/* Main Content Styles */
+main {
+    padding: 2em; /* Consistent padding for the main content */
+    background-color: #ffffff; /* White background for readability */
+}
 
+/* Navigation Styles */
+nav {
+    padding: 1em 0; /* Padding for the navigation */
+}
+
+nav ul {
+    list-style: none; /* No bullets in the list */
+}
+
+nav ul li {
+    margin-bottom: 1em; /* Space between list items */
+}
+
+nav a {
+    text-decoration: none; /* No underline for links */
+    color: #4A90E2; /* Blue for links */
+    font-weight: bold; /* Bold font for emphasis */
+}
+
+nav a:hover {
+    color: #e57c1e; /* Change color on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center; /* Centered footer */
+    padding: 1em; /* Padding for the footer */
+    background-color: #4A90E2; /* Same blue as header */
+}
+
+footer a {
+    text-decoration: none; /* No underline for footer links */
+    color: #ffffff; /* White text for contrast */
+}
+
+footer a:hover {
+    color: #e57c1e; /* Orange on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 1em; /* Reduced padding for smaller screens */
+    }
+
+    header h1 {
+        font-size: 2em; /* Smaller font size for smaller screens */
+    }
+
+    nav ul {
+        padding-left: 1em; /* Align list for smaller screens */
+    }
+}

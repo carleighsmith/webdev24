@@ -1,0 +1,85 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styles */
+body {
+    background-color: #f0f0f0; /* Light gray background for a clean look */
+    font-family: 'Roboto', sans-serif; /* Use a modern, readable font */
+    color: #333; /* Dark gray text for high contrast */
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 1.5em 0; /* Increase padding for better spacing */
+    background-color: #4A90E2; /* Professional blue for header */
+}
+
+header h1 {
+    font-size: 2.5em; /* Reduced size for a cleaner look */
+    color: #ffffff; /* White text for contrast */
+}
+
+/* Main Content Styles */
+main {
+    padding: 2em; /* Consistent padding */
+    background-color: #ffffff; /* White background for readability */
+}
+
+/* Navigation Styles */
+nav {
+    padding: 1em 0; /* Additional padding for spacing */
+}
+
+nav ul {
+    list-style: none; /* No list bullets */
+}
+
+nav ul li {
+    margin-bottom: 1em; /* Increase spacing between items */
+}
+
+nav a {
+    text-decoration: none; /* No underline */
+    color: #4A90E2; /* Consistent blue for links */
+    font-weight: bold; /* Emphasize links */
+}
+
+nav a:hover {
+    color: #e57c1e; /* Change color on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1em; /* Consistent padding */
+    background-color: #4A90E2; /* Match header color */
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff; /* White text for contrast */
+}
+
+footer a:hover {
+    color: #e57c1e; /* Orange on hover for consistency */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 1em; /* Reduced padding for smaller screens */
+    }
+
+    header h1 {
+        font-size: 2em; /* Reduce size for smaller screens */
+    }
+
+    nav ul {
+        padding-left: 1em; /* Align list on smaller screens */
+    }
+}
