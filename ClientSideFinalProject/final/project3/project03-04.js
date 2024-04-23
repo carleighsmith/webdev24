@@ -4,7 +4,7 @@
 
       Application to write a list of customer reviews
       Author: Carleigh Smith
-      Date:   4/11/2024
+      Date:   2/27/2024
 
       Filename: project03-04.js
 */
@@ -21,16 +21,38 @@ let reviews = [
 ];
 let reviewTitles = ["My Favorite Workout Game", "Poor Choreography", "Buggy with Poor Tech Support", "Nice Improvement"];
 
-function starImages(rating)
-{
-      let imageText = "";
+function starImages(rating) {
+    let imageText = "";
 
-      for (let i =1; i < rating-1; i++)
-      {
-            imageText += "<img src= 'star.png' alt = ''>";
-      }
+    // Loop through each star and add an image tag for each
+    for (let i = 0; i < rating; i++) {
+        imageText += "<img src='star.png' alt='Star'>";
+    }
 
-      return imageText;
-
-      
+    return imageText;
 }
+
+window.onload = function() {
+    const reviewSection = document.querySelector("article");
+
+    for (let i = 0; i < reviewers.length; i++) {
+        let reviewCode = '';
+        if (reviewType[i] === 'P') {
+            reviewCode += "<table class='prime'>";
+        } else if (reviewType[i] === 'N') {
+            reviewCode += "<table class='new'>";
+        } else {
+            reviewCode += "<table>";
+        }
+
+        reviewCode += "<tr><td>Title: " + reviewTitles[i] + "</td></tr>";
+        reviewCode += "<tr><td>Reviewer: " + reviewers[i] + "</td></tr>";
+        reviewCode += "<tr><td>Date: " + reviewDates[i] + "</td></tr>";
+        reviewCode += "<tr><td>Rating: " + starImages(stars[i]) + "</td></tr>";
+        reviewCode += "<tr><td>Review: " + reviews[i] + "</td></tr>";
+
+        reviewCode += "</table>";
+
+        reviewSection.innerHTML += reviewCode;
+    }
+};

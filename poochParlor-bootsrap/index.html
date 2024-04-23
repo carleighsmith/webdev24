@@ -1,0 +1,142 @@
+<!--Validated 3/27/2024-->
+<!DOCTYPE html>
+<!--
+    Student Name: Carleigh Smith
+    File Name: index.html
+    Date: 01/17/2024
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../poochparlor/css/styles.css">
+    <title>The Pooch Parlor: Home</title>
+    <link rel="shortcut icon" href="images/fav/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="images/fav/android-chrome-192.png">
+    <script src="scripts/scripts.js" defer></script> 
+</head>
+<body>
+    <div id="container"> 
+
+        <!-- Use the header area for the website name or logo -->
+        <header id="ffc-logo">
+            <a href = "index.html"><img src="images/The_Pooch_Parlor.jpg" alt="logo" class="logo"></a>
+        </header>
+        <!-- Use the nav area to add hyperlinks to other pages
+            within the website-->
+            <nav class="mobile-nav">
+                <div id="menu-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html"> Services</a></li>
+                        <li><a href="bookings.html">Bookings</a></li>
+                        <li><a href="FAQs.html"> FAQs</a></li>
+                        <li><a href="about.html"> About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <a class="menu-icon" onclick="hamburger()">
+                    <div>&#9776;</div>
+                </a>
+            </nav>
+
+            <nav class="tablet-desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html"> Services</a></li>
+                    <li><a href="bookings.html">Bookings</a></li>
+                    <li><a href="FAQs.html"> FAQs</a></li>
+                    <li><a href="about.html"> About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+
+            <!--Hero Image-->
+            <div id="hero" class="tablet-desktop">
+                <img src="images/images/dog-banner.jpg" alt="banner with dogs on it" class="banneralt">
+            </div>
+
+
+        <!-- Use the main area to add the main content of the webpage-->
+        <main>
+            <!-- <a href = "index.html"><img src="images/images/dog-banner.jpg" alt="banner with dogs on it" class="banneralt"></a> -->
+
+            <div id = homepage >
+
+        
+                <div class ="mobile">
+                    <p>Welcome To The Parlor for Your Pooches- <br> Where Tails Transform and Paws Shine</p>
+                  
+                    <p>Mission Statement:</p>
+
+                    <p>"Grooming is not just a service – it's an expression of love for dogs"</p>
+
+                <div id="callus"><p>Call Us Today to Make an Appointment</p></div>
+
+                    <p class="tel-link"><a href="tel:6014023709">(601) 402-3709</a></p> 
+                </div>
+
+
+                <div class="tablet-desktop">
+                    <h1>Welcome To The Parlor for Your Pooches- <br> Where Tails Transform and Paws Shine</h1>
+                    <p>Mission Statement:</p>
+                    <p>"Grooming is not just a service – it's an expression of love for dogs"</p>
+                    <p>Get 50% off your pet's first appointment: <span class="action">Book appointments here!</span></p>
+                </div>
+
+                <br>
+                <section>
+                     <video controls poster="images/pexels-nishizuka-485294.jpg">
+                         <source src="media/groom.mp4" type="video/mp4">
+                         <source src="media/groom.webm" type="video/webm">
+                         <track src="media/captions.vtt" kind="captions" srclang="en" label="Captions">
+                         <track src="media/descriptions.vtt" kind="descriptions" srclang="en" label="English Descriptions">
+                         <p>Your browser does not support the video element.</p>
+                     </video>
+            </div>
+
+            <div class="grid">
+
+                <figure class="frame">
+                    <a href="services.html">
+                        <img src="images/j-balla-photography-F57xLufncj8-unsplash.jpg" alt="dog getting dried off" class="fram-pic">
+                    </a>
+                    <figcaption class="pic-text">Services</figcaption>
+                </figure>
+
+                <figure class="frame">
+                    <a href="bookings.html">
+                        <img src="images/images/dog-bath.jpg" alt="dog getting a bath" class="fram-pic">
+                    </a>
+                    <figcaption class="pic-text">Book An Appointment</figcaption>
+                </figure>
+
+                <figure class="frame">
+                    <a href="FAQs.html">
+                        <img src="images/images/dog-nail-trim.jpg" alt="dog getting nails trimmed" class="fram-pic">
+                    </a>
+                    <figcaption class="pic-text">Frequently Asked Questions</figcaption>
+                </figure>
+                
+            </div>
+   
+            </section> 
+        </main>
+
+        <!-- Use the footer area to add webpage footer content-->
+        <footer>
+            <br>
+            <p>&copy; Copyright 2024. All Rights Reserved.</p>
+            <p><a href="mailto:thepoochparlor@grooming.net">thepoochparlor@grooming.net</a></p>
+        </footer>
+
+    </div>
+</body>
+</html>
