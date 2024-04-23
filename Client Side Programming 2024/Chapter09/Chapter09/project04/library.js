@@ -4,8 +4,8 @@
       Project 09-04
 
       Project to store high scores from a game in a cookie
-      Author: 
-      Date:   
+      Author: Carleigh Smith
+      Date:   4/22/2024
 
       Filename: project09-04.js
 */
