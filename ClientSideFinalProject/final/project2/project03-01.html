@@ -1,5 +1,6 @@
+<!--Validated on 4/23/2024-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
    <!--
       JavaScript 7th Edition
@@ -11,40 +12,60 @@
 
       Filename: project03-01.html
    -->
-   <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <meta charset="utf-8">
    <title>Hands-on Project 3-1</title>
-   <link rel="stylesheet" href="styles.css" />
+   <link rel="stylesheet" href="styles.css">
+      <!--add a script element to load the project03-01.js-->
    <script src="project03-01.js" defer></script>
 </head>
 
 <body>
    <header>
-      <h1>
-         Hands-on Project 3-1
-      </h1>
+      <h1>Lunch Selections</h1>
    </header>
 
    <article>
-      <h2>Lunch selections</h2>
-      <form>
-         <input type="checkbox" class="menuItem" id="item1" value="11.95" />
-         <label for="item1">Fried chicken ($11.95)</label>
-         <input type="checkbox" class="menuItem" id="item2" value="13.95" />
-         <label for="item2">Fried halibut ($13.95)</label>
-         <input type="checkbox" class="menuItem" id="item3" value="10.95" />
-         <label for="item3">Hamburger ($10.95)</label>
-         <input type="checkbox" class="menuItem" id="item4" value="17.95" />
-         <label for="item4">Grilled salmon ($17.95)</label>
-         <input type="checkbox" class="menuItem" id="item5" value="8.95" />
-         <label for="item5">Side salad ($8.95)</label>
+      <h2>Menu</h2>
+      <form id="lunchForm">
+   
+            <input type="number" min="0" value="0" class="menuQuantity" id="quantity1" data-price="11.95">
+            <label for="quantity1">Fried chicken ($11.95)</label>
+
+            <input type="number" min="0" value="0" class="menuQuantity" id="quantity2" data-price="13.95">
+            <label for="quantity2">Fried halibut ($13.95)</label>
+
+            <input type="number" min="0" value="0" class="menuQuantity" id="quantity3" data-price="10.95">
+            <label for="quantity3">Hamburger ($10.95)</label>
+
+            <input type="number" min="0" value="0" class="menuQuantity" id="quantity4" data-price="17.95">
+            <label for="quantity4">Grilled salmon ($17.95)</label>
+
+            <input type="number" min="0" value="0" class="menuQuantity" id="quantity5" data-price="8.95">
+            <label for="quantity5">Side salad ($8.95)</label>
+
+         <aside>
+            <p>Subtotal: <span id="subtotal">$0.00</span></p>
+            <p>Tax (7%): <span id="tax">$0.00</span></p>
+            <p>Total: <span id="total">$0.00</span></p>
+         </aside>
+
       </form>
-      <aside>
-         Total Order Cost: <span id="billTotal">$0</span>
-      </aside>
+      
    </article>
+   <article>
+      <h3>Order Summary</h3>
+   <ul>
+      <li>Fried chicken: <span id="orderedQuantity1">0</span></li>
+      <li>Fried halibut: <span id="orderedQuantity2">0</span></li>
+      <li>Hamburger: <span id="orderedQuantity3">0</span></li>
+      <li>Grilled salmon: <span id="orderedQuantity4">0</span></li>
+      <li>Side salad: <span id="orderedQuantity5">0</span></li>
+   </ul>
+   </article>
+
+
+   <footer>
+      <p><a href="../index.html">Final Project Home</a></p>
+   </footer>
 </body>
-<div>
-   <p><a href="../index.html">Final Projects main page</a></p>
-</div>
 </html>

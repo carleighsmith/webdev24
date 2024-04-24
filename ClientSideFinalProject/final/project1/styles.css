@@ -1,6 +1,10 @@
+/*Validated 4/23/2024*/
 /*  JavaScript 7th Edition
     Chapter 2
     Hands-on Project 2-4
+
+    Author: Carleigh Smith
+    Date: 04/16/2024
 
     Filename: styles.css
 */
@@ -85,7 +89,7 @@ form {
 input {
    float: left;
    clear: left;
-   margin: 10px;
+   margin: 7px;
 }
 
 label {
@@ -96,7 +100,7 @@ label {
 aside {
    position: absolute;
    top: 120px;
-   left: 400px;
+   left: 480px;
    outline: 1px solid red;
 }
 
@@ -143,3 +147,28 @@ aside span#totalBill {
    width: 100px;
    text-align: right;
 }
+
+/*The footer styling*/
+footer {
+   background: #330570; 
+   color: white; 
+   text-align: center; 
+   padding: 10px; 
+   border-top: 1px solid #ddd; 
+   position: relative; 
+   margin-top: 0; 
+}
+
+footer a {
+   color: white; 
+   text-decoration: none; 
+}
+
+footer a:hover {
+   color: #ece9f0;   
+   background-color: #aa82df77;
+   /* text-decoration: underline; */
+   
+}
+
+

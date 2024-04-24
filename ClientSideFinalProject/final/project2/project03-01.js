@@ -1,31 +1,38 @@
-/*    JavaScript 7th Edition
-      Chapter 3
-      Project 03-01
 
-      Application to calculate total order cost
-      Author: Carleigh Smith
-      Date:   4/11/2024
+// Declare variables for menu item quantities
+let menuQuantities = document.getElementsByClassName("menuQuantity");
 
-      Filename: project03-01.js
-*/
-let menuItems = document.getElementsByClassName("menuItem");
-
-for (let i = 0; i < menuItems.length; i++) {
-    menuItems[i].addEventListener("click", calcTotal);
+// Event listener setup for each quantity input
+for (let i = 0; i < menuQuantities.length; i++) {
+    menuQuantities[i].addEventListener("input", calcTotal);
 }
 
+// Function to calculate the total order cost and update the order summary
 function calcTotal() {
-    let orderTotal = 0;
-    for (let i = 0; i < menuItems.length; i++) {
-        if (menuItems[i].checked) {
-            orderTotal += Number(menuItems[i].value);
-        }
+    let subtotal = 0;
+    const taxRate = 0.07; // 7% tax rate
+
+    // Loop through the quantity inputs and calculate the subtotal
+    for (let i = 0; i < menuQuantities.length; i++) {
+        let itemPrice = Number(menuQuantities[i].dataset.price);
+        let itemQuantity = Number(menuQuantities[i].value);
+        subtotal += itemPrice * itemQuantity; // Calculate the subtotal
+
+        // Update the ordered quantity display at the end of the form
+        document.getElementById("orderedQuantity" + (i + 1)).innerText = itemQuantity;
     }
 
-    document.getElementById("billTotal").innerHTML = formatCurrency(orderTotal);
+    // Calculate tax and total cost
+    let tax = subtotal * taxRate;
+    let total = subtotal + tax;
+
+    // Update the displayed values for subtotal, tax, and total
+    document.getElementById("subtotal").innerText = formatCurrency(subtotal);
+    document.getElementById("tax").innerText = formatCurrency(tax);
+    document.getElementById("total").innerText = formatCurrency(total);
 }
 
-// Function to display a numeric value as a text string in the format $##.##
+// Function to format numbers as currency
 function formatCurrency(value) {
     return "$" + value.toFixed(2);
 }
