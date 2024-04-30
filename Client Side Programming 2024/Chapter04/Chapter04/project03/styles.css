@@ -99,3 +99,26 @@ div#warningBox {
    color: red;
    margin-top: 15px;
 }
+
+/*The footer styling*/
+footer {
+   background: #5472B2; 
+   color: #000; 
+   text-align: center; 
+   padding: 10px; 
+   border: 1px solid #000; 
+   position: relative; 
+   margin-top: 0; 
+}
+
+footer a {
+   color: #000; 
+   text-decoration: none; 
+}
+
+footer a:hover {
+   color: #000;   
+   background-color: #3e61ac;
+   text-decoration: underline;
+   
+}

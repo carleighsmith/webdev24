@@ -1,0 +1,358 @@
+/*
+Author: Carleigh Smith
+Start Date: 4/20/2024
+File Name: client.css
+*/
+
+/*CSS Reset*/
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section,
+article, aside {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+/*Begin style rules for mobile viewport*/
+body{
+    background-color: #d29797;
+}
+
+/*Style rule for box sizing applies to all elements*/
+* {
+    box-sizing: border-box;
+}
+
+/*Begin style rules for mobile viewport*/
+/*Style rules for header*/
+header {
+    position: relative; 
+    height: 190px;
+    padding-left: 20px; 
+}
+
+header img {
+    position: absolute; 
+    top: 20px; 
+    left: 10px; 
+    height: 150px; 
+    width: 150px; 
+    border-radius: 50%; 
+    border: 2px solid #fff; 
+}
+
+
+/*Style rules for hamburger menu*/
+
+.mobile-nav a {
+    color: #160c0c;
+    font-family: 'Francois On', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+.tablet-desktop, #menu-links {
+    display: none;
+}
+
+/* Style rules for main content */
+main{
+    background-color: #e6afaf;
+    padding: 2%;
+    font-size: 1.15em;
+    font-family: "Roboto Slab", serif;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+
+/* Style rules for footer content */
+footer .copyright {
+    font-size: 0.75em;
+    text-align: center;
+    color: #fff;
+    padding: 2% 4%;
+    float: left;
+    width: 75%;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social {
+    float: right;
+    width: 20%;
+    padding: 2%;
+}
+
+.social img {
+    display: inline-block;
+    padding: 5%;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: #5c3838; 
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.4em;
+    color: #5c3838; 
+    text-align: center;
+}
+
+h3 {
+    color: #5c3838; 
+    font-size: 1.3em;
+}
+
+aside {
+    text-align: center;
+    font-size: 1.2em;
+    font-style: italic;
+    color: #5c3838; 
+}
+
+a:link {
+    color: #dd6484;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+ a:visited{
+    color: #821835; 
+} 
+
+a:hover {
+    color: #d93b65; 
+    border-radius: 8px;
+}
+
+/* Define the grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 20px; 
+   min-height:100vh;
+   min-height:100svh;
+}
+  
+/* Define the grid items */
+.grid-item {
+    background-color: #d29797; /* Light blue for grid items */
+    padding: 20px; /* Add some padding to the grid items */
+    text-align: center; /* Center the content of the grid items */
+}
+
+
+
+/* Media Query for Tablet Viewport*/
+@media screen and (min-width: 630px),print {  /*630px is starting breakpoint*/
+
+    /*Tablet Viewport: Show tablet-desktop class, hide mobile class*/
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    /* Tablet Viewport: Style rule for header */
+    header {
+        position: static;
+        padding-bottom: 2%;
+    }
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav{
+        padding: 1%;
+        margin-bottom: 1%;
+    }
+     
+    nav ul{
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav li {
+        display: inline-block;
+        border-right: 1px solid #fff;
+        font-size: 1.5em;
+        font-family: 'Francois One', sans-serif;
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav li a {
+        padding: 0.5em 1em;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    /* Tablet Viewport: Style rules for main content area */ 
+    .pic-text {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    aside {
+        text-align: center;
+        font-size: 1.2em;
+        font-style: italic;
+        color: #5c3838; 
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    #home {
+        text-align: center;
+    }
+    
+    
+} /*end media for min-width 630px*/
+
+/* Media Query for Desktop Viewport */ 
+@media screen and (min-width: 1015px),print {
+
+    /* Desktop Viewport: Style rule for header */ 
+    header {
+        width: 25%;
+        float: left;
+        padding-bottom: 0;
+        height: 1%;
+    }
+
+     /* Desktop Viewport: Style rules for nav area */ 
+     nav {
+        float: right;
+        width: 70%;
+        margin: 4em 1em 0 0;
+     }
+
+     nav ul {
+        text-align: right;
+     }
+
+     nav li {
+        border: none;
+    }
+
+    nav li a {
+        padding: 0.5em 1em;
+    }
+
+    nav li a:hover {
+        color: #000;
+        background-color: #fff;
+        transform: scale(1.3);
+    }
+
+    /* Desktop Viewport: Style Rules for main content */
+    main{
+        clear: left;
+    }
+
+    h1, h2 {
+        font-size: 1.8em;
+       
+        color: #fff; /* Navy blue */
+        text-align: center;
+      
+    }
+
+    article h3 {
+        font-size: 1.75em;
+    }
+
+    .pic-text {
+        font-size: 1.5em;
+        padding: 20px;
+    }
+
+    .frame {
+        opacity: 0.9;
+    }
+
+    .frame:hover {
+        opacity: 1;
+        box-shadow: 8px 8px 10px #808080;
+        transform: translateY(10px);
+    }
+
+    #weights, #cardio, #training {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+
+    #exercises {
+        clear: left;
+    }
+
+    .offer:hover {
+        transform: scale(1.25);
+        cursor: pointer;
+    }
+
+    /*Desktop Viewport: Style rules for form elements*/
+    form {
+        width: auto;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+    }
+
+    .btn {
+        grid-column: 1 / span 3;
+    }
+
+
+
+}/* media query closing brace for desktop viewport */
+
+/* Media Query for Large Desktop Viewports */
+ @media screen and (min-width: 1921px) {
+    #container {
+        width: 1920px;
+        margin: 0 auto;
+    } 
+
+    table {
+        width: 80%;
+    }
+ }
+ /*media query closing brace for large desktop viewport */
+
+/* Media Query for Print */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+}

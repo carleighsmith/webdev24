@@ -9,15 +9,9 @@
     
     <title>Carleigh's Final Project: Home</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/styles.css">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    <!-- <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png"> 
-    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">  -->
+   
+    <link rel="stylesheet" href="css/client.css">    
     <script src="scripts/script.js" defer></script>
 
 </head>
@@ -31,8 +25,8 @@
                 <a href="index.html">Home</a>
                 <a href="showcase.html">Showcase</a>
                 <a href="../ClientSideFinalProject/final/index.html">Client-Side</a>
-                <a href="../fitnessClub/index.html">Fitness Club</a>
-                <a href="../fitness-bootstrap/index.html">Bootstrap</a>
+                <a href="../fitnessClub/index.html" target="_blank">Fitness Club</a>
+                <a href="../fitness-bootstrap/index.html" target="_blank">Bootstrap</a>
             </div>
 
             <a class="menu-icon" onclick="hamburger()">
@@ -40,98 +34,103 @@
             </a>
         </nav>
 
-
-        <!-- Use the header area for the website name or logo -->
         <header id="ffc-logo">
-            <h1>Home</h1>
-            <!-- <a href="index.html"><img src="images/forward-fitness-logo.png" alt="Forward Fitness Club logo" ></a>  -->
+
+            <a href="index.html"><img src="images/Carleigh.jpg" alt="website logo" class="round"></a>
         </header>
+        <!-- Use the header area for the website name or logo -->
+
+
         <!-- Use the nav area to add hyperlinks to other pages
             within the website-->
         <!--Tablet, Desktop Nav-->
-            <nav class="tablet-desktop">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="showcase.html">Showcase</a></li>
-                    <li><a href="../ClientSideFinalProject/final/index.html">Client-Side</a></li>
-                    <li><a href="../fitnessClub/index.html">Fitness Club</a></li>
-                    <li><a href="../fitness-bootstrap/index.html">Bootstrap</a></li>
-                </ul>
-            </nav>
+        <nav class="tablet-desktop">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="showcase.html">Showcase</a></li>
+                <li><a href="client.html">Client-Side</a></li>
+                <li><a href="../fitnessClub/index.html" target="_blank">Fitness Club</a></li>
+                <li><a href="../fitness-bootstrap/index.html" target="_blank">Bootstrap</a></li>
+            </ul>
+        </nav>
 
             <!--Hero Image-->
             <!-- <div id="hero" class="tablet-desktop" >
                 <img src="images/hero-image.jpg" alt="left arm extended holding a weight"> 
             </div> -->
-
-        <header>
-            <h1>Web & Program Concepts</h1>
-                <h2>Spring 2024</h2>
-                <h2>Carleigh Smith</h2>
-        </header>  
+ 
         <!-- Use the main area to add the main content of the webpage-->
+        
         <main>
-            <aside>
-                Client-Side link: include images and links to showcase the following projects you worked on in your Client-Side course.
-                Include 1 of the hands-on projects from each chapter you completed starting in chapters 2 - 7, 9, 12 (total: 8 projects)
-            </aside>
 
-            <div class="grid-item">
-                <h2>Project: Hands-On Project 2-4</h2>
-                <p>In this project, you will calculate the cost plus the tax of ordering items from a restaurant’s online menu. 
-                  So that the currency values are displayed with a leading character, and to two decimal places you will call a 
-                  function created for you named formatCurrency(), which takes a number and returns a text string in 
-                  the format $##.##. (See more details on Canvas and in the textbook)</p>
-                  <p><a href="project1/project02-04.html">Go to project...</a></p>
-              </div>
-              <div class="grid-item">
-                <h2>Project: Hands-On Project 3-1</h2>
-                <p>In this project, you create an application that calculates the total cost of items selected from a lunch 
-                  menu using a for loop and an if statement as part of the program code. The cost of each menu item is stored 
-                  in the value attribute of an input control on a web form. (See more details on Canvas and in the textbook)</p>
-                  <p><a href="project2/project03-01.html">Go to project...</a></p>
-              </div>
-              <div class="grid-item">
-                <h2>Project: Hands-On Project 3-4</h2>
-                <p>In this project, you will display customer reviews for a new digital game. Information on each customer and 
-                  review is contained within several arrays. Customers give the game a rating from one to five stars, 
-                  which you will display as star images on the web page. (See more details on Canvas and in the textbook)</p>
-                  <p><a href="project3/project03-04.html">Go to project...</a></p>
-              </div>
-              <div class="grid-item">
-                <h2>Project: Hands-On Project 4-4 Debugging Challenge</h2>
-                <p>In this project, you will work with an app that calculates the change returned for a purchase and breaks 
-                  down the amount in units of currency from pennies up to $20 bills. However, there are errors in the code 
-                  that must be corrected. (See more details on Canvas and in the textbook)</p>
-                  <p><a href="project4/project04-04.html">Go to project...</a></p>
-              </div>
-              <div class="grid-item">
-                <h2>Project: Hands-On Project 6-4</h2>
-                <p>In this project, you will explore how to filter the contents of one selection list based on an option 
-                  chosen in another selection list. The web form you are given contains three selection lists with the make, 
-                  model, and trim of cars that one might consider purchasing. Your script will link the three selection lists 
-                  so that selecting a car make will filter the list of car models and selecting a car model will filter 
-                  the list of car trims. (See more details on Canvas and in the textbook)</p>
-                  <p><a href="project5/project06-04.html">Go to project...</a></p>
-              </div>
-              <div class="grid-item">
-                <h2>Project: Hands-On Project 9-4</h2>
-                <p>In this project, you will work with cookies that store the fastest time to complete a sliding block puzzle. 
-                  Much of the code for the puzzle has already been written. Your task is to write the code that records 
-                  the user's best time and stores it within a persistent cookie with a 90-day lifetime 
-                  (See more details on Canvas and in the textbook).</p>
-                  <p><a href="project6/project09-04.html">Go to project...</a></p>
-              </div>
-            </div>  
+            <h1>Client-Side Projects</h1>
+            <h2>Spring 2024</h2>
+            <h2>Carleigh Smith</h2>
+            <aside><p>Client-Side link: include images and links to showcase the following projects you worked on in your Client-Side course. Include 1 of the hands-on projects from each chapter you completed starting in chapters 2 - 7, 9, 12 (total: 8 projects)</p></aside>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Project: Hands-On 2-01</h3>
+                    <p>Description</p>
+                      <p><a href="../Client Side Programming 2024/Chapter02/project01/project02-01.html">Go to project...</a></p>
+                  </div>
+                  <div class="grid-item">
+                    <h3>Project:  Hands-On 3-03</h3>
+                    <p></p>Description</p>
+                      <p><a href="../Client Side Programming 2024/Chapter03/Chapter03/project03/project03-03.html">Go to project...</a></p>
+                  </div>
+                  <div class="grid-item">
+                    <h3>Project: Hands-On 4-03</h3>
+                    <p>Description</p>
+                      <p><a href="../Client Side Programming 2024/Chapter04/Chapter04/project03/project04-03.html">Go to project...</a></p>
+                  </div>
+                  <div class="grid-item">
+                    <h3>Project: Hands-On 5-02</h3>
+                    <p>Description</p>
+                      <p><a href="../Client Side Programming 2024/Chapter05/Chapter05/project02/project05-02.html">Go to project...</a></p>
+                  </div>
+                  <div class="grid-item">
+                    <h3>Project: Hands-On 6-01</h3>
+                    <p>Description</p>
+                      <p><a href="../Client Side Programming 2024/Chapter06/Chapter06/project01/project06-01.html">Go to project...</a></p>
+                  </div>
+                  <div class="grid-item">
+                    <h3>Project: Hands-On 7-01</h3>
+                    <p>Description</p>
+                      <p><a href="../Client Side Programming 2024/Chapter07/Chapter07/project01/project07-01.html">Go to project...</a></p>
+                  </div>
+                  <div class="grid-item">
+                    <h3>Project: Chapter 9 Project</h3>
+                    <p>Description</p>
+                      <p><a href="../Client Side Programming 2024/Chapter09/Chapter09/project05/product01.html">Go to project...</a></p>
+                  </div>
+                  <div class="grid-item">
+                    <h3>Project: Chapter 12 Project</h3>
+                    <p>Description</p>
+                      <p><a href="../Client Side Programming 2024/Chapter12/Chapter12/project03/project12-03.html">Go to project...</a></p>
+                  </div>
+            </div>
+            
+    
+            <div id="home">
+                <p><a href="index.html">Return Home</a></p>
+            </div>
+
         </main>
 
         <!-- Use the footer area to add webpage footer content-->
         <footer>
-            <p>&copy; Copyright 2024. All Rights Reserved.</p>
+            <div class="copyright">
+                <p>&copy; Copyright 2024. All Rights Reserved.</p>
+            </div>
+
+            <div class="social">
+                <a href="https://www.facebook.com/fwdfitclub" target="_blank"><img src="images/facebook-logo.png" alt="black and white Facebook logo"></a>
+                <a href="https://twitter.com/fwdfitclub" target="_blank"><img src="images/twitter-logo.png" alt="black and white Twitter logo"></a>
+            </div>
+            
         </footer>
 
     </div>
-
 
 </body>
 </html>

@@ -36,27 +36,26 @@ function zeroTheRegister() {
 // Function to run the cash register
 function runRegister() {
    zeroTheRegister(); // Reset the register
-   
+
    let cashValue = parseFloat(cashBox.value);
    let billValue = parseFloat(billBox.value);
 
-   // Check if the cash or bill amount is over $100
+   // Check if cash or bill amount exceeds $100
    if (cashValue > 100 || billValue > 100) {
-      warningBox.innerHTML = "Error: Cash or bill amount must be $100 or less.";
-      return; // Exit the function without calculating the change
-   }
-   
-   // Check if the bill value is greater than the cash amount
-   if (billValue > cashValue) {
-      warningBox.innerHTML = "Error: Bill amount cannot be greater than cash amount.";
-      return; // Exit the function without calculating the change
+       warningBox.innerHTML = "Error: Cash or bill amount must be $100 or less.";
+       return; 
    }
 
-   // If no errors, calculate the change
-   let changeValue = cashValue - billValue;  // calculate the change 
-   changeBox.value = formatCurrency(changeValue); // format the change as currency
-   
-   calcChange(changeValue); // Determine the units of currency needed for the change
+   // Ensure bill value isn't greater than cash
+   if (billValue > cashValue) {
+       warningBox.innerHTML = "Error: Bill amount cannot be greater than cash amount.";
+       return; 
+   }
+
+   // Calculate the change and update the display
+   let changeValue = cashValue - billValue;  // Calculate change
+   changeBox.value = formatCurrency(changeValue); // Format as currency
+   calcChange(changeValue); // Determine units of currency
 }
 
 // Function to calculate the change by each unit of currency

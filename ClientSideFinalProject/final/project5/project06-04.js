@@ -52,6 +52,17 @@ model.onchange = function() {
    }     
 };
 
+// Event handler for the "Select" button
+selectVehicle.onclick = function() {
+   let makeText = make.options[make.selectedIndex].text;
+   let modelText = model.options[make.selectedIndex].text;
+   let trimText = trim.options[trim.selectedIndex].text;
+   let yearText = year.options[year.selectedIndex].text; // Capture selected year
+   
+   // Update the text of the paragraph with the selected vehicle information
+   vehicle.textContent = `${makeText} ${modelText} ${trimText} ${yearText}`;
+};
+
 // Function to show all options in a selection list
 function showAll(selectList) {
    let options = selectList.options;
@@ -74,13 +85,3 @@ function filterSelect(selectList, category) {
    }
 }
 
-// Event handler for the "Select" button
-selectVehicle.onclick = function() {
-   let makeText = make.options[make.selectedIndex].text;
-   let modelText = model.options[make.selectedIndex].text;
-   let trimText = trim.options[trim.selectedIndex].text;
-   let yearText = year.options[year.selectedIndex].text; // Capture selected year
-   
-   // Update the text of the paragraph with the selected vehicle information
-   vehicle.textContent = `${makeText} ${modelText} ${trimText} ${yearText}`;
-};

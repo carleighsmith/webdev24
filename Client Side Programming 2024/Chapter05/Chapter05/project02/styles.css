@@ -142,11 +142,35 @@ ol {
 }
 
 ol li {
-   margin-left: 0
+   margin-left: 0;
    padding-left: 0;
    margin-right: 40px;
 }
+
 ol li img {
    width: 160px;
    height: 120px;
+}
+
+/*The footer styling*/
+footer {
+   background: #5472B2; 
+   color: #000; 
+   text-align: center; 
+   padding: 10px; 
+   border: 1px solid #000; 
+   position: relative; 
+   margin-top: 0; 
+}
+
+footer a {
+   color: #000; 
+   text-decoration: none; 
+}
+
+footer a:hover {
+   color: #000;   
+   background-color: #3e61ac;
+   text-decoration: underline;
+   
 }

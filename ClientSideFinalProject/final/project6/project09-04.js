@@ -10,7 +10,7 @@
       Filename: project09-04.js
 */
 
-/* Page Objects */
+// Page Objects 
 let bestText = document.getElementById("best");
 let clockTimer = document.getElementById("timer");
 
