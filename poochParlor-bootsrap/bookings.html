@@ -1,82 +1,97 @@
+
 <!--Validated 3/27/2024-->
+
 <!DOCTYPE html>
 <!--
     Student Name: Carleigh Smith
-    File Name: template.html
+    File Name: bookings.html
     Date: 01/17/2024
 -->
 <html lang="en">
 <head>
+    <title>The Pooch Parlor: Bookings</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!-- Preconnecting and linking styles and scripts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../poochparlor/css/styles.css">
-    <title>The Pooch Parlor: Bookings</title>
+    
+    <!-- Favicon -->
     <link rel="shortcut icon" href="images/fav/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-touch-icon.png">
     <link rel="icon" sizes="192x192" href="images/fav/android-chrome-192.png">
+   
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom styles and scripts -->
+    <link rel="stylesheet" href="css/styles.css">
     <script src="scripts/scripts.js" defer></script>
 </head>
 <body>
-    <div id="container"> 
+    <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="index.html">The Pooch Parlor</a>
 
-        <!-- Use the header area for the website name or logo -->
-        <header>
-            <a href = "index.html"><img src="images/The_Pooch_Parlor.jpg" alt="logo" class="logo"></a>
-        </header>
-        <!-- Use the nav area to add hyperlinks to other pages
-            within the website-->
-            <nav class="mobile-nav">
-                <div id="menu-links">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html"> Services</a></li>
-                        <li><a href="bookings.html">Bookings</a></li>
-                        <li><a href="FAQs.html"> FAQs</a></li>
-                        <li><a href="about.html"> About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
+    <!-- Hamburger menu for mobile view -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-                <a class="menu-icon" onclick="hamburger()">
-                    <div>&#9776;</div>
-                </a>
-            </nav>
-
-            <nav class="tablet-desktop">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html"> Services</a></li>
-                    <li><a href="bookings.html">Bookings</a></li>
-                    <li><a href="FAQs.html"> FAQs</a></li>
-                    <li><a href="about.html"> About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-
-
-            <div id="hero" class="tablet-desktop">
-                <img src="images/images/dog-banner.jpg" alt="banner with dogs on it" class="banneralt">
-            </div>
-
-        <!-- Use the main area to add the main content of the webpage-->
-        <main>
-            <div>
-                <h2>This Page Has No Info Yet</h2>
-                <p>It will eventually include information on how to book appointments for grooming</p>
-            </div>
-        </main>
-
-        <!-- Use the footer area to add webpage footer content-->
-        <footer>
-            <br>
-            <p>&copy; Copyright 2024. All Rights Reserved.</p>
-            <p><a href="mailto:thepoochparlor@grooming.net">thepoochparlor@grooming.net</a></p>    </footer>
-
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="bookings.html">Bookings</a></li>
+            <li class="nav-item"><a class="nav-link" href="FAQs.html">FAQs</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
     </div>
+  </nav>
 
+    <!-- Header Section -->
+    <header class="jumbotron jumbotron-fluid text-center mt-5">
+        <div class="container">
+            <h1 class="display-1">Bookings</h1>
+        </div>
+    </header>
+
+    
+    <!-- Main Content Area -->
+    <main class="container-fluid mt-5">
+        <h3 class="book"> To Book an Appointment, Go To: <a href="contact.html">Contact Page</a></h3>
+    </main>
+            
+    <!-- Footer -->
+    <footer class="jumbotron-fluid text-center bg-dark p-5">
+        <div class="container text-white">
+            <p>&copy; Copyright 2024. All Rights Reserved.</p>
+            <p><a href="mailto:forwardfitness@club.net" class="text-white">forwardfitness@club.net</a></p>
+            <a href="https://www.facebook.com/fwdfitclub" target="_blank"><img src="images/facebook-logo.png"
+                    alt="black and white Facebook logo" class="pr-4"></a>
+            <a href="https://twitter.com/fwdfitclub" target="_blank"><img src="images/twitter-logo.png"
+                    alt="black and white Twitter logo"></a>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

@@ -3,140 +3,165 @@
 <!--
     Student Name: Carleigh Smith
     File Name: index.html
-    Date: 01/17/2024
+    Date: 04/20/2024
 -->
 <html lang="en">
 <head>
+    <title>The Pooch Parlor: Home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../poochparlor/css/styles.css">
-    <title>The Pooch Parlor: Home</title>
+    
+    <!-- Favicon -->
     <link rel="shortcut icon" href="images/fav/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-touch-icon.png">
     <link rel="icon" sizes="192x192" href="images/fav/android-chrome-192.png">
-    <script src="scripts/scripts.js" defer></script> 
-</head>
-<body>
-    <div id="container"> 
-
-        <!-- Use the header area for the website name or logo -->
-        <header id="ffc-logo">
-            <a href = "index.html"><img src="images/The_Pooch_Parlor.jpg" alt="logo" class="logo"></a>
-        </header>
-        <!-- Use the nav area to add hyperlinks to other pages
-            within the website-->
-            <nav class="mobile-nav">
-                <div id="menu-links">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html"> Services</a></li>
-                        <li><a href="bookings.html">Bookings</a></li>
-                        <li><a href="FAQs.html"> FAQs</a></li>
-                        <li><a href="about.html"> About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-
-                <a class="menu-icon" onclick="hamburger()">
-                    <div>&#9776;</div>
-                </a>
-            </nav>
-
-            <nav class="tablet-desktop">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html"> Services</a></li>
-                    <li><a href="bookings.html">Bookings</a></li>
-                    <li><a href="FAQs.html"> FAQs</a></li>
-                    <li><a href="about.html"> About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-
-
-            <!--Hero Image-->
-            <div id="hero" class="tablet-desktop">
-                <img src="images/images/dog-banner.jpg" alt="banner with dogs on it" class="banneralt">
-            </div>
-
-
-        <!-- Use the main area to add the main content of the webpage-->
-        <main>
-            <!-- <a href = "index.html"><img src="images/images/dog-banner.jpg" alt="banner with dogs on it" class="banneralt"></a> -->
-
-            <div id = homepage >
-
-        
-                <div class ="mobile">
-                    <p>Welcome To The Parlor for Your Pooches- <br> Where Tails Transform and Paws Shine</p>
-                  
-                    <p>Mission Statement:</p>
-
-                    <p>"Grooming is not just a service – it's an expression of love for dogs"</p>
-
-                <div id="callus"><p>Call Us Today to Make an Appointment</p></div>
-
-                    <p class="tel-link"><a href="tel:6014023709">(601) 402-3709</a></p> 
-                </div>
-
-
-                <div class="tablet-desktop">
-                    <h1>Welcome To The Parlor for Your Pooches- <br> Where Tails Transform and Paws Shine</h1>
-                    <p>Mission Statement:</p>
-                    <p>"Grooming is not just a service – it's an expression of love for dogs"</p>
-                    <p>Get 50% off your pet's first appointment: <span class="action">Book appointments here!</span></p>
-                </div>
-
-                <br>
-                <section>
-                     <video controls poster="images/pexels-nishizuka-485294.jpg">
-                         <source src="media/groom.mp4" type="video/mp4">
-                         <source src="media/groom.webm" type="video/webm">
-                         <track src="media/captions.vtt" kind="captions" srclang="en" label="Captions">
-                         <track src="media/descriptions.vtt" kind="descriptions" srclang="en" label="English Descriptions">
-                         <p>Your browser does not support the video element.</p>
-                     </video>
-            </div>
-
-            <div class="grid">
-
-                <figure class="frame">
-                    <a href="services.html">
-                        <img src="images/j-balla-photography-F57xLufncj8-unsplash.jpg" alt="dog getting dried off" class="fram-pic">
-                    </a>
-                    <figcaption class="pic-text">Services</figcaption>
-                </figure>
-
-                <figure class="frame">
-                    <a href="bookings.html">
-                        <img src="images/images/dog-bath.jpg" alt="dog getting a bath" class="fram-pic">
-                    </a>
-                    <figcaption class="pic-text">Book An Appointment</figcaption>
-                </figure>
-
-                <figure class="frame">
-                    <a href="FAQs.html">
-                        <img src="images/images/dog-nail-trim.jpg" alt="dog getting nails trimmed" class="fram-pic">
-                    </a>
-                    <figcaption class="pic-text">Frequently Asked Questions</figcaption>
-                </figure>
-                
-            </div>
    
-            </section> 
-        </main>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <!-- Use the footer area to add webpage footer content-->
-        <footer>
-            <br>
+    <!-- My Script Sheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- My Style Sheet -->
+    <script src="scripts/scripts.js" defer></script> 
+
+</head>
+
+<body>
+
+    <!-- Bootstrap Navigation bar -->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+
+        <a class="navbar-brand" href="index.html">The Pooch Parlor</a>
+
+        <!-- Hamburger menu icon -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="bookings.html">Bookings</a></li>
+                <li class="nav-item"><a class="nav-link" href="FAQs.html">FAQs</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Header and Hero Image -->
+    <header class="jumbotron-fluid hero">
+        <div class="container welcome text-white">
+            <img src="images/The_Pooch_Parlor.jpg" alt="Pooch Parlor logo"
+                class="float-left mr-3 img-fluid">
+            <h1>Welcome To The Parlor for Your Pooches-</h1>
+            <h2>Where Tails Transform and Paws Shine</h2>
+            <p>Mission Statement:</p>
+            <p>"Grooming is not just a service – it's an expression of love for dogs"</p>
+            <a href="contact.html" role="button" class="btn btn-outline-secondary btn-lg bg-dark text-white">Contact Us Here</a>
+            </div>
+    </header>
+
+
+    <!-- Main Content Area -->
+    <main class="container-fluid mt-5">
+     
+        <!-- <div>
+            <video controls poster="images/pexels-nishizuka-485294.jpg">
+                <source src="media/groom.mp4" type="video/mp4">
+                <source src="media/groom.webm" type="video/webm">
+                <track src="media/captions.vtt" kind="captions" srclang="en" label="Captions">
+                <track src="media/descriptions.vtt" kind="descriptions" srclang="en" label="English Descriptions">
+                <p>Your browser does not support the video element.</p>
+            </video>
+        </div> -->
+
+
+        <div class="row">
+
+            <div class="col-sm-4">
+
+                <figure>
+                    <a href="services.html"><img src="images/j-balla-photography-F57xLufncj8-unsplash.jpg" alt="picture of dog getting groomed"
+                            class="img-fluid"></a>
+                </figure>
+
+                <h1>Our Services</h1>
+
+              <p class="lead">We offer a variety of services for your friendly pet.</p>
+
+            </div>
+
+            <div class="col-sm-4">
+
+                <figure>
+                    <a href="bookings.html"><img src="images/images/dog-bath.jpg" alt="dog getting a bath"
+                            class="img-fluid"></a>
+                </figure>
+
+                <h1>Book An Appointment</h1>
+
+               <!--Change--> <p class="lead">Book an appointment with one of our groomers.</p>
+
+            </div>
+
+            <div class="col-sm-4">
+
+                <figure>
+                    <a href="FAQS.html"><img src="images/images/dog-nail-trim.jpg" alt="dog getting nails trimmed"
+                            class="img-fluid"></a>
+                </figure>
+
+                <h1>Frequent Questions</h1>
+
+               <!--Change--> <p class="lead">Have a question? Check out our FAQs</p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="jumbotron-fluid text-center bg-dark p-5">
+        <div class="container text-white">
             <p>&copy; Copyright 2024. All Rights Reserved.</p>
-            <p><a href="mailto:thepoochparlor@grooming.net">thepoochparlor@grooming.net</a></p>
-        </footer>
+            <p><a href="mailto:thepoochparlor@grooming.net" class="text-white">thepoochparlor@grooming.net</a></p>
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png"
+                    alt="black and white Facebook logo" class="pr-4"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter-logo.png"
+                    alt="black and white Twitter logo"></a>
+        </div>
+    </footer>
 
-    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="scripts/script.js"></script>
+
+
+
+   
 </body>
 </html>

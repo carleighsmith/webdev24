@@ -15,16 +15,17 @@
     <script src="scripts/script.js" defer></script>
 
 </head>
+
 <body>
 
     <div id="container"> 
 
-                <!--Mobile Nav-->
+        <!--Mobile Nav-->
         <nav class="mobile-nav">
             <div id="menu-links">
                 <a href="index.html">Home</a>
                 <a href="showcase.html">Showcase</a>
-                <a href="../ClientSideFinalProject/final/index.html">Client-Side</a>
+                <a href="client.html">Client-Side</a>
                 <a href="../fitnessClub/index.html" target="_blank">Fitness Club</a>
                 <a href="../fitness-bootstrap/index.html" target="_blank">Bootstrap</a>
             </div>
@@ -34,87 +35,116 @@
             </a>
         </nav>
 
+        <!-- Use the header area for the website name or logo -->
         <header id="ffc-logo">
-
             <a href="index.html"><img src="images/Carleigh.jpg" alt="website logo" class="round"></a>
         </header>
-        <!-- Use the header area for the website name or logo -->
-
 
         <!-- Use the nav area to add hyperlinks to other pages
             within the website-->
         <!--Tablet, Desktop Nav-->
         <nav class="tablet-desktop">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="showcase.html">Showcase</a></li>
-                <li><a href="client.html">Client-Side</a></li>
-                <li><a href="../fitnessClub/index.html" target="_blank">Fitness Club</a></li>
-                <li><a href="../fitness-bootstrap/index.html" target="_blank">Bootstrap</a></li>
-            </ul>
+            <div class="wrapper">
+                <div class="logo"><a href="index.html"><img src="images/Carleigh.jpg" alt="website logo" class="round"></a></div>
+                <ul class="nav-links">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="showcase.html" class="desktop-item">Showcase</a></li>
+                  <li><a href="client.html">Client-Side</a></li>
+                  <li><a href="../fitnessClub/index.html" target="_blank">Fitness Club</a></li>
+                  <li><a href="../fitness-bootstrap/index.html" target="_blank">Bootstrap</a></li>
+                </ul>
+              </div>
         </nav>
 
-            <!--Hero Image-->
-            <!-- <div id="hero" class="tablet-desktop" >
-                <img src="images/hero-image.jpg" alt="left arm extended holding a weight"> 
-            </div> -->
  
         <!-- Use the main area to add the main content of the webpage-->
-        
         <main>
 
-            <h1>Client-Side Projects</h1>
-            <h2>Spring 2024</h2>
-            <h2>Carleigh Smith</h2>
+            <div id="intro">
+
+                <h1>Showcase Projects</h1>
+                <h2>Spring 2024</h2>
+                <h2>Carleigh Smith</h2>
+            </div>
             <aside><p>Client-Side link: include images and links to showcase the following projects you worked on in your Client-Side course. Include 1 of the hands-on projects from each chapter you completed starting in chapters 2 - 7, 9, 12 (total: 8 projects)</p></aside>
             <div class="grid-container">
                 <div class="grid-item">
+                    <h3>Project: Hands-On 1-03</h3>
+                    <p>This program creates a basic form for gathering user contact information and reservation details. </p>
+                    <img src="images/project1-3.jpg" alt="image of project 1-3">
+                      <p><a href="../Client Side Programming 2024/Chapter01/project03/smithproject01-03.html">Go to project...</a></p>
+                  </div>
+                <div class="grid-item">
                     <h3>Project: Hands-On 2-01</h3>
-                    <p>Description</p>
+                    <p>This program is a simple Fahrenheit to Celsius temperature converter. The program allows for easy conversion between the two temperature scales in a simple and interactive way.</p>
+                    <img src="images/project2-1.jpg" alt="image of project 2-1">
                       <p><a href="../Client Side Programming 2024/Chapter02/project01/project02-01.html">Go to project...</a></p>
                   </div>
                   <div class="grid-item">
+                    <h3>Project:  Hands-On 3-02</h3>
+                    <p>This program dynamically creates and displays a slide gallery of ISS images. </p>
+
+                    <img src="images/project3-2.jpg" alt="image of project 3-2">
+                      <p><a href="../Client Side Programming 2024/Chapter03/Chapter03/project02/project03-02.html">Go to project...</a></p>
+                  </div>
+                  <div class="grid-item">
                     <h3>Project:  Hands-On 3-03</h3>
-                    <p></p>Description</p>
+                    <p>This program is a simple web application that generates a list of the top 10 movies from IMDb. The application creates an interactive list of the top 10 IMDb movies, displaying key information and links to their IMDb pages, making it easy for users to explore and learn about these movies. </p>
+                    <img src="images/project3-3.jpg" alt="image of project 3-3">
                       <p><a href="../Client Side Programming 2024/Chapter03/Chapter03/project03/project03-03.html">Go to project...</a></p>
                   </div>
                   <div class="grid-item">
                     <h3>Project: Hands-On 4-03</h3>
-                    <p>Description</p>
+                    <p>This program is a simple character counter for a book review comment. The program helps users track the number of characters in their book review comment, ensuring they stay within a specified limit and providing helpful feedback in case of overages.</p>
+                    <img src="images/project4-3.jpg" alt="image of project 4-3">
                       <p><a href="../Client Side Programming 2024/Chapter04/Chapter04/project03/project04-03.html">Go to project...</a></p>
                   </div>
+                
                   <div class="grid-item">
                     <h3>Project: Hands-On 5-02</h3>
-                    <p>Description</p>
+                    <p>This program allows users to rank a set of photos by moving them between a "photo bucket" and a "photo list." This setup allows users to create a ranked list of their favorite photos by transferring them from one section to another. </p>
+                    <img src="images/project5-2.jpg" alt="image of project 5-2">
                       <p><a href="../Client Side Programming 2024/Chapter05/Chapter05/project02/project05-02.html">Go to project...</a></p>
                   </div>
                   <div class="grid-item">
                     <h3>Project: Hands-On 6-01</h3>
-                    <p>Description</p>
+                    <p>This program is designed to validate an account creation form, focusing on password security and confirmation. If there's a validation error, the browser will prevent form submission and display the corresponding custom error message. This setup ensures users create strong passwords and confirm them correctly during account creation, helping to enhance security. </p>
+                    <img src="images/project6-1.jpg" alt="image of project 6-1">
                       <p><a href="../Client Side Programming 2024/Chapter06/Chapter06/project01/project06-01.html">Go to project...</a></p>
                   </div>
                   <div class="grid-item">
                     <h3>Project: Hands-On 7-01</h3>
-                    <p>Description</p>
+                    <p>This program validates a form used for creating a new account, specifically focusing on the strength of the password. This validation mechanism helps ensure that users create strong passwords, improving the security of the account creation process.</p>
+                    <img src="images/project7-1.jpg" alt="image of project 7-1">
                       <p><a href="../Client Side Programming 2024/Chapter07/Chapter07/project01/project07-01.html">Go to project...</a></p>
                   </div>
                   <div class="grid-item">
-                    <h3>Project: Chapter 9 Project</h3>
-                    <p>Description</p>
-                      <p><a href="../Client Side Programming 2024/Chapter09/Chapter09/project05/product01.html">Go to project...</a></p>
+                    <h3>Project: Hands-On 7-02</h3>
+                    <p>This program provides a basic poker hand simulation where users can deal cards from a shuffled deck, with an updated count of the remaining cards.</p>
+                    <img src="images/project7-2.jpg" alt="image of project 7-2">
+                      <p><a href="../Client Side Programming 2024/Chapter07/Chapter07/project02/project07-02.html">Go to project...</a></p>
                   </div>
                   <div class="grid-item">
-                    <h3>Project: Chapter 12 Project</h3>
-                    <p>Description</p>
+                    <h3>Project: Hands-On 9-2</h3>
+                    <p>This program enables users to submit cycling-related information through an interactive form and then view a summary of the submitted data on a separate page. The session storage mechanism in JavaScript is used to temporarily retain the collected data between page transitions.</p>
+                    <img src="images/project9-2.jpg" alt="image of project 9-2">
+                      <p><a href="../Client Side Programming 2024/Chapter09/Chapter09/project02/project09-02a_txt.html">Go to project...</a></p>
+                  </div>
+                  <div class="grid-item">
+                    <h3>Project: Chapter 9-5</h3>
+                    <p>This program simulates an e-commerce shopping cart system where users can add products to their cart and view the cart's contents. It comprises several components: product pages that display different items (like mitts, gloves, and other handwear), a shopping cart page, and associated JavaScript to manage cart storage. This program allows users to browse product pages, add items to a virtual shopping cart, and view the cart's contents, simulating a simple online shopping experience with persistent cart storage.</p>
+                    <img src="images/project9-5.jpg" alt="image of project 9-5">
+                      <p><a href="../Client Side Programming 2024/Chapter09/Chapter09/project05/product01.html">Go to project...</a></p>
+                  </div>
+
+                  <div class="grid-item">
+                    <h3>Project: Chapter 12-3</h3>
+                    <p>This program creates an interactive recipe page with expandable and collapsible content. Overall, this program creates an interactive recipe page where users can click to reveal or hide recipe details, providing a cleaner and more user-friendly experience.</p>
+                    <img src="images/project12-3.jpg" alt="image of project 12-3">
                       <p><a href="../Client Side Programming 2024/Chapter12/Chapter12/project03/project12-03.html">Go to project...</a></p>
                   </div>
             </div>
             
-    
-            <div id="home">
-                <p><a href="index.html">Return Home</a></p>
-            </div>
-
         </main>
 
         <!-- Use the footer area to add webpage footer content-->
@@ -124,8 +154,8 @@
             </div>
 
             <div class="social">
-                <a href="https://www.facebook.com/fwdfitclub" target="_blank"><img src="images/facebook-logo.png" alt="black and white Facebook logo"></a>
-                <a href="https://twitter.com/fwdfitclub" target="_blank"><img src="images/twitter-logo.png" alt="black and white Twitter logo"></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="black and white Facebook logo"></a>
+                <a href="https://twitter.com" target="_blank"><img src="images/twitter-logo.png" alt="black and white Twitter logo"></a>
             </div>
             
         </footer>

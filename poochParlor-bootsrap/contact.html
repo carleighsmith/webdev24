@@ -8,155 +8,230 @@
 -->
 <html lang="en">
 <head>
+    <title>The Pooch Parlor: Contact Us</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!-- Preconnecting and linking styles and scripts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../poochparlor/css/styles.css">
-    <title>The Pooch Parlor: Contact</title>
+    
+    <!-- Favicon -->
     <link rel="shortcut icon" href="images/fav/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-touch-icon.png">
     <link rel="icon" sizes="192x192" href="images/fav/android-chrome-192.png">
+   
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom styles and scripts -->
+    <link rel="stylesheet" href="css/styles.css">
     <script src="scripts/scripts.js" defer></script>
 </head>
+
 <body>
-    <div id="container"> 
-
-        <!-- Use the header area for the website name or logo -->
-        <header>
-            <a href = "index.html"><img src="images/The_Pooch_Parlor.jpg" alt="logo" class="logo"></a>
-        </header>
-
-        <!-- Use the nav area to add hyperlinks to other pages
-            within the website-->
-            <nav class="mobile-nav">
-                <div id="menu-links">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html"> Services</a></li>
-                        <li><a href="bookings.html">Bookings</a></li>
-                        <li><a href="FAQs.html"> FAQs</a></li>
-                        <li><a href="about.html"> About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-
-                <a class="menu-icon" onclick="hamburger()">
-                    <div>&#9776;</div>
-                </a>
-            </nav>
-
-            <nav class="tablet-desktop">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html"> Services</a></li>
-                    <li><a href="bookings.html">Bookings</a></li>
-                    <li><a href="FAQs.html"> FAQs</a></li>
-                    <li><a href="about.html"> About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-
-
-            <div id="hero" class="tablet-desktop">
-            <img src="images/images/dog-banner.jpg" alt="banner with dogs on it" class="banneralt">
-            </div>
-
-        
-        <!-- Use the main area to add the main content of the webpage-->
-        <main>
-
-            <div id = contact>
-                <h2>You can reach us at:</h2>
-
-                <p class="tel-link"><a href="tel:6014023709">(601) 402-3709</a></p> 
-                
-                <p>Email: <a href="mailto:thepoochparlor@grooming.net" class="external-link" target="_blank">thepoochparlor@grooming.net</a></p>
-                
-                <p>Address: <a href="https://www.google.com/maps/place/Affinity+Retreat/@31.317693,-89.363041,14z/data=!4m6!3m5!1s0x889cdf02d469f58b:0x3b742c56a4319bc2!8m2!3d31.3176925!4d-89.363041!16s%2Fg%2F1hc7xxgt6?hl=en&entry=ttu"  
-                class="external-link" target="_blank">2132 Oak Grove Rd, Hattiesburg, MS 39402 </a>
-                <!--Fix map link-->
-                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13633.697030082445!2d-89.37144319999999!3d31.319654399999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889cdf02d469f58b%3A0x3b742c56a4319bc2!2sAffinity%20Retreat!5e0!3m2!1sen!2sus!4v1706752421200!5m2!1sen!2sus"
-            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe></p>
-            </div>
-
-            <div id="form">
-
-                <h2>Complete the form below to subscribe to our updates and emails! </h2>
-                <form class="form-grid"> <!-- Start Form -->
-                    <fieldset>
-                        <legend>Subscription Information</legend>
-                        <label for="fName">First Name:</label>
-                        <input type="text" name="fName" id="fName" required>
-                   
-                        <label for="lName">Last Name:</label>
-                        <input type="text" name="lName" id="lName" required>
-                    
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" required>
-
-                        <label for="phone">Phone:</label>
-                        <input type="tel" name="phone" id="phone" required>
-                    </fieldset>
-
-                    <div id="appointmentForm">
-                        <fieldset>
-                            <legend>Sign Up to Make Appointment</legend>
-    
-                            <label for="ofName">Owner's First Name:</label>
-                            <input type="text" name="ofName" id="ofName" required>
-                       
-                            <label for="olName">Owner's Last Name:</label>
-                            <input type="text" name="olName" id="olName" required>
-                        
-                            <label for="oemail">Email:</label>
-                            <input type="email" name="oemail" id="oemail" required>
-    
-                            <label for="ophone">Phone:</label>
-                            <input type="tel" name="ophone" id="ophone" required>
-                        
-                            <label for="petName">Pet's Name:</label>
-                            <input type="text" name="petName" id="petName" required>
-                        </fieldset>
-                        
-                        <fieldset>
-                            <legend>Pet's Gender:</legend>
-                            <input type="radio" id="female" name="petGender" value="Female"><label for="female">Female</label><br>
-                            <input type="radio" id="male" name="petGender" value="Male"><label for="male">Male</label>
-                        </fieldset>
-                            
-                        <fieldset>
-                            <legend>Services</legend>
-                            <!--add check marks-->
-                            <input type="checkbox" id="bathandshampoo" value="Bathing and Shampooing" name="service"><label for="bathandshampoo">Bathing and Shampooing: $25</label><br>
-                            <input type="checkbox" id="haircutandstyle" value="Haircut and Styling" name="service"><label for="haircutandstyle">Haircut and Styling: $40</label><br>
-                            <input type="checkbox" id="nailtrimming" value="Nail Trimming" name="service"><label for="nailtrimming">Nail Trimming: $15</label><br>
-                            <input type="checkbox" id="earcleaning" value="Ear Cleaning" name="service"><label for="earcleaning">Ear Cleaning: $10</label><br>
-                            <input type="checkbox" id="teethcleaning" value="Teeth Cleaning" name="service"><label for="teethcleaning">Teeth Cleaning: $20</label><br>
-                            <input type="checkbox" id="desheding" value="De-Shedding" name="service"><label for="desheding">De-shedding: $30</label><br>
-                            <input type="checkbox" id="treatment" value="Flea and Tick Treatment" name="service"><label for="treatment">Flea and Tick Treatment: $25</label><br>
-                            <input type="checkbox" id="conditioning" value="Skin and Coat Conditioning" name="service"><label for="conditioning">Skin and Coat Conditioning: $20</label><br>
-                            <input type="checkbox" id="specialtyservice" value="Specialty Services" name="service"><label for="specialtyservice">Specialty Services: Prices vary, please inquire for details.</label><br>
-    
-                        </fieldset>
-                    </div>
-                    <input type="submit" id="submit" value="Submit" class="btn">
-
-                </form>
-
-
-            </div>
-        </main>
-
-        <!-- Use the footer area to add webpage footer content-->
-        <footer>
-            <br>
-            <p>&copy; Copyright 2024. All Rights Reserved.</p>
-            <p><a href="mailto:thepoochparlor@grooming.net" class="link" target="_blank">thepoochparlor@grooming.net</a></p>    
-        </footer>
-    </div>
      
+ <!-- Navigation bar -->
+ <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="index.html">The Pooch Parlor</a>
+
+    <!-- Hamburger menu for mobile view -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="bookings.html">Bookings</a></li>
+            <li class="nav-item"><a class="nav-link" href="FAQs.html">FAQs</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+  </nav>
+
+     <!-- Main Content Area -->
+     <main class="container mt-5">
+
+        <div class="text-center">
+
+            <h2 class="py-3">You can reach us at:</h2>
+            <h4 class="mobile mb-3"><a href="tel:6014023709" role="button"
+                    class="btn btn-outline-secondary btn-lg bg-dark text-white">(601) 402-3709</a></h4>
+            <h4 class="tablet-desktop tel-num mb-3">(601) 402-3709</h4>
+            <h4>Email us: <a href="mailto:thepoochparlor@grooming.net"
+                    class="contact-email-link">thepoochparlor@grooming.net</a></h4>
+            <h4>Visit us at:  <a href="https://www.google.com/maps/place/Affinity+Retreat/@31.317693,-89.363041,14z/data=!4m6!3m5!1s0x889cdf02d469f58b:0x3b742c56a4319bc2!8m2!3d31.3176925!4d-89.363041!16s%2Fg%2F1hc7xxgt6?hl=en&entry=ttu"  
+                class="external-link" target="_blank">2132 Oak Grove Rd, Hattiesburg, MS 39402 </a> </h4>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13633.697030082445!2d-89.37144319999999!3d31.319654399999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889cdf02d469f58b%3A0x3b742c56a4319bc2!2sAffinity%20Retreat!5e0!3m2!1sen!2sus!4v1706752421200!5m2!1sen!2sus"
+                width="600" height="450" allowfullscreen class="map"></iframe>
+        </div>
+
+        <div id="form">
+
+            <h2 class="text-center">Complete the form below to subscribe to our updates and emails! </h2>
+
+            <form class="form-grid p-2 mt-3 bg-light"><!-- Start Form -->
+
+                <fieldset class="mb-2 form-group">
+                    <legend>Subscription Information</legend>
+                    <label for="fName">First Name:</label>
+                    <input type="text" name="fName" id="fName" class="form-control" required>
+
+                    <label for="lName">Last Name:</label>
+                    <input type="text" name="lName" id="lName" class="form-control" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" class="form-control" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" class="form-control" required>
+                
+                    <legend>Referral Source</legend>
+
+                    <label for="reference">How did you find us?</label>
+                    <select name="reference" id="reference" class="form-control">
+                        <option value="ad">Advertisement</option>
+                        <option value="friend">Friend</option>
+                        <option value="google">Google</option>
+                        <option value="social">Social Media</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="questions">Questions?</label>
+                    <textarea id="questions" name="questions" rows="5" cols="35" class="form-control"></textarea>
+                </fieldset>
+
+                <fieldset class="mb-2 form-group">
+                    <legend>Sign Up to Make Appointment</legend>
+                   
+                    <label for="ofName">Owner's First Name:</label>
+                    <input type="text" name="ofName" id="ofName" class="form-control" required>
+
+                    <label for="ofName">Owner's Last Name:</label>
+                    <input type="text" name="olName" id="olName" class="form-control" required>
+
+                    <label for="ofName">Email:</label>
+                    <input type="text" name="oemail" id="oemail" class="form-control" required>
+
+                    <label for="ofName">Phone:</label>
+                    <input type="text" name="ophone" id="ophone" class="form-control" required>
+
+                    <label for="ofName">Pet's Name:</label>
+                    <input type="text" name="petName" id="petName" class="form-control" required>
+
+                    <legend>Pet's Gender:</legend>
+
+                    <div class="form-check form-check-inline">
+                        <div class="form-check form-check-inline">
+                        <input type="radio" name="petGender" id="female" value="Female" class="form-check-input">
+                        <label for="female" class="form-check-label">Female</label><br>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                        <input type="radio" name="petGender" id="male" value="Male" class="form-check-input">
+                        <label for="male" class="form-check-label">Male</label><br>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="mb-2 ml-2 form-group">
+                    <legend>Services</legend>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" name="service" id="bathandshampoo" value="Bathing and Shampooing"
+                            class="form-check-input">
+                        <label for="bathandshampoo" class="form-check-label">Bathing and Shampooing: $25</label>
+                    </div>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" name="service" id="haircutandstyle" value="Haircut and Styling"
+                            class="form-check-input">
+                        <label for="haircutandstyle" class="form-check-label">Haircut and Styling: $40</label>
+                    </div>
+                    <br>
+
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" name="service" id="nailtrimming" value="Nail Trimming" class="form-check-input">
+                        <label for="nailtrimming" class="form-check-label">Nail Trimming: $15</label>
+                    </div>
+                    <br>
+
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" name="service" id="earcleaning" value="Ear Cleaning" class="form-check-input">
+                        <label for="earcleaning" class="form-check-label">Ear Cleaning: $10</label>
+                    </div>
+                    <br>
+
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" name="service" id="teethcleaning" value="Teeth Cleaning" class="form-check-input">
+                        <label for="teethcleaning" class="form-check-label">Teeth Cleaning: $20</label>
+                    </div>
+                    <br>
+
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" name="service" id="desheding" value="De-Shedding" class="form-check-input">
+                        <label for="desheding" class="form-check-label">De-shedding: $30</label>
+                    </div>
+                    <br>
+
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" name="service" id="treatment" value="Flea and Tick Treatment" class="form-check-input">
+                        <label for="treatment" class="form-check-label">Flea and Tick Treatment: $25</label>
+                    </div>
+                    <br>
+
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" name="service" id="conditioning" value="Skin and Coat Conditioning" class="form-check-input">
+                        <label for="conditioning" class="form-check-label">Skin and Coat Conditioning: $20</label>
+                    </div>
+                    <br>
+
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" name="service" id="specialtyservice" value="Specialty Services" class="form-check-input">
+                        <label for="specialtyservice" class="form-check-label">Specialty Services: Prices vary, please inquire for details.</label>
+                    </div>
+                </fieldset>
+
+                <input type="submit" id="submit" value="Submit" class="btn  btn-lg bg-dark text-white mx-auto d-block">
+
+            </form>
+        </div>
+
+    </main>
+
+     <!-- Footer -->
+     <footer class="jumbotron-fluid text-center bg-dark p-5">
+        <div class="container text-white">
+            <p>&copy; Copyright 2024. All Rights Reserved.</p>
+            <p><a href="mailto:thepoochparlor@grooming.net" class="text-white">thepoochparlor@grooming.net</a></p>
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png"
+                    alt="black and white Facebook logo" class="pr-4"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter-logo.png"
+                    alt="black and white Twitter logo"></a>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

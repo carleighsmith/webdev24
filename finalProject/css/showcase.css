@@ -1,0 +1,277 @@
+/*
+Author: Carleigh Smith
+Start Date: 4/20/2024
+File Name: showcase.css
+*/
+
+/*CSS Reset*/
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section,
+article, aside {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Montserrat, sans-serif;
+    background: linear-gradient(to right, #575048,#8e8b86,#a79181,#d0a47f); 
+}
+
+
+/*Begin style rules for mobile viewport*/
+/*Style rules for header*/
+header {
+    height: 190px;
+    padding-left: 20px; 
+    background: linear-gradient(to right, #575048,#8e8b86,#a79181,#d0a47f); 
+}
+
+#ffc-logo img {
+    position: absolute; 
+    top: 20px; 
+    left: 10px; 
+    height: 150px; 
+    width: 150px; 
+    border-radius: 50%; 
+    border: 2px solid #fff; 
+}
+
+/*Style rules for hamburger menu*/
+.mobile-nav a {
+    color: #160c0c;
+    font-family: 'Francois On', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+.tablet-desktop, #menu-links {
+    display: none;
+}
+
+/* Style rules for main content */
+main{
+    padding: 2%;
+    font-size: 1.15em;
+    font-family: "Roboto Slab", serif;
+    background-image: url('../images/kace-rodriguez-p3OzJuT_Dks-unsplash.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Style rules for footer content */
+footer {
+    padding: 1% 1%;
+    margin: 0;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+}
+
+footer .copyright {
+    font-size: 0.75em;
+    text-align: center;
+    color: #fff;
+    padding: 2% 4%;
+    float: left;
+    width: 75%;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social {
+    float: right;
+    width: 20%;
+    padding: 2%;
+}
+
+.social img {
+    width: 40px;
+    height: auto;
+}
+
+.logo{
+    margin-top: auto;
+}
+
+.logo img{ 
+    width: 56px; 
+    height: auto;
+    border-radius: 50%;
+}
+
+img {
+    width: 450px;
+}
+
+
+/* General styles for links */
+#sources {
+    color: #333; 
+    background: white; 
+    padding: 10px 20px; 
+    margin: 10px;
+    border: 1px solid #333; 
+    border-radius: 5px; 
+    text-decoration: none; 
+}
+
+#sources a {
+    color: #3A3A3A; 
+    font-weight: bold; 
+    text-decoration: none; 
+    padding: 10px;
+    margin: 10px 0; 
+    display: inline-block; 
+}
+
+/* Hover effect for links */
+#sources a:hover {
+    color: white; 
+    background-color: #3A3A3A; 
+    border-radius: 5px; 
+}
+
+/* Style links as buttons */
+#sources a {
+    border: 1px solid #3A3A3A;
+    background-color: white;
+    border-radius: 5px; 
+}
+
+/* Center the links in the intro section */
+#sources, #intro {
+    text-align: center; 
+}
+
+/* Adjust spacing between links */
+#intro a {
+    margin: 15px 10px; 
+}
+
+#intro {
+    margin-top: 50px;
+}
+
+
+@media screen and (min-width: 630px),print {  /*630px is starting breakpoint*/
+
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    #ffc-logo {
+        display: none;
+    }
+
+    nav{
+        position: fixed;
+        z-index: 99;
+        width: 100%;
+        background: #242526;
+    }
+      
+    nav .wrapper{
+        position: relative;
+        max-width: 1300px;
+        padding: 0px 30px;
+        height: 70px;
+        line-height: 70px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .wrapper .logo a{
+        color: #f2f2f2;
+        font-size: 30px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .wrapper .nav-links{
+        display: inline-flex;
+    }
+
+    .nav-links li{
+        list-style: none;
+    }
+
+    .nav-links li a{
+        color: #f2f2f2;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 9px 15px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1015px),print {
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+    
+    #ffc-logo {
+        display: none;
+    }
+    
+    nav{
+        position: fixed;
+        z-index: 99;
+        width: 100%;
+        background: #242526;
+    }
+
+}
+
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+    #container {
+        width: 1920px;
+        margin: 0 auto;
+    } 
+
+ }
+ /*media query closing brace for large desktop viewport */
+
+/* Media Query for Print */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+}

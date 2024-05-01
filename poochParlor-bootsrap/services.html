@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <!--
     Student Name: Carleigh Smith
@@ -8,388 +6,385 @@
 -->
 <html lang="en">
 <head>
+    <title>The Pooch Parlor: Services</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../poochparlor/css/styles.css">
-    <title>The Pooch Parlor: Services</title>
+   
+    <!-- Preconnecting and linking styles and scripts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
     <link rel="shortcut icon" href="images/fav/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-touch-icon.png">
     <link rel="icon" sizes="192x192" href="images/fav/android-chrome-192.png">
+   
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom styles and scripts -->
+    <link rel="stylesheet" href="css/styles.css">
     <script src="scripts/scripts.js" defer></script>
 </head>
-<body>
-    <div id="container"> 
 
-    <!-- Use the header area for the website name or logo -->
-    <header>
-        <a href = "index.html"><img src="images/The_Pooch_Parlor.jpg" alt="logo" class="logo"></a>
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="index.html">The Pooch Parlor</a>
+
+    <!-- Hamburger menu for mobile view -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="bookings.html">Bookings</a></li>
+            <li class="nav-item"><a class="nav-link" href="FAQs.html">FAQs</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+  </nav>
+
+    <!-- Header Section -->
+    <header class="jumbotron jumbotron-fluid text-center mt-5">
+        <div class="container">
+            <h1 class="display-1">The Pooch Parlor Schedule</h1>
+            <p class="lead">Weekly Schedule</p>
+        </div>
     </header>
 
-     <!-- Use the nav area to add hyperlinks to other pages
-         within the website-->
-         <nav class="mobile-nav">
-            <div id="menu-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html"> Services</a></li>
-                    <li><a href="bookings.html">Bookings</a></li>
-                    <li><a href="FAQs.html"> FAQs</a></li>
-                    <li><a href="about.html"> About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-
-            <a class="menu-icon" onclick="hamburger()">
-                <div>&#9776;</div>
-            </a>
-        </nav>
-
-        <nav class="tablet-desktop">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html"> Services</a></li>
-                <li><a href="bookings.html">Bookings</a></li>
-                <li><a href="FAQs.html"> FAQs</a></li>
-                <li><a href="about.html"> About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-
-        <div id="hero" class="tablet-desktop">
-            <img src="images/images/dog-banner.jpg" alt="banner with dogs on it" class="banneralt">
-        </div>
-
-    <!-- Use the main area to add the main content of the webpage-->
-    <main>
-       
-        <div class="mobile">
-            <h3>Schedule</h3>
-            <p>Sunday: 8am - 2pm </p>
-            <p>Monday: 8am - 7pm</p>
-            <p>Tuesday: 8am - 7pm</p>
-            <p>Wednesday: 8am - 7pm</p>
-            <p>Thursday: 8am - 7pm</p>
-            <p>Friday: 8am - 7pm</p>
-            <p>Saturday: Closed</p>
-            <p>To find specifics about the groomers and their times, visit our website on a tablet or desktop.</p>
-        </div>
-
-
+    <!-- Main Section -->
+    <main class="container mb-5">
+        <!-- Existing Content -->
         <div class="tablet-desktop">
-            <table> <!--Start Table-->
-                <caption>The Pooch Parlor Schedule</caption>
-                <tr><!-- Row 1 -->
-                    <th>Days</th>
-                    <th>Times</th>
-                    <th>Charlotte's Schedule</th>
-                    <th>John's Schedule</th>
-                    <th>Sarah's Schedule</th>
+            <!-- Example of existing content: Schedule table -->
+            <table class="table table-striped table-hover">
+              <thead class="thead-dark">
+                <tr>
+                  <th>Days</th>
+                  <th>Times</th>
+                  <th>Charlotte's Schedule</th>
+                  <th>John's Schedule</th>
+                  <th>Sarah's Schedule</th>
                 </tr>
-                <tr><!-- Row 2 -->
-                    <td>Sunday</td>
-                    <td>8am - 2pm</td>
-                    <td>8am - 10am</td>
-                    <td>10am - 12am</td>
-                    <td>12am - 2pm</td>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sunday</td>
+                  <td>8am - 2pm</td>
+                  <td>8am - 10am</td>
+                  <td>10am - 12pm</td>
+                  <td>12pm - 2pm</td>
                 </tr>
-                <tr><!-- Row 3 -->
-                    <td>Monday</td>
-                    <td>8am - 2pm</td>
-                    <td>8am - 10am</td>
-                    <td>10am - 12am</td>
-                    <td>12am - 2pm</td>
+                <tr>
+                  <td>Monday</td>
+                  <td>8am - 2pm</td>
+                  <td>8am - 10am</td>
+                  <td>10am - 12pm</td>
+                  <td>12pm - 2pm</td>
                 </tr>
-                <tr><!-- Row 4 -->
-                    <td>Tuesday</td>
-                    <td>8am - 2pm</td>
-                    <td>8am - 10am</td>
-                    <td>10am - 12am</td>
-                    <td>12am - 2pm</td>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>8am - 2pm</td>
+                  <td>8am - 10am</td>
+                  <td>10am - 12pm</td>
+                  <td>12pm - 2pm</td>
                 </tr>
-                <tr><!-- Row 5 -->
-                    <td>Wednesday</td>
-                    <td>8am - 2pm</td>
-                    <td>8am - 10am</td>
-                    <td>10am - 12am</td>
-                    <td>12am - 2pm</td>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>8am - 2pm</td>
+                  <td>8am - 10am</td>
+                  <td>10am - 12pm</td>
+                  <td>12pm - 2pm</td>
                 </tr>
-                <tr><!-- Row 6 -->
-                    <td>Thursday</td>
-                    <td>8am - 2pm</td>
-                    <td>8am - 10am</td>
-                    <td>10am - 12am</td>
-                    <td>12am - 2pm</td>
+                <tr>
+                  <td>Thursday</td>
+                  <td>8am - 2pm</td>
+                  <td>8am - 10am</td>
+                  <td>10am - 12pm</td>
+                  <td>12pm - 2pm</td>
                 </tr>
-                <tr><!-- Row 7 -->
-                    <td>Friday</td>
-                    <td>8am - 2pm</td>
-                    <td>8am - 10am</td>
-                    <td>10am - 12am</td>
-                    <td>12am - 2pm</td>
+                <tr>
+                  <td>Friday</td>
+                  <td>8am - 2pm</td>
+                  <td>8am - 10am</td>
+                  <td>10am - 12pm</td>
+                  <td>12pm - 2pm</td>
                 </tr>
-                <tr><!-- Row 8 -->
-                    <td>Saturday</td>
-                    <td>Closed</td>
-                    <td>Off</td>
-                    <td>Off</td>
-                    <td>Off</td>
+                <tr>
+                  <td>Saturday</td>
+                  <td>Closed</td>
+                  <td>Off</td>
+                  <td>Off</td>
+                  <td>Off</td>
                 </tr>
+              </tbody>
             </table>
         </div>
 
-        <section id="services">
-           
-                    
-                    <img src="../poochparlor/images/images/boney-dHIRbh9En6I-unsplash.jpg" alt="doggy getting haircut" class="serve" >
-                    <h1>Services</h1>
-                    <p class="mobile">Our grooming facility includes these services: Bathing and Shampooing, 
-                        Haircut and Styling, Nail Trimming, Ear Cleaning, Teeth Cleaning, 
-                        De-shedding, Flea and Tick Treatment, Skin and Coat Conditioning, 
-                        and Specialty Services. </p>
+        <div class="row">
+            <div class="col-md-7">
+              <h2 class="display-3">Services</h2>
+              <p class="lead">Our grooming facility includes these services: Bathing and Shampooing, Haircut and Styling, Nail Trimming, Ear Cleaning, Teeth Cleaning, De-shedding, Flea and Tick Treatment, Skin and Coat Conditioning, and Specialty Services.</p>
+              <ul>
+                <li>&#128062;Bathing and Shampooing: $25</li>
+                <li>&#128062;Haircut and Styling: $40</li>
+                <li>&#128062;Nail Trimming: $15</li>
+                <li>&#128062;Ear Cleaning: $10</li>
+                <li>&#128062;Teeth Cleaning: $20</li>
+                <li>&#128062;De-shedding: $30</li>
+                <li>&#128062;Flea and Tick Treatment: $25</li>
+                <li>&#128062;Skin and Coat Conditioning: $20</li>
+                <li>&#128062;Specialty Services: Prices vary, please inquire for details.</li>
+              </ul>
+              
+            </div>
+            <div class="col-md-5">
+              <img src="../poochparlor/images/images/boney-dHIRbh9En6I-unsplash.jpg" alt="doggy getting haircut"
+                class="img-fluid rounded">
+            </div>
+        </div>
+    
+        <hr class="my-5">
 
+        <div class="row">
+            <div class="col-md-7">
+              <h2 class="display-3">Packages</h2>
+              <h3>Pampered Pooch Package: $60 </h3>
+              <ul class="package" >
+                  <li>Bathing and Shampooing</li>
+                  <li>Haircut and Styling</li>
+                  <li>Nail Trimming</li>
+                  <li>Ear Cleaning</li>
+                  <li>Teeth Cleaning</li>
+                  <li>Skin and Coat Conditioning</li>
+              </ul>
+              <h3>Grooming Essentials Package: $45</h3>
+              <ul class="package" >
+                  <li>Bathing and Shampooing</li>
+                  <li>Haircut and Styling</li>
+                  <li>Nail Trimming</li>
+                  <li>Ear Cleaning</li>
+              </ul>
+              <h3>Deluxe Spa Package: $75</h3>
+              <ul class="package" >
+                  <li>Bathing and Shampooing</li>
+                  <li>Haircut and Styling</li>
+                  <li>Nail Trimming</li>
+                  <li>Ear Cleaning</li>
+                  <li>Teeth Cleaning</li>
+                  <li>Skin and Coat Conditioning</li>
+                  <li>De-shedding</li>
+              </ul>
+              <h3>Wellness Package: $50</h3>
+              <ul class="package">
+                  <li>Bathing and Shampooing</li>
+                  <li>Nail Trimming</li>
+                  <li>Ear Cleaning</li>
+                  <li>Teeth Cleaning</li>
+                  <li>Flea and Tick Treatment</li>
+              </ul>
+              
+            </div>
+            <div class="col-md-5">
+                <img src="images/kitties.jpg" alt="my kitties"
+                class="img-fluid rounded">
+            </div>
+        </div>
+    
+        <hr class="my-5">
 
-                    <ul class="tablet-desktop">
-                        <li>&#128062;Bathing and Shampooing: $25</li>
-                        <li>&#128062;Haircut and Styling: $40</li>
-                        <li>&#128062;Nail Trimming: $15</li>
-                        <li>&#128062;Ear Cleaning: $10</li>
-                        <li>&#128062;Teeth Cleaning: $20</li>
-                        <li>&#128062;De-shedding: $30</li>
-                        <li>&#128062;Flea and Tick Treatment: $25</li>
-                        <li>&#128062;Skin and Coat Conditioning: $20</li>
-                        <li>&#128062;Specialty Services: Prices vary, please inquire for details.</li>
+        <div class="row">
+            <div class="col-md-7">
+              <h2 class="display-3">Service Descriptions</h2>
+              <p class="lead">The descriptions of these services can be found by accessing this website on desktop or tablet, or by calling :</p>
+              <p class="tel-link"><a href="tel:6014023709">(601) 402-3709</a></p>
+              <dl class="tablet-desktop">
+                <dt>Bathing and Shampooing</dt>
+                <dd>
+                    <ul>
+                        <li>Basic baths using dog-friendly shampoos and conditioners.</li>
+                        <li>Medicated baths for dogs with skin conditions.</li>
                     </ul>
-
-                    <p class="mobile">
-                        Introducing our luxurious grooming packages tailored to pamper your beloved furry friend. 
-                        Our Pampered Pooch Package, priced at $60, is the epitome of indulgence, encompassing a 
-                        comprehensive array of services to ensure your pet's ultimate comfort and well-being. 
-                        From a soothing bath and expert shampooing to a stylish haircut and precise nail trimming, 
-                        every aspect of grooming is meticulously attended to. Additionally, we provide thorough ear
-                        and teeth cleaning to promote optimal hygiene and health. Furthermore, our skilled groomers 
-                        administer a specialized skin and coat conditioning treatment, leaving your pet's fur 
-                        irresistibly soft and lustrous. For those seeking a blend of elegance and practicality, 
-                        our Grooming Essentials Package offers all the fundamental services at a competitive rate 
-                        of $45. Meanwhile, our Deluxe Spa Package, priced at $75, elevates the grooming experience 
-                        with the inclusion of de-shedding treatment, ensuring your pet emerges not only impeccably 
-                        groomed but also shedding significantly less. Prioritizing your pet's wellness, our Wellness 
-                        and Protection Package, priced at $50, focuses on essential hygiene and preventive care, 
-                        offering bathing, nail trimming, ear cleaning, teeth cleaning, and flea and tick treatment 
-                        to safeguard your pet from common health concerns. Indulge your furry companion with our 
-                        exquisite grooming packages and witness the transformation into a pampered and radiant pet.</p>
-
-
-                <div class="tablet-desktop"> 
-                    <h1>Packages:</h1>
-                    <p>Pampered Pooch Package: $60 </p>
-                    <ul class="package" >
-                        <li>Bathing and Shampooing</li>
-                        <li>Haircut and Styling</li>
-                        <li>Nail Trimming</li>
-                        <li>Ear Cleaning</li>
-                        <li>Teeth Cleaning</li>
-                        <li>Skin and Coat Conditioning</li>
-                    </ul>
-                    <p>Grooming Essentials Package: $45</p>
-                    <ul class="package" >
-                        <li>Bathing and Shampooing</li>
-                        <li>Haircut and Styling</li>
-                        <li>Nail Trimming</li>
-                        <li>Ear Cleaning</li>
-                    </ul>
-                    <p>Deluxe Spa Package: $75</p>
-                    <ul class="package" >
-                        <li>Bathing and Shampooing</li>
-                        <li>Haircut and Styling</li>
-                        <li>Nail Trimming</li>
-                        <li>Ear Cleaning</li>
-                        <li>Teeth Cleaning</li>
-                        <li>Skin and Coat Conditioning</li>
-                        <li>De-shedding</li>
-                    </ul>
-                    <p>Wellness Package: $50</p>
-                    <ul class="package">
-                        <li>Bathing and Shampooing</li>
-                        <li>Nail Trimming</li>
-                        <li>Ear Cleaning</li>
-                        <li>Teeth Cleaning</li>
-                        <li>Flea and Tick Treatment</li>
-                    </ul>
-                </div>
+                </dd>
                 
+                <dt>Haircut and Styling</dt>
+                <dd>
+                    <ul>
+                        <li>Breed-specific haircuts or customized styles based on the owner's preference.</li>
+                        <li>Trimming and shaping of the coat.</li>
+                    </ul>
+                </dd>
                 
-            </section>
+                <dt>Nail Trimming</dt>
+                <dd>
+                    <ul>
+                        <li>Regular nail trimming to prevent overgrowth and discomfort for the dog.</li>
+                    </ul>
+                </dd>
+                
+                <dt>Ear Cleaning</dt>
+                <dd>
+                    <ul>
+                        <li>Cleaning and removal of excess ear wax to prevent infections.</li>
+                    </ul>
+                </dd>
+                
+                <dt>Teeth Cleaning</dt>
+                <dd>
+                    <ul>
+                        <li>Teeth Brushing.</li>
+                        <li>Other dental care services to maintain oral health.</li>
+                    </ul>
+                </dd>
+                
+                <dt>De-shedding</dt>
+                <dd>
+                    <ul>
+                        <li>Removal of loose fur to reduce shedding and keep the coat healthy.</li>
+                    </ul>
+                </dd>
+                
+                <dt>Flea and Tick Treatment</dt>
+                <dd>
+                    <ul>
+                        <li>Application of flea and tick control products to protect the dog from parasites.</li>
+                    </ul>
+                </dd>
+                
+                <dt>Skin and Coat Conditioning</dt>
+                <dd>
+                    <ul>
+                        <li>Application of moisturizers or treatments to maintain a healthy coat and skin.</li>
+                    </ul>
+                </dd>
+                
+                <dt>Specialty Services*</dt>
+                <dd>
+                    <ul>
+                        <li>Creative grooming for those who want unique styles or colors.</li>
+                        <li>Spa treatments, such as aromatherapy or massages.</li>
+                        <li>Specialized services for senior dogs or those with specific health issues.</li>
+                    </ul>
+                </dd>
+            </dl>
+
+            <p class="lead">*Specialty services upon request</p>
 
             
-            <section id="descriptions">
-                
-                    <img src="images/doggywash.jpg" alt="banner with dogs on it" class="serve">
-                    <h1>Service Descriptions</h1>
-                    <p>The descriptions of these services can be found by accessing this website on desktop or tablet, or by calling :</p>
-                    <p class="tel-link"><a href="tel:6014023709">(601) 402-3709</a></p> 
+            </div>
+            <div class="col-md-5">
+              <img src="images/doggywash.jpg" alt="banner with dogs on it"
+                class="img-fluid rounded">
+            </div>
+        </div>   
 
-                    <dl class="tablet-desktop">
-                        
-                        <dt>Bathing and Shampooing</dt>
-                        <dd>
-                            <ul>
-                                <li>Basic baths using dog-friendly shampoos and conditioners.</li>
-                                <li>Medicated baths for dogs with skin conditions.</li>
-                            </ul>
-                        </dd>
-                
-                        <dt>Haircut and Styling</dt>
-                        <dd>
-                            <ul>
-                                <li>Breed-specific haircuts or customized styles based on the owner's preference.</li>
-                                <li>Trimming and shaping of the coat.</li>
-                            </ul>
-                        </dd>
-        
-                        <dt>Nail Trimming</dt>
-                        <dd>
-                            <ul>
-                                <li>Regular nail trimming to prevent overgrowth and discomfort for the dog.</li>
-                            </ul>
-                        </dd>
-        
-                        <dt>Ear Cleaning</dt>
-                        <dd>
-                            <ul>
-                                <li>Cleaning and removal of excess ear wax to prevent infections.</li>
-                            </ul>
-                        </dd>
-        
-                        <dt>Teeth Cleaning</dt>
-                        <dd>
-                            <ul>
-                                <li>Teeth Brushing.</li>
-                                <li>Other dental care services to maintain oral health.</li>
-                            </ul>
-                        </dd>
-        
-                        <dt>De-shedding</dt>
-                        <dd>
-                            <ul>
-                                <li>Removal of loose fur to reduce shedding and keep the coat healthy.</li>
-        
-                            </ul>
-                        </dd>
-        
-                        <dt>Flea and Tick Treatment</dt>
-                        <dd>
-                            <ul>
-                                <li>Application of flea and tick control products to protect the dog from parasites.</li>
-                            </ul>
-                        </dd>
-        
-                        <dt>Skin and Coat Conditioning</dt>
-                        <dd>
-                            <ul>
-                                <li>Application of moisturizers or treatments to maintain a healthy coat and skin.</li>
-                            </ul>
-                        </dd>
-        
-                        <dt>Specialty Services*</dt>
-                        <dd>
-                            <ul>
-                                <li>Creative grooming for those who want unique styles or colors.</li>
-                                <li>Spa treatments, such as aromatherapy or massages.</li>
-                                <li>Specialized services for senior dogs or those with specific health issues.</li>
-                            </ul>
-                        </dd>
-                    </dl>
-                    <p class="tablet-desktop">*Specialty services upon request</p>
+        <hr class="my-5">
 
-            </section>
-            
-            <section id="hours" >
-                <img src="images/jamie-street-s9Tf1eBDFqw-unsplash.jpg" alt="puppy in bed" class="serve" >
-                <h1>Hours</h1>
-
+        <div class="row">
+            <div class="col-md-7">
+              <h2 class="display-3">Specialty Services</h2>
+              <h3>Creative Grooming</h3>
                 <ul>
-                    <li>Mon-Thu: 6:00am - 6:00pm</li> 
-                    <li>Friday: 6:00am - 4:00pm</li> 
-                    <li>Saturday: 8:00am - 6:00pm</li> 
-                    <li>Sunday: Closed</li>
-                </ul>
-
-                <h1 class="tablet-desktop">Specialty Services</h1>
-                <p class="tablet-desktop">Creative Grooming</p>
-                <ul class="tablet-desktop">
                     <li>Unique Styles: $50 - $150 (depending on complexity)</li>
                     <li>Coloring: $30 - $100 (based on size and intricacy)</li>
                     <li>Creative Patterns: $60 - $200 (varies with design complexity)</li>
                 </ul>
+              <h3>Spa Treatments</h3>
+              <ul> 
+                <li>Aromatherapy: $20 - $50 (includes essential oils)</li>
+                <li>Massages: $25 - $80 (depending on session length)</li>
+              </ul>
+              <h3>Specialized Services for Senior Dogs or Those with Health Issues</h3>
+              <ul>
+                <li>Gentle Grooming for Seniors: $40 - $80 (includes extra care and attention)</li>
+                <li>Medicated Baths: $30 - $60 (for dogs with skin conditions)</li>
+                <li>Mobility Support: $15 - $50 (assistance for arthritic dogs)</li>
+              </ul>
 
-                <p class="tablet-desktop">Spa Treatments</p>
-                <ul class="tablet-desktop">
-                    <li class="tablet-desktop">Aromatherapy: $20 - $50 (includes essential oils)</li>
-                    <li class="tablet-desktop">Massages: $25 - $80 (depending on session length)</li>
-                </ul>
-
-                <p class="tablet-desktop">Specialized Services for Senior Dogs or Those with Health Issues</p>
-                <ul class="tablet-desktop">
-                    <li class="tablet-desktop">Gentle Grooming for Seniors: $40 - $80 (includes extra care and attention)</li>
-                    <li class="tablet-desktop">Medicated Baths: $30 - $60 (for dogs with skin conditions)</li>
-                    <li class="tablet-desktop">Mobility Support: $15 - $50 (assistance for arthritic dogs)</li>
-                </ul>
-
-
-            </section>
-
-            <section id="groomers" class="tablet-desktop">
-                <h1>Our Groomers </h1>
-
-                <dl>
-                    <img src="images/dog-groomer1.jpg" alt="woman and dog" class="round">
-
-                    <dt>Charlotte</dt>
-                    <dd>
-                        Charlotte is a seasoned dog groomer renowned for her gentle touch and deep understanding of canine behavior. With over a decade of experience in the industry, she has earned a reputation for her exceptional skill in handling dogs of all breeds and temperaments. Charlotte's passion for grooming extends beyond mere aesthetics; she prioritizes the well-being and comfort of each furry client that crosses her doorstep. Her tranquil salon exudes a calming atmosphere, ensuring that every pup feels relaxed and at ease during their grooming sessions. Clients often praise Charlotte not only for her grooming expertise but also for her genuine love and care for their four-legged companions. Her dedication to providing top-notch grooming services coupled with her compassionate approach makes Charlotte a beloved figure in the local pet community.
-                    </dd>
-
-                    <img src="images/dog-groomer2.jpg" alt="man grooming dog" class="round">
-
-                    <dt>John</dt>
-                    <dd>
-                        John is a dog groomer with a contagious enthusiasm for his craft. Despite being relatively new to the profession, John's natural affinity for animals and his eagerness to learn have quickly propelled him to success. His genuine affection for dogs shines through in every interaction, fostering trust and rapport with both pets and their owners. John's attention to detail is unmatched; he meticulously tends to each dog's grooming needs, ensuring they leave his salon looking and feeling their best. His warm demeanor and dedication to customer satisfaction have earned him a loyal following within the community. Whether it's a routine bath or a full grooming session, clients know they can rely on John to provide expert care with a smile.
-                    </dd>
-
-                    <img src="images/dog-groomer3.jpg" alt="woman holding yorkie" class="round">
-
-                    <dt>Sarah</dt>
-                    <dd>
-                        Sarah is a seasoned dog groomer whose passion for her work is evident in every furry client she attends to. With years of experience under her belt, Sarah has honed her skills to perfection, earning a reputation as one of the most sought-after groomers in town. Her gentle demeanor and innate understanding of canine behavior create a calming atmosphere in her salon, putting both dogs and their owners at ease. Sarah approaches each grooming session with dedication and care, taking the time to tailor her services to meet the unique needs of every dog in her care. From soothing baths to precise trims, Sarah's attention to detail ensures that each pup leaves her salon looking and feeling their absolute best. Clients rave about Sarah's professionalism, expertise, and unwavering commitment to the well-being of their beloved pets, making her a beloved figure in the local dog grooming community.
-                    </dd>
-
-                    <img src="images/dog-groomer4.jpg" alt="woman washing dog" class="round">
-
-                    <dt>Jane</dt>
-                    <dd>
-                        Jane is a dog groomer known for her unparalleled expertise and genuine love for animals. With a career spanning over a decade, Jane has perfected her craft, becoming a trusted name in the industry. Her passion for dogs extends beyond grooming; she forms deep connections with each furry client that enters her salon. Jane's gentle touch and calming presence create a stress-free environment, ensuring every dog feels safe and comfortable during their grooming session. From basic baths to intricate trims, Jane approaches every task with precision and care, leaving no detail overlooked. Clients praise Jane not only for her exceptional grooming skills but also for her unwavering dedication to the happiness and well-being of their beloved pets. With Jane, dogs aren't just clients – they're cherished companions, and her commitment to their care is evident in every interaction.
-                    </dd>
-                </dl>
-
-            </section>
-    
-
-            <div class="mobile">
-                <p>For More Information: Visit <a href="https://carleighsmith.github.io/webdev24/poochparlor/index.html" class="external-link">https://carleighsmith.github.io/webdev24/poochparlor/index.html</a> On Desktop</p>
-                
             </div>
+
+            <div class="col-md-5">
+              <img src="images/jamie-street-s9Tf1eBDFqw-unsplash.jpg" alt="puppy in bed"
+                class="img-fluid rounded">
+            </div>
+        </div>
+    
+        <hr class="my-5">
+
         
-        </main>
 
-        <!-- Use the footer area to add webpage footer content-->
-        <footer>
-            <br>
+        <!-- Groomers Section -->
+        <section id="groomers" class="tablet-desktop">
+            <dl>
+                <img src="images/dog-groomer1.jpg" alt="woman and dog" class="round">
+
+                <dt>Charlotte</dt>
+                <dd>
+                    Charlotte is a seasoned dog groomer renowned for her gentle touch and deep understanding of canine behavior. With over a decade of experience in the industry, she has earned a reputation for her exceptional skill in handling dogs of all breeds and temperaments. Charlotte's passion for grooming extends beyond mere aesthetics; she prioritizes the well-being and comfort of each furry client that crosses her doorstep. Her tranquil salon exudes a calming atmosphere, ensuring that every pup feels relaxed and at ease during their grooming sessions. Clients often praise Charlotte not only for her grooming expertise but also for her genuine love and care for their four-legged companions. Her dedication to providing top-notch grooming services coupled with her compassionate approach makes Charlotte a beloved figure in the local pet community.
+                </dd>
+
+                <img src="images/dog-groomer2.jpg" alt="man grooming dog" class="round">
+
+                <dt>John</dt>
+                <dd>
+                    John is a dog groomer with a contagious enthusiasm for his craft. Despite being relatively new to the profession, John's natural affinity for animals and his eagerness to learn have quickly propelled him to success. His genuine affection for dogs shines through in every interaction, fostering trust and rapport with both pets and their owners. John's attention to detail is unmatched; he meticulously tends to each dog's grooming needs, ensuring they leave his salon looking and feeling their best. His warm demeanor and dedication to customer satisfaction have earned him a loyal following within the community. Whether it's a routine bath or a full grooming session, clients know they can rely on John to provide expert care with a smile.
+                </dd>
+
+                <img src="images/dog-groomer3.jpg" alt="woman holding yorkie" class="round">
+
+                <dt>Sarah</dt>
+                <dd>
+                    Sarah is a seasoned dog groomer whose passion for her work is evident in every furry client she attends to. With years of experience under her belt, Sarah has honed her skills to perfection, earning a reputation as one of the most sought-after groomers in town. Her gentle demeanor and innate understanding of canine behavior create a calming atmosphere in her salon, putting both dogs and their owners at ease. Sarah approaches each grooming session with dedication and care, taking the time to tailor her services to meet the unique needs of every dog in her care. From soothing baths to precise trims, Sarah's attention to detail ensures that each pup leaves her salon looking and feeling their absolute best. Clients rave about Sarah's professionalism, expertise, and unwavering commitment to the well-being of their beloved pets, making her a beloved figure in the local dog grooming community.
+                </dd>
+
+                <img src="images/dog-groomer4.jpg" alt="woman washing dog" class="round">
+
+                <dt>Jane</dt>
+                <dd>
+                    Jane is a dog groomer known for her unparalleled expertise and genuine love for animals. With a career spanning over a decade, Jane has perfected her craft, becoming a trusted name in the industry. Her passion for dogs extends beyond grooming; she forms deep connections with each furry client that enters her salon. Jane's gentle touch and calming presence create a stress-free environment, ensuring every dog feels safe and comfortable during their grooming session. From basic baths to intricate trims, Jane approaches every task with precision and care, leaving no detail overlooked. Clients praise Jane not only for her exceptional grooming skills but also for her unwavering dedication to the happiness and well-being of their beloved pets. With Jane, dogs aren't just clients – they're cherished companions, and her commitment to their care is evident in every interaction.
+                </dd>
+            </dl>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="jumbotron-fluid text-center bg-dark p-5">
+        <div class="container text-white">
             <p>&copy; Copyright 2024. All Rights Reserved.</p>
-            <p><a href="mailto:thepoochparlor@grooming.net">thepoochparlor@grooming.net</a></p>    
-        </footer>
+            <p><a href="mailto:thepoochparlor@grooming.net" class="text-white">thepoochparlor@grooming.net</a></p>
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png"
+                    alt="black and white Facebook logo" class="pr-4"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter-logo.png"
+                    alt="black and white Twitter logo"></a>
+        </div>
+    </footer>
 
-    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+
+
 </body>
 </html>
